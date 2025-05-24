@@ -2,7 +2,8 @@ create database DB_Polleria
 use DB_Polleria
 create table TipoCliente(
 	idTipoCliente int primary key identity (1,1) not null,
-	nombre varchar(50) not null
+	nombre varchar(50) not null,
+	estado int 
 )
 
 create table Cliente(
@@ -17,6 +18,7 @@ create table Cliente(
 	direccion varchar(200) not null,
 	telefono varchar(9),
 	idTipoCliente int not null,
+	estado int,
 	foreign key (idTipoCliente) references TipoCliente(idTipoCliente)
 )
 create table Producto(
@@ -46,4 +48,44 @@ create table comprobantePago(
 	Foreign key (idOrdenVenta) references OrdenVenta(idOrdenVenta),
 	fecha datetime
 )
-
+----Procedimientos almacenados
+--Listar Tipo Cliente
+create or alter procedure [dbo].[spListarTipoCliente]
+as
+	select idTipoCliente, nombre, estado from TipoCliente
+	where estado = 1
+--Insertar Tipo Cliente
+create or alter procedure [dbo].[spInsertarTipoCliente]
+	@nombre varchar(50),
+	@estado int
+as
+begin
+	insert into TipoCliente (nombre,estado)
+	values (@nombre,1);
+end
+--Editar TipoCliente
+create or alter procedure [dbo].[spEditaTipoCliente]
+	@idTipoCliente int,
+	@nombre varchar(50)
+as
+begin
+	update TipoCliente set
+	nombre=@nombre
+end
+--Deshabilitar TipoCliente
+create or alter procedure [dbo].[spDeshabilitarTipoCliente]
+	@idTipoCliente int
+as
+begin
+	update TipoCliente set
+	estado = 0
+	where idTipoCliente = @idTipoCliente
+end
+--Buscar TipoCliente
+create or alter procedure [dbo].[spBuscarTipoCliente]
+	@idTipoCliente int
+as
+begin
+	select idTipoCliente, nombre, estado from TipoCliente
+	where idTipoCliente=@idTipoCliente
+end

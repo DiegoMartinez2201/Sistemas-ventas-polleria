@@ -4,6 +4,65 @@
     "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj": {}
   },
   "projects": {
+    "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj": {
+      "restore": {
+        "projectUniqueName": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj",
+        "projectName": "capaDatos",
+        "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
+                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+      "restore": {
+        "projectUniqueName": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj",
+        "projectName": "capaLogica",
+        "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj": {
+                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj"
+              },
+              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
+                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
+      "restore": {
+        "projectUniqueName": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj",
+        "projectName": "capaEntidad",
+        "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,12 +85,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/api/v2": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj"
+              },
+              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
+                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,6 +116,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

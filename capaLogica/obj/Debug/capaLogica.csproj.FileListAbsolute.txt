@@ -1,0 +1,11 @@
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\bin\Debug\capaLogica.dll
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\bin\Debug\capaLogica.pdb
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\bin\Debug\capa.dll
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\bin\Debug\capaDatos.dll
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\bin\Debug\capaDatos.pdb
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\bin\Debug\capa.pdb
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.AssemblyReference.cache
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.CoreCompileInputs.cache
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.Up2Date
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.dll
+G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.pdb

@@ -1,0 +1,6 @@
+G:\DIARS\Polleria\Sistema-ventas-polleria\capa\bin\Debug\capa.dll
+G:\DIARS\Polleria\Sistema-ventas-polleria\capa\bin\Debug\capa.pdb
+G:\DIARS\Polleria\Sistema-ventas-polleria\capa\obj\Debug\capaEntidad.csproj.AssemblyReference.cache
+G:\DIARS\Polleria\Sistema-ventas-polleria\capa\obj\Debug\capaEntidad.csproj.CoreCompileInputs.cache
+G:\DIARS\Polleria\Sistema-ventas-polleria\capa\obj\Debug\capa.dll
+G:\DIARS\Polleria\Sistema-ventas-polleria\capa\obj\Debug\capa.pdb
