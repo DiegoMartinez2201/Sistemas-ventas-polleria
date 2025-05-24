@@ -8,6 +8,8 @@ create table TipoCliente(
 
 create table Cliente(
 	idCliente int primary key identity (1,1) not null,
+	correo varchar(100),
+	contraseña varchar(100),
 	dni varchar(8),
 	primerNombre varchar(20),
 	segundoNombre varchar(20),
@@ -21,6 +23,7 @@ create table Cliente(
 	estado int,
 	foreign key (idTipoCliente) references TipoCliente(idTipoCliente)
 )
+
 create table Producto(
 	idProducto int primary key identity (1,1),
 	nombre varchar(50),
@@ -70,7 +73,9 @@ create or alter procedure [dbo].[spEditaTipoCliente]
 as
 begin
 	update TipoCliente set
-	nombre=@nombre
+	nombre = @nombre
+	where
+	idTipoCliente=@idTipoCliente
 end
 --Deshabilitar TipoCliente
 create or alter procedure [dbo].[spDeshabilitarTipoCliente]
