@@ -102,9 +102,9 @@ namespace capaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    c.idTipoCliente = Convert.ToInt32("idTipoCliente");
-                    c.nombre = Convert.ToString("nombre");
-                    c.estado = Convert.ToInt32("estado");
+                    c.idTipoCliente = Convert.ToInt32(dr["idTipoCliente"]);
+                    c.nombre = Convert.ToString(dr["nombre"]);
+                    c.estado = Convert.ToInt32(dr["estado"]);
                 }
             }
             catch(Exception e) { throw e; }

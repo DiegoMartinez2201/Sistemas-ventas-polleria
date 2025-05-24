@@ -1,0 +1,44 @@
+﻿@model List<capaEntidad.entTipoCliente>
+
+<h2>Listado de Tipo de Clientes</h2>
+
+@if (TempData["SuccessMessage"]!= null)
+{
+    <div class="alert alert-success">
+    @TempData["SuccessMessage"]
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"] </div>
+}
+<table class="table">
+    <thead>
+       <tr>
+            <th>ID Tipo Cliente</th>
+            <th>Nombre</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+       </tr>
+    </thead>
+    <tbody>
+        @foreach (var tipoCliente in Model)
+        {
+            <tr>
+                <td>@tipoCliente.idTipoCliente</td>
+                <td>@tipoCliente.nombre</td>
+                <td>@(tipoCliente.estado == 1 ? "Activo":"Deshabilitado")</td>
+                <td>
+                    @if(tipoCliente.estado == 1)
+                    {
+                        <form method="post" action ="@Url.Action("DeshabilitaTipoCliente", "MantenedorTipoCliente")">
+                            <input type="hidden" name="idTipoCliente" value="@tipoCliente.idTipoCliente" />
+                            <button type="submit" class="btn btn-warning">Deshabilitar</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

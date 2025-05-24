@@ -7,7 +7,7 @@
 <h1>Listar</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @Html.ActionLink("Inserta", "InsertarTipoCliente")
 </p>
 <table class="table">
     <thead>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.estado)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Editar", "EditaTipoCliente", new { idTipoCliente = item.idTipoCliente}) |
+                @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                @Html.ActionLink("Deshabilitar", "DeshabilitaTipoCliente", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
 }
