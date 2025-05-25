@@ -58,7 +58,7 @@ namespace capaDatos
             try
             {
                 SqlConnection cn = cConexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertaTipoCliente", cn);
+                cmd = new SqlCommand("spInsertarTipoCliente", cn);
                 cmd.Parameters.AddWithValue("@nombre", c.nombre);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -118,7 +118,7 @@ namespace capaDatos
             try
             {
                 SqlConnection cn = cConexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDeshabilitaTipoCliente", cn);
+                cmd = new SqlCommand("spDeshabilitarTipoCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idTipoCliente", c.idTipoCliente);
                 cn.Open();

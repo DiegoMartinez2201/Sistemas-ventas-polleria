@@ -9,3 +9,14 @@ G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.Up2Date
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.dll
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.pdb
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\bin\Debug\capaLogica.dll
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\bin\Debug\capaLogica.pdb
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\bin\Debug\capa.dll
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\bin\Debug\capaDatos.dll
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\bin\Debug\capaDatos.pdb
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\bin\Debug\capa.pdb
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.AssemblyReference.cache
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.CoreCompileInputs.cache
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.Up2Date
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.dll
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.pdb

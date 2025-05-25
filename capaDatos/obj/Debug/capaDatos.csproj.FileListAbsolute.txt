@@ -7,3 +7,12 @@ G:\DIARS\Polleria\Sistema-ventas-polleria\capaDatos\obj\Debug\capaDatos.csproj.C
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaDatos\obj\Debug\capaDatos.csproj.Up2Date
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaDatos\obj\Debug\capaDatos.dll
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaDatos\obj\Debug\capaDatos.pdb
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\bin\Debug\capaDatos.dll
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\bin\Debug\capaDatos.pdb
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\bin\Debug\capa.dll
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\bin\Debug\capa.pdb
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\obj\Debug\capaDatos.csproj.AssemblyReference.cache
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\obj\Debug\capaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\obj\Debug\capaDatos.csproj.Up2Date
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\obj\Debug\capaDatos.dll
+C:\Users\Nelson Juarez\OneDrive - Universidad Privada del Norte\Documents\DIARS\Sistemas-ventas-polleria\capaDatos\obj\Debug\capaDatos.pdb

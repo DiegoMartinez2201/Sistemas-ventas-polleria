@@ -23,7 +23,7 @@ namespace capaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=DESKTOP-HNG11PV\\SQLEXPRESS;initial Catalog=DB_Polleria;" + "Integrated Security=true";
+            cn.ConnectionString = "Data Source=NELSON\\SQLEXPRESS;initial Catalog=DB_Polleria;" + "Integrated Security=true";
             return cn;
         }
         #endregion metodos

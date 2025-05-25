@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Sistema-ventas-polleria.props" />
+</Project>
