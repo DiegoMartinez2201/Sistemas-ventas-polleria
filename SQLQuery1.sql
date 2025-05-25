@@ -94,3 +94,9 @@ begin
 	select idTipoCliente, nombre, estado from TipoCliente
 	where idTipoCliente=@idTipoCliente
 end
+
+--Procedimientos de Cliente
+--Listar Cliente 
+create or alter procedure [dbo].[spListarCliente]
+as
+	select idCliente, correo, contraseña, dni, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, ruc, razonSocial, direccion, telefono, idTipoCliente, estado from Cliente 

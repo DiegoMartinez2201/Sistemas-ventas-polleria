@@ -5,7 +5,7 @@ namespace Sistema_ventas_polleria.Controllers
 {
     public class MantenedorTipoCliente : Controller
     {
-        public IActionResult Listar()
+        public IActionResult ListarTipoCliente()
         {
             List<entTipoCliente> lista = logTipoCliente.Instancia.ListarTipoCliente();
             ViewBag.lista = lista;
