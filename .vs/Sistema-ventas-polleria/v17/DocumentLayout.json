@@ -1,17 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\",
+  "WorkspaceRootPath": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\sistema-ventas-polleria\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\capalogica\\logproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|solutionrelative:capalogica\\logproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\capadatos\\datproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\datproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\capa\\entproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|solutionrelative:capa\\entproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|solutionrelative:capa\\entcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\capadatos\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capalogica\\logcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|solutionrelative:capalogica\\logcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capadatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\enttipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|solutionrelative:capa\\enttipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capadatos\\datcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\datcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\sistema-ventas-polleria\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|solutionrelative:sistema-ventas-polleria\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\sistema-ventas-polleria\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\sistema-ventas-polleria\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|solutionrelative:sistema-ventas-polleria\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\sistema-ventas-polleria\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\sistema-ventas-polleria\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|solutionrelative:sistema-ventas-polleria\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -22,50 +58,164 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Controllers\\HomeController.cs",
-              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Sistema-ventas-polleria\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T02:48:05.167Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dashboard.cshtml",
-              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
-              "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
-              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
-              "RelativeToolTip": "Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T02:43:12.483Z",
+              "DocumentIndex": 0,
+              "Title": "logProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaLogica\\logProducto.cs",
+              "RelativeDocumentMoniker": "capaLogica\\logProducto.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaLogica\\logProducto.cs",
+              "RelativeToolTip": "capaLogica\\logProducto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T05:42:09.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "datProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\datProducto.cs",
+              "RelativeDocumentMoniker": "capaDatos\\datProducto.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\datProducto.cs",
+              "RelativeToolTip": "capaDatos\\datProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T05:41:22.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "entProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entProducto.cs",
+              "RelativeDocumentMoniker": "capa\\entProducto.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entProducto.cs",
+              "RelativeToolTip": "capa\\entProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T05:40:31.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "logCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaLogica\\logCliente.cs",
+              "RelativeDocumentMoniker": "capaLogica\\logCliente.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaLogica\\logCliente.cs",
+              "RelativeToolTip": "capaLogica\\logCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:59:27.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "entTipoCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entTipoCliente.cs",
+              "RelativeDocumentMoniker": "capa\\entTipoCliente.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entTipoCliente.cs",
+              "RelativeToolTip": "capa\\entTipoCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:58:49.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "entCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entCliente.cs",
+              "RelativeDocumentMoniker": "capa\\entCliente.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entCliente.cs",
+              "RelativeToolTip": "capa\\entCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:57:59.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "datTipoCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\datTipoCliente.cs",
+              "RelativeDocumentMoniker": "capaDatos\\datTipoCliente.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\datTipoCliente.cs",
+              "RelativeToolTip": "capaDatos\\datTipoCliente.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAowIgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:53:10.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "datCliente.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\datCliente.cs",
+              "RelativeDocumentMoniker": "capaDatos\\datCliente.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\datCliente.cs",
+              "RelativeToolTip": "capaDatos\\datCliente.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwCoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:11:20.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "cConexion.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\cConexion.cs",
+              "RelativeDocumentMoniker": "capaDatos\\cConexion.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\cConexion.cs",
+              "RelativeToolTip": "capaDatos\\cConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T03:09:11.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Sistema-ventas-polleria\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T02:48:05.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
+              "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
+              "RelativeToolTip": "Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-28T02:43:12.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
-              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T02:43:06.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T02:43:06.39Z"
             }
           ]
         }
