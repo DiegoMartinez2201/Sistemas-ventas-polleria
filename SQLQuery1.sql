@@ -23,14 +23,17 @@ create table Cliente(
 	estado int,
 	foreign key (idTipoCliente) references TipoCliente(idTipoCliente)
 )
+ALTER TABLE Producto
+ADD estado bit;
 
 create table Producto(
 	idProducto int primary key identity (1,1),
 	nombre varchar(50),
 	descripcion varchar(100),
 	precio decimal(2),
-	stock int
+	stock int	
 )
+select * from Producto
 create table ordenVenta(
 	idOrdenVenta int primary key identity (1,1),
 	fecha datetime,
@@ -100,3 +103,57 @@ end
 create or alter procedure [dbo].[spListarCliente]
 as
 	select idCliente, correo, contraseña, dni, primerNombre, segundoNombre, apellidoPaterno, apellidoMaterno, ruc, razonSocial, direccion, telefono, idTipoCliente, estado from Cliente 
+---------------------------------------------------------------------
+--Mantenedor Producto
+--Listar Producto
+create or alter procedure [dbo].[spListarProducto]
+as
+	select idProducto, nombre, descripcion, precio, stock, estado from Producto
+	
+--Insertar Producto
+alter or alter procedure [dbo].[spInsertarProducto]
+	@nombre varchar(50),
+	@descripcion varchar(100),
+	@precio decimal(2,0),
+	@stock int,
+	@estado bit
+as
+begin
+	insert into Producto(nombre,descripcion,precio,stock,estado)
+	values (@nombre,@descripcion,@precio,@stock,@estado);
+end
+--Editar Producto
+create or alter procedure [dbo].[spEditaProducto]
+	@idProducto int,
+	@nombre varchar(50),
+	@descripcion varchar(100),
+	@precio decimal(2,0),
+	@stock int
+as
+begin
+	update Producto set
+	nombre = @nombre,
+	descripcion = @descripcion,
+	precio = @precio,
+	stock = @stock
+	where
+	idProducto=@idProducto
+end
+--Deshabilitar Producto
+create or alter procedure [dbo].[spDeshabilitarProducto]
+	@idProducto int
+as
+begin
+	update Producto set
+	estado = '0'
+	where idProducto =  @idProducto
+end
+--Buscar Producto
+create or alter procedure [dbo].[spBuscarProducto]
+	@idProducto int
+as
+begin
+	select idProducto, nombre, descripcion,precio,stock from Producto
+	where idProducto=@idProducto
+end
+

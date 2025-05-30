@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\capalogica\\logproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|solutionrelative:capalogica\\logproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capadatos\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\capadatos\\datproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\datproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\capa\\entproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|solutionrelative:capa\\entproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|solutionrelative:capa\\entcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|c:\\users\\nelson juarez\\onedrive - universidad privada del norte\\documents\\diars\\sistemas-ventas-polleria\\capadatos\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capalogica\\logcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|solutionrelative:capalogica\\logcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capalogica\\logproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|solutionrelative:capalogica\\logproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{838160F2-914C-4E47-8DDC-0AE6FE925D19}|capa\\capaEntidad.csproj|solutionrelative:capa\\entcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capadatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "logProducto.cs",
               "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaLogica\\logProducto.cs",
               "RelativeDocumentMoniker": "capaLogica\\logProducto.cs",
@@ -78,8 +78,7 @@
               "RelativeToolTip": "capaLogica\\logProducto.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T05:42:09.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T05:42:09.357Z"
             },
             {
               "$type": "Document",
@@ -102,14 +101,13 @@
               "RelativeDocumentMoniker": "capa\\entProducto.cs",
               "ToolTip": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entProducto.cs",
               "RelativeToolTip": "capa\\entProducto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T05:40:31.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T05:40:31.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "logCliente.cs",
               "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaLogica\\logCliente.cs",
               "RelativeDocumentMoniker": "capaLogica\\logCliente.cs",
@@ -133,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "entCliente.cs",
               "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capa\\entCliente.cs",
               "RelativeDocumentMoniker": "capa\\entCliente.cs",
@@ -141,8 +139,7 @@
               "RelativeToolTip": "capa\\entCliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T03:57:59.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T03:57:59.588Z"
             },
             {
               "$type": "Document",
@@ -170,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "cConexion.cs",
               "DocumentMoniker": "C:\\Users\\Nelson Juarez\\OneDrive - Universidad Privada del Norte\\Documents\\DIARS\\Sistemas-ventas-polleria\\capaDatos\\cConexion.cs",
               "RelativeDocumentMoniker": "capaDatos\\cConexion.cs",
