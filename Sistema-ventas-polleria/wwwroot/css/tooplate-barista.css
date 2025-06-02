@@ -352,13 +352,11 @@ strong {
     color: var(--white-color);
 }
 
-.navbar .navbar-brand-image {
-}
-
-.navbar-brand-image {
+.navbar-brand-images {
     width: 100px;
     height: auto;
     margin-right: 10px;
+    
 }
 
 .navbar .custom-btn {
