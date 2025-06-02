@@ -11,7 +11,7 @@ namespace capaDatos
 {
     public class datTipoCliente
     {
-        #region singleton
+        /*#region singleton
         private static readonly datTipoCliente UnicaInstancia = new datTipoCliente();
         public static datTipoCliente Instancia
         {
@@ -135,6 +135,6 @@ namespace capaDatos
             finally { cmd.Connection.Close (); }
             return delete;
         }
-        #endregion metodos
+        #endregion metodos*/
     }
 }

@@ -10,7 +10,7 @@ namespace capaLogica
 {
     public class logCliente
     {
-        #region singleton
+        /*#region singleton
         private static readonly logCliente UnicaInstancia = new logCliente();
         public static logCliente Instancia
         {
@@ -27,7 +27,7 @@ namespace capaLogica
             List<entCliente> lista = datCliente.Instancia.ListarCliente();
             return lista;
         }
-        #endregion metodos
+        #endregion metodos*/
 
     }
 }

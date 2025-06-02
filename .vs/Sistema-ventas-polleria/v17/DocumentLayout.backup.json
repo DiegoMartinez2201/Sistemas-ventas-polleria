@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\sistema-ventas-polleria\\controllers\\mantenedortipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|solutionrelative:sistema-ventas-polleria\\controllers\\mantenedortipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\sistema-ventas-polleria\\controllers\\mantenedorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|solutionrelative:sistema-ventas-polleria\\controllers\\mantenedorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\capalogica\\logtipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|solutionrelative:capalogica\\logtipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\capalogica\\logcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8486EEE0-921B-4702-B6AA-2EAC5CDC2961}|capaLogica\\capaLogica.csproj|solutionrelative:capalogica\\logcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\capadatos\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\cconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\capadatos\\datcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\datcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\capadatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD58537-6947-4592-A6F9-D07ACF2B0D65}|capaDatos\\capaDatos.csproj|solutionrelative:capadatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\sistema-ventas-polleria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|solutionrelative:sistema-ventas-polleria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|g:\\diars\\polleria\\sistema-ventas-polleria\\sistema-ventas-polleria\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|solutionrelative:sistema-ventas-polleria\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,6 +63,110 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MantenedorTipoCliente.cs",
+              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\MantenedorTipoCliente.cs",
+              "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Controllers\\MantenedorTipoCliente.cs",
+              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\MantenedorTipoCliente.cs",
+              "RelativeToolTip": "Sistema-ventas-polleria\\Controllers\\MantenedorTipoCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:15:08.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MantenedorCliente.cs",
+              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\MantenedorCliente.cs",
+              "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Controllers\\MantenedorCliente.cs",
+              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\MantenedorCliente.cs",
+              "RelativeToolTip": "Sistema-ventas-polleria\\Controllers\\MantenedorCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:14:58.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "logTipoCliente.cs",
+              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\logTipoCliente.cs",
+              "RelativeDocumentMoniker": "capaLogica\\logTipoCliente.cs",
+              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\logTipoCliente.cs",
+              "RelativeToolTip": "capaLogica\\logTipoCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:14:39.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "logCliente.cs",
+              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\logCliente.cs",
+              "RelativeDocumentMoniker": "capaLogica\\logCliente.cs",
+              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\logCliente.cs",
+              "RelativeToolTip": "capaLogica\\logCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:14:31.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "datTipoCliente.cs",
+              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\datTipoCliente.cs",
+              "RelativeDocumentMoniker": "capaDatos\\datTipoCliente.cs",
+              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\datTipoCliente.cs",
+              "RelativeToolTip": "capaDatos\\datTipoCliente.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwIkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:14:11.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "datCliente.cs",
+              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\datCliente.cs",
+              "RelativeDocumentMoniker": "capaDatos\\datCliente.cs",
+              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\datCliente.cs",
+              "RelativeToolTip": "capaDatos\\datCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:13:42.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Program.cs",
+              "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Program.cs",
+              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Program.cs",
+              "RelativeToolTip": "Sistema-ventas-polleria\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:12:55.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "cConexion.cs",
+              "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\cConexion.cs",
+              "RelativeDocumentMoniker": "capaDatos\\cConexion.cs",
+              "ToolTip": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\cConexion.cs",
+              "RelativeToolTip": "capaDatos\\cConexion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:11:42.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Controllers\\HomeController.cs",
@@ -43,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "dashboard.cshtml",
               "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
               "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
@@ -51,12 +187,11 @@
               "RelativeToolTip": "Sistema-ventas-polleria\\Views\\Home\\dashboard.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T02:43:12.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T02:43:12.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
@@ -64,8 +199,7 @@
               "RelativeToolTip": "Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T02:43:06.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T02:43:06.39Z"
             }
           ]
         }

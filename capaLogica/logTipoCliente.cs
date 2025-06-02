@@ -10,7 +10,7 @@ namespace capaLogica
 {
     public class logTipoCliente
     {
-        #region singleton
+       /* #region singleton
         private static readonly logTipoCliente UnicaInstancia = new logTipoCliente();
         public static logTipoCliente Instancia
         {
@@ -63,6 +63,6 @@ namespace capaLogica
             }
             catch (Exception e) { throw e; }
         }
-        #endregion metodos
+        #endregion metodos*/
     }
 }

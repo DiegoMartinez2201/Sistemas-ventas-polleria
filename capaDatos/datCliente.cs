@@ -12,7 +12,7 @@ namespace capaDatos
 {
     public class datCliente
     {
-        #region singleton
+       /* #region singleton
         private static readonly datCliente UnicaInstancia = new datCliente();
         public static datCliente Instancia
         {
@@ -63,6 +63,6 @@ namespace capaDatos
             return lista;
         }
 
-        #endregion metodos
+        #endregion metodos*/
     }
 }

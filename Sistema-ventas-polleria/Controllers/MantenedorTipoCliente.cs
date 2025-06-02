@@ -5,7 +5,7 @@ namespace Sistema_ventas_polleria.Controllers
 {
     public class MantenedorTipoCliente : Controller
     {
-        public IActionResult ListarTipoCliente()
+        /*public IActionResult ListarTipoCliente()
         {
             List<entTipoCliente> lista = logTipoCliente.Instancia.ListarTipoCliente();
             ViewBag.lista = lista;
@@ -86,6 +86,6 @@ namespace Sistema_ventas_polleria.Controllers
             {
                 return View("Error", new {message = ex.Message});
             }
-        }
+        }*/
     }
 }
