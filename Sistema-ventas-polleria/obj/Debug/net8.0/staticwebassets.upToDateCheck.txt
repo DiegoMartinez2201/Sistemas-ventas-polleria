@@ -11,6 +11,7 @@ wwwroot\images\barman-with-fruits.jpg
 wwwroot\images\coffee-beans.png
 wwwroot\images\happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg
 wwwroot\images\happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg
+wwwroot\images\logoKialChiken.jpg
 wwwroot\images\mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg
 wwwroot\images\reviews\senior-man-white-sweater-eyeglasses.jpg
 wwwroot\images\reviews\young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg
