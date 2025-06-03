@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\DIARS\\Sistemas-ventas-polleria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|d:\\diars\\sistemas-ventas-polleria\\sistema-ventas-polleria\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1202DCBB-0C41-4138-B13E-A297AEE05064}|Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj|solutionrelative:sistema-ventas-polleria\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Sistema-ventas-polleria\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T14:07:06.16Z",
+              "EditorCaption": ""
             }
           ]
         }
