@@ -28,7 +28,7 @@ namespace Sistema_ventas_polleria.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-        public IActionResult dashboard()
+        public IActionResult Dashboard()
         {
             return View();
         }
