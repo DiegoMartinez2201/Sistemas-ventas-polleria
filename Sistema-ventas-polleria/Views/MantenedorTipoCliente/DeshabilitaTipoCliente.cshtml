@@ -1,4 +1,4 @@
-﻿@model List<capaEntidad.entTipoCliente>
+﻿@model List<capaEntidad.EntTipoCliente>
 
 <h2>Listado de Tipo de Clientes</h2>
 
@@ -25,14 +25,14 @@
         @foreach (var tipoCliente in Model)
         {
             <tr>
-                <td>@tipoCliente.idTipoCliente</td>
-                <td>@tipoCliente.nombre</td>
-                <td>@(tipoCliente.estado == 1 ? "Activo":"Deshabilitado")</td>
+                <td>@tipoCliente.IdTipoCliente</td>
+                <td>@tipoCliente.Nombre</td>
+                <td>@(tipoCliente.Estado == 1 ? "Activo":"Deshabilitado")</td>
                 <td>
-                    @if(tipoCliente.estado == 1)
+                    @if(tipoCliente.Estado == 1)
                     {
                         <form method="post" action ="@Url.Action("DeshabilitaTipoCliente", "MantenedorTipoCliente")">
-                            <input type="hidden" name="idTipoCliente" value="@tipoCliente.idTipoCliente" />
+                            <input type="hidden" name="idTipoCliente" value="@tipoCliente.IdTipoCliente" />
                             <button type="submit" class="btn btn-warning">Deshabilitar</button>
                         </form>
                     }

@@ -7,17 +7,19 @@ using System.Threading.Tasks;
 
 namespace capaDatos
 {
-    class cConexion
+    class cConexionUnica
     {
         /*#region singleton
-        private static readonly cConexion UnicaInstancia = new cConexion();
-        public static cConexion Instancia
+        private static readonly cConexionUnica UnicaInstancia = new cConexionUnica();
+        public static cConexionUnica Instancia
         {
             get
             {
-                return cConexion.UnicaInstancia;
+                return cConexionUnica.UnicaInstancia1;
             }
         }
+
+        internal static cConexionUnica UnicaInstancia1 => UnicaInstancia;
         #endregion singleton
         #region metodos
         public SqlConnection Conectar()
@@ -27,6 +29,6 @@ namespace capaDatos
             return cn;
         }
         #endregion metodos*/
-        public static object Instancia { get; internal set; }
     }
 }
+          

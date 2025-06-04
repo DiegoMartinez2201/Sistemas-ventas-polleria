@@ -1,4 +1,4 @@
-﻿@model IEnumerable<capaEntidad.entTipoCliente>
+﻿@model IEnumerable<capaEntidad.EntTipoCliente>
 
 @{
     ViewData["Title"] = "ListarTipoCliente";
@@ -13,13 +13,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.idTipoCliente)
+                @Html.DisplayNameFor(model => model.IdTipoCliente)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.nombre)
+                @Html.DisplayNameFor(model => model.Nombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.estado)
+                @Html.DisplayNameFor(model => model.Estado)
             </th>
             <th></th>
         </tr>
@@ -28,16 +28,16 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.idTipoCliente)
+                @Html.DisplayFor(modelItem => item.IdTipoCliente)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.nombre)
+                @Html.DisplayFor(modelItem => item.Nombre)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.estado)
+                @Html.DisplayFor(modelItem => item.Estado)
             </td>
             <td>
-                @Html.ActionLink("Editar", "EditaTipoCliente", new { idTipoCliente = item.idTipoCliente}) |
+                @Html.ActionLink("Editar", "EditaTipoCliente", new { idTipoCliente = item.IdTipoCliente}) |
                 @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
                 @Html.ActionLink("Deshabilitar", "DeshabilitaTipoCliente", new { /* id=item.PrimaryKey */ })
             </td>

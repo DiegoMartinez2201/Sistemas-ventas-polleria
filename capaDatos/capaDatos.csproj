@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cConexion.cs" />
+    <Compile Include="cConexionBase.cs" />
     <Compile Include="datCliente.cs" />
     <Compile Include="datTipoCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

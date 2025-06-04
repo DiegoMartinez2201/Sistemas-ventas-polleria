@@ -5778,23 +5778,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Martinez\\.nuget\\packages\\": {},
+    "C:\\Users\\HOGAR\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "projectUniqueName": "D:\\POLLITOS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "projectName": "Sistema-ventas-polleria",
-      "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
-      "packagesPath": "C:\\Users\\Martinez\\.nuget\\packages\\",
-      "outputPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+      "projectPath": "D:\\POLLITOS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "packagesPath": "C:\\Users\\HOGAR\\.nuget\\packages\\",
+      "outputPath": "D:\\POLLITOS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Martinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HOGAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5803,18 +5803,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.nuget.org/api/v2": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj": {
-              "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj"
+            "D:\\POLLITOS\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+              "projectPath": "D:\\POLLITOS\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
             },
-            "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
-              "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj"
+            "D:\\POLLITOS\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+              "projectPath": "D:\\POLLITOS\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
             }
           }
         }

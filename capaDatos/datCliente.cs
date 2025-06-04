@@ -7,12 +7,11 @@ using System.Data.SqlClient;
 using System.Data;
 using capa;
 
-
 namespace capaDatos
 {
     public class DatCliente
     {
-        #region singleton
+        /*#region singleton
         private static readonly DatCliente UnicaInstancia = new DatCliente();
         public static DatCliente Instancia
         {
@@ -29,9 +28,11 @@ namespace capaDatos
             List<entCliente> lista = new List<entCliente>();
             try
             {
-                SqlConnection cn = cConexion.Instancia.Conectar();
-                cmd = new SqlCommand("spListarCliente", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
+                SqlConnection cn = cConexion.instancia.Conectar();
+                cmd = new SqlCommand("spListarCliente", cn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
@@ -65,6 +66,8 @@ namespace capaDatos
             return lista;
         }
 
-        #endregion metodos
+        #endregion metodos*/
     }
+
+    
 }

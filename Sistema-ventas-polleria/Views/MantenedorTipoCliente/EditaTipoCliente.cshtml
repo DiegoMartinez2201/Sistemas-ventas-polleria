@@ -1,4 +1,4 @@
-﻿@model capaEntidad.entTipoCliente
+﻿@model capaEntidad.EntTipoCliente
 
 @{
     ViewData["Title"] = "EditaTipoCliente";
@@ -13,19 +13,19 @@
         <form asp-action="EditaTipoCliente">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="idTipoCliente" class="control-label"></label>
-                <input asp-for="idTipoCliente" class="form-control" />
-                <span asp-validation-for="idTipoCliente" class="text-danger"></span>
+                <label asp-for="IdTipoCliente" class="control-label"></label>
+                <input asp-for="IdTipoCliente" class="form-control" />
+                <span asp-validation-for="IdTipoCliente" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="nombre" class="control-label"></label>
-                <input asp-for="nombre" class="form-control" />
-                <span asp-validation-for="nombre" class="text-danger"></span>
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="estado" class="control-label"></label>
-                <input asp-for="estado" class="form-control" />
-                <span asp-validation-for="estado" class="text-danger"></span>
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" class="form-control" />
+                <span asp-validation-for="Estado" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
