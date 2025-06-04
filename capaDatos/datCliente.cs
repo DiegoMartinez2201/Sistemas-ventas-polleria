@@ -10,15 +10,15 @@ using capa;
 
 namespace capaDatos
 {
-    public class datCliente
+    public class DatCliente
     {
-       /* #region singleton
-        private static readonly datCliente UnicaInstancia = new datCliente();
-        public static datCliente Instancia
+        #region singleton
+        private static readonly DatCliente UnicaInstancia = new DatCliente();
+        public static DatCliente Instancia
         {
             get
             {
-                return datCliente.UnicaInstancia;
+                return DatCliente.UnicaInstancia;
             }
         }
         #endregion singleton
@@ -36,21 +36,23 @@ namespace capaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entCliente c = new entCliente();
-                    c.idCliente = Convert.ToInt32(dr["idCliente"]);
-                    c.correo = Convert.ToString(dr["correo"]);
-                    c.contraseña = Convert.ToString(dr["contraseña"]);
-                    c.dni = Convert.ToString(dr["dni"]);
-                    c.primernombre = Convert.ToString(dr["primernombre"]);
-                    c.segundonombre = Convert.ToString(dr["segundonombre"]);
-                    c.apellidoPaterno = Convert.ToString(dr["apellidoPaterno"]);
-                    c.apellidoMaterno = Convert.ToString(dr["apellidoMaterno"]);
-                    c.ruc = Convert.ToString(dr["ruc"]);
-                    c.razonSocial = Convert.ToString(dr["razonSocial"]);
-                    c.direccion = Convert.ToString(dr["direccion"]);
-                    c.telefono = Convert.ToString(dr["telefono"]);
-                    c.idTipoCliente = Convert.ToInt32(dr["idTipoCliente"]);
-                    c.estado = Convert.ToInt32(dr["estado"]);
+                    entCliente c = new entCliente
+                    {
+                        idCliente = Convert.ToInt32(dr["idCliente"]),
+                        correo = Convert.ToString(dr["correo"]),
+                        contraseña = Convert.ToString(dr["contraseña"]),
+                        dni = Convert.ToString(dr["dni"]),
+                        primernombre = Convert.ToString(dr["primernombre"]),
+                        segundonombre = Convert.ToString(dr["segundonombre"]),
+                        apellidoPaterno = Convert.ToString(dr["apellidoPaterno"]),
+                        apellidoMaterno = Convert.ToString(dr["apellidoMaterno"]),
+                        ruc = Convert.ToString(dr["ruc"]),
+                        razonSocial = Convert.ToString(dr["razonSocial"]),
+                        direccion = Convert.ToString(dr["direccion"]),
+                        telefono = Convert.ToString(dr["telefono"]),
+                        idTipoCliente = Convert.ToInt32(dr["idTipoCliente"]),
+                        estado = Convert.ToInt32(dr["estado"])
+                    };
                     lista.Add(c);
                 }
             }
@@ -63,6 +65,6 @@ namespace capaDatos
             return lista;
         }
 
-        #endregion metodos*/
+        #endregion metodos
     }
 }
