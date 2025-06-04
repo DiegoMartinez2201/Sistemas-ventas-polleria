@@ -27,5 +27,6 @@ namespace capaDatos
             return cn;
         }
         #endregion metodos*/
+        public static object Instancia { get; internal set; }
     }
 }
