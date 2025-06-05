@@ -1,16 +1,8 @@
 {
   "Files": [
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Sistema-ventas-polleria.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Sistema-ventas-polleria.bundle.scp.css"
-    },
-    {
       "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\bootstrap-icons.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-icons.css"
-    },
-    {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
       "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\fontawesome.min.css",

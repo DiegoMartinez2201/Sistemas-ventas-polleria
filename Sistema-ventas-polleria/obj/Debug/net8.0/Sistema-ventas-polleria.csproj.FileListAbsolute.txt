@@ -470,9 +470,7 @@ D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\stati
 D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Sistema-ventas-polleria.props
 D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Sistema-ventas-polleria.props
 D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\staticwebassets.pack.json
-D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\scopedcss\bundle\Sistema-ventas-polleria.styles.css
-D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\scopedcss\projectbundle\Sistema-ventas-polleria.bundle.scp.css
 D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\Sistema-.380D1523.Up2Date
 D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\Sistema-ventas-polleria.dll
 D:\DIARS\Sistemas-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\refint\Sistema-ventas-polleria.dll
