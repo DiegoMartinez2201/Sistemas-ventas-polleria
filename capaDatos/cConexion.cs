@@ -9,17 +9,15 @@ namespace capaDatos
 {
     class cConexionUnica
     {
-        /*#region singleton
-        private static readonly cConexionUnica UnicaInstancia = new cConexionUnica();
-        public static cConexionUnica Instancia
+        /*  #region singleton
+        private static readonly cConexion UnicaInstancia = new cConexion(); 
+        public static cConexion Instancia
         {
             get
             {
-                return cConexionUnica.UnicaInstancia1;
+                return cConexion.UnicaInstancia;
             }
         }
-
-        internal static cConexionUnica UnicaInstancia1 => UnicaInstancia;
         #endregion singleton
         #region metodos
         public SqlConnection Conectar()
