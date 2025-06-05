@@ -37,11 +37,6 @@
                         </a>
 
                         <a class="btn custom-btn smoothscroll me-2 mb-2" href="#section_3"><strong>Check Menu</strong></a>
-
-                        <!-- Botón para abrir el modal de login -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            Iniciar Sesión
-                        </button>
                     </div>
 
                 </div>
@@ -49,42 +44,6 @@
 
             <div class="hero-slides"></div>
         </section>
-
-        <!-- Modal de Login -->
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Usuario</label>
-                                <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
-                            </div>
-
-                            <div class="form-check mb-3">
-                                <input type="checkbox" class="form-check-input" id="rememberMe">
-                                <label class="form-check-label" for="rememberMe">Recordarme</label>
-                                <a href="#" class="float-end" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">¿Olvidó su contraseña?</a>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-                        </form>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <p class="mb-0">¿No tiene una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <section class="about-section section-padding" id="section_2">
             <div class="section-overlay"></div>
@@ -563,5 +522,44 @@
             </div>
         </section>
     </main>
+
+    <!-- Modal de Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="username" placeholder="Ingrese su usuario">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Recordarme</label>
+                            <a href="#" class="float-end" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">¿Olvidó su contraseña?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <p class="mb-0">¿No tiene una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar los scripts de Bootstrap al final del body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
