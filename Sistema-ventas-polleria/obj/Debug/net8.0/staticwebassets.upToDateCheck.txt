@@ -1,4 +1,3 @@
-wwwroot\css\bootstrap.min.css
 wwwroot\css\bootstrap-icons.css
 wwwroot\css\fontawesome.min.css
 wwwroot\css\fullcalendar.min.css

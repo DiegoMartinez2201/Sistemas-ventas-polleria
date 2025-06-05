@@ -705,9 +705,7 @@ G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8
 G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\Sistema-ventas-polleria.RazorAssemblyInfo.cache
 G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\Sistema-ventas-polleria.RazorAssemblyInfo.cs
 G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\Sistema-ventas-polleria.sourcelink.json
-G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\scopedcss\bundle\Sistema-ventas-polleria.styles.css
-G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\scopedcss\projectbundle\Sistema-ventas-polleria.bundle.scp.css
 G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\staticwebassets.build.json
 G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\staticwebassets.build.json.cache
 G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\obj\Debug\net8.0\staticwebassets.development.json
