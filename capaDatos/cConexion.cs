@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace capaDatos
 {
-    class cConexionUnica
+    public class cConexion
     {
         /*  #region singleton
         private static readonly cConexion UnicaInstancia = new cConexion(); 

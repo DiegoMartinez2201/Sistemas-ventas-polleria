@@ -10,7 +10,7 @@ using System.Data;
 namespace Sistema_ventas_polleria.Controllers
 {
     public class CuentaController : Controller
-    {
+    {/*
         [HttpPost]
         public async Task<IActionResult> Login(string correo, string contraseña)
         {
@@ -66,5 +66,6 @@ namespace Sistema_ventas_polleria.Controllers
             await HttpContext.SignOutAsync();
             return Json(new { success = true });
         }
-    }
+*/}
+
 }

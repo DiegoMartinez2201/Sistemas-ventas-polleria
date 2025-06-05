@@ -319,7 +319,7 @@ strong {
 -----------------------------------------*/
 .sticky-wrapper {
     position: absolute;
-    z-index: 999999;
+    z-index: 1030;
     top: 0;
     right: 0;
     left: 0;
@@ -333,7 +333,7 @@ strong {
 
 .navbar {
     background: transparent;
-    z-index: 999999;
+    z-index: 1030;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -516,6 +516,18 @@ strong {
             top: 8px;
         }
 
+/* Modal styles */
+.modal {
+    z-index: 9999 !important;
+}
+
+.modal-backdrop {
+    z-index: 9998 !important;
+}
+
+.modal-dialog {
+    z-index: 9999 !important;
+}
 
 /*---------------------------------------
   HERO        
@@ -1189,4 +1201,16 @@ strong {
     .timeline-container-right::before {
         top: 13px;
     }
+}
+
+/* --- Fix modal always on top of header/navbar --- */
+header, .navbar, .sticky-wrapper {
+    z-index: 100 !important;
+    position: relative;
+}
+
+.modal,
+.modal-dialog,
+.modal-backdrop {
+    z-index: 9999 !important;
 }

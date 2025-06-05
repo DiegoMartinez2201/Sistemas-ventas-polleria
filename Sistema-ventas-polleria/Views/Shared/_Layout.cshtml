@@ -57,7 +57,9 @@
                             <a class="nav-link click-scroll" href="#section_5">Contactanos</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link click-scroll" href="#section_5">Registrarse</a>
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalRegistroCliente">
+                                    Registrarse
+                                </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</a>
@@ -74,10 +76,13 @@
             </div>
         </nav>
     </header>
+        
     <div class="">
         <main role="main" class="">
             @RenderBody()
+               
         </main>
+
     </div>
     <footer class="site-footer">
             <div class="container">
@@ -173,6 +178,13 @@
     <script src="js/click-scroll.js"></script>
     <script src="js/vegas.min.js"></script>
     <script src="js/custom.js"></script>
+        <script>
+            function mostrarFormulario() {
+              var tipo = document.getElementById("tipoCliente").value;
+              document.getElementById("formPersona").style.display = (tipo === "persona") ? "block" : "none";
+              document.getElementById("formEmpresa").style.display = (tipo === "empresa") ? "block" : "none";
+            }
+        </script>
     </main>
 </body>
 </html>

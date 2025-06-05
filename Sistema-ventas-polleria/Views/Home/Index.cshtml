@@ -522,7 +522,104 @@
             </div>
         </section>
     </main>
+    <!-- Modal Registro Cliente-->
+    <div class="modal fade" id="modalRegistroCliente" tabindex="-1" aria-labelledby="modalRegistroClienteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
 
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRegistroClienteLabel">Registro de Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Tipo de cliente -->
+                    <div class="mb-3">
+                        <label for="tipoCliente" class="form-label">Tipo de Cliente</label>
+                        <select id="tipoCliente" class="form-select" onchange="mostrarFormulario()">
+                            <option value="" selected disabled>Seleccione...</option>
+                            <option value="persona">Persona Natural</option>
+                            <option value="empresa">Empresa</option>
+                        </select>
+                    </div>
+
+                    <!-- Formulario Persona Natural -->
+                    <div id="formPersona" style="display:none;">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label>DNI</label>
+                                <input type="text" class="form-control" maxlength="8">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Nombre</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Segundo Nombre</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Apellido Paterno</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Apellido Materno</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Número de Teléfono</label>
+                                <input type="tel" class="form-control">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label>Dirección</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Fecha de Nacimiento</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Correo Electrónico</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Contraseña</label>
+                                <input type="password" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario Empresa -->
+                    <div id="formEmpresa" style="display:none;">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label>Número de RUC</label>
+                                <input type="text" class="form-control" maxlength="11">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Razón Social</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label>Dirección</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label>Teléfono</label>
+                                <input type="tel" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal de Login -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
