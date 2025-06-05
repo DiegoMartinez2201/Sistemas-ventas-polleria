@@ -1209,8 +1209,4 @@ header, .navbar, .sticky-wrapper {
     position: relative;
 }
 
-.modal,
-.modal-dialog,
-.modal-backdrop {
-    z-index: 9999 !important;
-}
+
