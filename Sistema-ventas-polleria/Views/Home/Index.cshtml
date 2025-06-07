@@ -650,7 +650,7 @@
                     </form>
                 </div>
                 <div class="modal-footer justify-content-center">
-                    <p class="mb-0">¿No tiene una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</a></p>
+                    <p class="mb-0">¿No tiene una cuenta? <a href="#" data-bs-toggle="modal" data-bs-target="#modalRegistroCliente">Registrarse</a></p>
                 </div>
             </div>
         </div>
@@ -739,6 +739,22 @@
                     document.body.style.paddingRight = '';
                 });
             });
+
+            // Manejar la transición de login a registro
+            const registerLink = loginModal.querySelector('a[data-bs-target="#modalRegistroCliente"]');
+            if (registerLink) {
+                registerLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const loginModalInstance = bootstrap.Modal.getInstance(loginModal);
+                    if (loginModalInstance) {
+                        loginModalInstance.hide();
+                        setTimeout(() => {
+                            const registerModalInstance = new bootstrap.Modal(registerModal);
+                            registerModalInstance.show();
+                        }, 150);
+                    }
+                });
+            }
 
             // Prevenir la propagación de eventos en el header cuando hay un modal abierto
             const header = document.querySelector('header');

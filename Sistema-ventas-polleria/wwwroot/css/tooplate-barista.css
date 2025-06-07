@@ -41,7 +41,11 @@ https://www.tooplate.com/view/2137-barista-cafe
 }
 
 body {
-    background-color: var(--white-color);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     font-family: var(--body-font-family);
 }
 
@@ -129,12 +133,12 @@ strong {
   SECTION               
 -----------------------------------------*/
 .section-padding {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .section-bg {
-    background-color: var(--section-bg-color);
+    background-color: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .section-overlay {
@@ -331,18 +335,33 @@ strong {
         padding: 15px 30px;
     }
 
-.navbar {
-    background: transparent;
+.site-header {
+    width: 100vw;
+    background: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1030;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-    .navbar .container {
-        background: rgba(0, 0, 0, 0.35);
-        border-radius: var(--border-radius-medium);
-        padding: 15px 30px;
-    }
+.navbar {
+    background: var(--primary-color);
+    z-index: 1030;
+    padding: 15px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar .container {
+    background: transparent;
+    border-radius: var(--border-radius-medium);
+    padding: 15px 30px;
+    margin: 0 auto;
+    max-width: 1320px;
+}
 
 .navbar-brand,
 .navbar-brand:hover {
@@ -356,7 +375,6 @@ strong {
     width: 100px;
     height: auto;
     margin-right: 10px;
-    
 }
 
 .navbar .custom-btn {
@@ -367,6 +385,13 @@ strong {
     border-radius: var(--border-radius-large);
     margin: 10px;
     padding: 10px;
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
 }
 
 .navbar-nav .nav-link {
@@ -451,70 +476,12 @@ strong {
 }
 
 .navbar-toggler {
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    margin: 0;
-    width: 30px;
-    height: 35px;
-    outline: none;
+    border-color: var(--white-color);
 }
 
-    .navbar-toggler:focus {
-        outline: none;
-        box-shadow: none;
-    }
-
-    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-        background: transparent;
-    }
-
-        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
-        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-            transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
-            transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-            transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
-            top: 0;
-        }
-
-        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-            transform: rotate(45deg);
-        }
-
-        .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-            transform: rotate(-45deg);
-        }
-
-    .navbar-toggler .navbar-toggler-icon {
-        background: var(--white-color);
-        transition: background 10ms 300ms ease;
-        display: block;
-        width: 30px;
-        height: 2px;
-        position: relative;
-    }
-
-        .navbar-toggler .navbar-toggler-icon:before,
-        .navbar-toggler .navbar-toggler-icon:after {
-            transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-            transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-            transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
-            position: absolute;
-            right: 0;
-            left: 0;
-            background: var(--white-color);
-            width: 30px;
-            height: 2px;
-            content: '';
-        }
-
-        .navbar-toggler .navbar-toggler-icon::before {
-            top: -8px;
-        }
-
-        .navbar-toggler .navbar-toggler-icon::after {
-            top: 8px;
-        }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 /* Modal styles */
 .modal {
@@ -533,7 +500,8 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     position: relative;
     overflow: hidden;
     min-height: 620px;
@@ -606,7 +574,8 @@ strong {
   ABOUT              
 -----------------------------------------*/
 .about-section {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     position: relative;
 }
 
@@ -690,7 +659,8 @@ strong {
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-    background-image: url('../images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
+    background-color: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -751,7 +721,8 @@ strong {
   REVIEWS              
 -----------------------------------------*/
 .reviews-section {
-    background-color: #7c5c52;
+    background-color: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .reviews-block {
@@ -849,7 +820,8 @@ strong {
   CONTACT               
 -----------------------------------------*/
 .contact-section {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(188, 108, 37, 1)), url('../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
+    background-color: var(--primary-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1207,6 +1179,47 @@ strong {
 header, .navbar, .sticky-wrapper {
     z-index: 100 !important;
     position: relative;
+}
+
+/* Ajustar el espaciado del contenido principal para que no se superponga con el header */
+main {
+    padding-top: 100px;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Asegurar que las secciones ocupen todo el ancho */
+section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustar el contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Agregar un efecto de brillo sutil */
+.site-header::after,
+.section-bg::after,
+.hero-section::after,
+.about-section::after,
+.menu-section::after,
+.reviews-section::after,
+.contact-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+    pointer-events: none;
 }
 
 

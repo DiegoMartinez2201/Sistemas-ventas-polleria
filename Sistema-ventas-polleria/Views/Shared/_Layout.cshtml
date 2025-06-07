@@ -20,14 +20,12 @@
     <link href="css/tooplate-barista.css" rel="stylesheet">
 </head>
 <body>
-    <main>
-    <header>
+    <header class="site-header">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand align-items-center" href="index.cshtml">
-                        <img src="~/images/logoKialChiken.jpg" style="width: 100px; margin-right: 10px;"
-                         alt="Logo de Polleria Kial Chicken"
-                         >
+                    <img src="~/images/logoKialChiken.jpg" style="width: 100px; margin-right: 10px;"
+                         alt="Logo de Polleria Kial Chicken">
                     Kial Chicken
                 </a>
 
@@ -57,9 +55,9 @@
                             <a class="nav-link click-scroll" href="#section_5">Contactanos</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalRegistroCliente">
-                                    Registrarse
-                                </a>
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalRegistroCliente">
+                                Registrarse
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</a>
@@ -76,7 +74,7 @@
             </div>
         </nav>
     </header>
-        
+    <main>
     <div class="">
         <main role="main" class="">
             @RenderBody()
