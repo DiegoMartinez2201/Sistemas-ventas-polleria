@@ -1,6 +1,8 @@
 wwwroot\css\bootstrap-icons.css
 wwwroot\css\fontawesome.min.css
 wwwroot\css\fullcalendar.min.css
+wwwroot\css\modal-styles.css
+wwwroot\css\notifications.css
 wwwroot\css\tooplate.css
 wwwroot\css\tooplate-barista.css
 wwwroot\css\vegas.min.css
@@ -21,11 +23,18 @@ wwwroot\images\team\portrait-elegant-old-man-wearing-suit.jpg
 wwwroot\images\team\small-business-owner-drinking-coffee.jpg
 wwwroot\images\team\smiley-business-woman-working-cashier.jpg
 wwwroot\images\young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg
+wwwroot\img\1cuartopollo.png
+wwwroot\img\1octavo.png
 wwwroot\img\dash-bg-01.jpg
 wwwroot\img\dash-bg-02.jpg
 wwwroot\img\dash-bg-03.jpg
+wwwroot\img\Fuego-KialChicken.jpg
+wwwroot\img\mediopollo.jpeg
+wwwroot\img\mediopollodosgaseosaysalsas.png
 wwwroot\img\product-image.jpg
 wwwroot\img\profile-image.png
+wwwroot\img\unpolloalabraza.jpeg
+wwwroot\img\unpollochicha.webp
 wwwroot\jquery-ui-datepicker\AUTHORS.txt
 wwwroot\jquery-ui-datepicker\external\jquery\jquery.js
 wwwroot\jquery-ui-datepicker\images\ui-bg_glass_75_d0e5f5_1x400.png
@@ -56,6 +65,7 @@ wwwroot\js\bootstrap.min.js
 wwwroot\js\Chart.min.js
 wwwroot\js\click-scroll.js
 wwwroot\js\custom.js
+wwwroot\js\delivery-carrito.js
 wwwroot\js\fullcalendar.min.js
 wwwroot\js\jquery.min.js
 wwwroot\js\jquery.sticky.js

@@ -42,7 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cConexion.cs" />
+    <Compile Include="datCategoria.cs" />
     <Compile Include="datCliente.cs" />
+    <Compile Include="datComprobanteDePago.cs" />
+    <Compile Include="datEstado.cs" />
+    <Compile Include="datFormaEnvio.cs" />
+    <Compile Include="datMarca.cs" />
+    <Compile Include="datMetodoPago.cs" />
+    <Compile Include="datPedidoDetalle.cs" />
+    <Compile Include="datPedidoOnline.cs" />
+    <Compile Include="datProducto.cs" />
+    <Compile Include="datRol.cs" />
+    <Compile Include="datTamaño.cs" />
     <Compile Include="datTipoCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

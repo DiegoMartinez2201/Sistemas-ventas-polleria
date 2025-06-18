@@ -9,7 +9,7 @@ using capa;
 
 namespace capaDatos
 {
-    public class DatCliente
+    public class datCliente
     {
         /*#region singleton
         private static readonly DatCliente UnicaInstancia = new DatCliente();

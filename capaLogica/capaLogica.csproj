@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="logCategoria.cs" />
     <Compile Include="logCliente.cs" />
+    <Compile Include="logComprobanteDePago.cs" />
+    <Compile Include="logEstado.cs" />
+    <Compile Include="logFormaEnvio.cs" />
+    <Compile Include="logMarca.cs" />
+    <Compile Include="logMetodoPago.cs" />
+    <Compile Include="logPedidoDetalle.cs" />
+    <Compile Include="logPedidoOnline.cs" />
+    <Compile Include="logProducto.cs" />
+    <Compile Include="logRol.cs" />
+    <Compile Include="logTamaño.cs" />
     <Compile Include="logTipoCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -32,8 +32,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxkYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Cliente/Carta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDYXJ0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Cliente/Clientelog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDbGllbnRlbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Cliente/Delivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxEZWxpdmVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Home/Index.cshtml]
@@ -74,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_LayoutCarta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDYXJ0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_LayoutCliente.cshtml]

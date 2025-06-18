@@ -12,10 +12,8 @@ namespace capa
         public string correo { get; set; }
         public string contraseña { get; set; }  
         public string dni { get; set; }
-        public string primernombre { get; set; }
-        public string segundonombre { get; set; }   
-        public string apellidoPaterno { get; set; }
-        public string apellidoMaterno { get; set; }
+        public string nombreCli { get; set; }
+        public string apellidoCli { get; set; }
         public string ruc { get; set; }
         public string razonSocial { get; set; }
         public string direccion { get; set; }   

@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entCategoria.cs" />
     <Compile Include="entCliente.cs" />
+    <Compile Include="entComprobanteDePago.cs" />
+    <Compile Include="entEstado.cs" />
+    <Compile Include="entFormaEnvio.cs" />
+    <Compile Include="entMarca.cs" />
+    <Compile Include="entMetodoPago.cs" />
+    <Compile Include="entPedidoDetalle.cs" />
+    <Compile Include="entPedidoOnline.cs" />
+    <Compile Include="entProducto.cs" />
+    <Compile Include="entRol.cs" />
+    <Compile Include="entTamaño.cs" />
     <Compile Include="entTipoCliente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
