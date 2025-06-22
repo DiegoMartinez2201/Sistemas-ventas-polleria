@@ -9,7 +9,7 @@ namespace capaDatos
 {
     public class cConexion
     {
-        /*  #region singleton
+         #region singleton
         private static readonly cConexion UnicaInstancia = new cConexion(); 
         public static cConexion Instancia
         {
@@ -23,10 +23,10 @@ namespace capaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=DESKTOP-HNG11PV\\SQLEXPRESS;initial Catalog=DB_Polleria;" + "Integrated Security=true";
+            cn.ConnectionString = "Data Source=NELSON\\SQLEXPRESS;initial Catalog=Polleria;" + "Integrated Security=true";
             return cn;
         }
-        #endregion metodos*/
+        #endregion metodos
     }
 }
           

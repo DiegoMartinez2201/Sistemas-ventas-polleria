@@ -10,8 +10,9 @@
         "dependencies": {
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
           "System.Data.SqlClient": "4.9.0",
-          "capaEntidad": "1.0.0",
-          "capaLogica": "1.0.0"
+          "capa": "1.0.0",
+          "capaLogica": "1.0.0",
+          "capa.Reference": "1.0.0.0"
         },
         "runtime": {
           "Sistema-ventas-polleria.dll": {}
@@ -1545,9 +1546,18 @@
           }
         }
       },
+      "capa/1.0.0": {
+        "runtime": {
+          "capa.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": ""
+          }
+        }
+      },
       "capaDatos/1.0.0": {
         "dependencies": {
-          "capaEntidad": "1.0.0"
+          "System.Data.SqlClient": "4.9.0",
+          "capa": "1.0.0"
         },
         "runtime": {
           "capaDatos.dll": {
@@ -1556,22 +1566,22 @@
           }
         }
       },
-      "capaEntidad/1.0.0": {
-        "runtime": {
-          "capa.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": ""
-          }
-        }
-      },
       "capaLogica/1.0.0": {
         "dependencies": {
-          "capaDatos": "1.0.0",
-          "capaEntidad": "1.0.0"
+          "capa": "1.0.0",
+          "capaDatos": "1.0.0"
         },
         "runtime": {
           "capaLogica.dll": {
             "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "capa.Reference/1.0.0.0": {
+        "runtime": {
+          "capa.dll": {
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -2431,18 +2441,23 @@
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
     },
-    "capaDatos/1.0.0": {
+    "capa/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "capaEntidad/1.0.0": {
+    "capaDatos/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "capaLogica/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "capa.Reference/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

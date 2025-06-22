@@ -42,3 +42,14 @@ G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.Up2Date
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.dll
 G:\DIARS\Polleria\Sistema-ventas-polleria\capaLogica\obj\Debug\capaLogica.pdb
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\bin\Debug\capaLogica.dll
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\bin\Debug\capaLogica.pdb
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\bin\Debug\capa.dll
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\bin\Debug\capaDatos.dll
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\bin\Debug\capaDatos.pdb
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\bin\Debug\capa.pdb
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.AssemblyReference.cache
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.CoreCompileInputs.cache
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.csproj.Up2Date
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.dll
+C:\Proyecto\Sistemas-ventas-polleria\capaLogica\obj\Debug\capaLogica.pdb

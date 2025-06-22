@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eInZF0lzhNA=",
+  "dgSpecHash": "Et5IGBTbKcI=",
   "success": true,
-  "projectFilePath": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+  "projectFilePath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nelson Juarez\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Nelson Juarez\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

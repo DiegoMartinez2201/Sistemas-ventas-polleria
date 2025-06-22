@@ -2056,32 +2056,36 @@
           }
         }
       },
-      "capaDatos/1.0.0": {
+      "capa/1.0.0": {
         "type": "project",
-        "dependencies": {
-          "capaEntidad": "1.0.0"
-        },
+        "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/capaDatos.dll": {}
+          "bin/placeholder/capa.dll": {}
         },
         "runtime": {
-          "bin/placeholder/capaDatos.dll": {}
+          "bin/placeholder/capa.dll": {}
         }
       },
-      "capaEntidad/1.0.0": {
+      "capaDatos/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.9.0",
+          "capa": "1.0.0"
+        },
         "compile": {
-          "bin/placeholder/capaEntidad.dll": {}
+          "bin/placeholder/capaDatos.dll": {}
         },
         "runtime": {
-          "bin/placeholder/capaEntidad.dll": {}
+          "bin/placeholder/capaDatos.dll": {}
         }
       },
       "capaLogica/1.0.0": {
         "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "capaDatos": "1.0.0",
-          "capaEntidad": "1.0.0"
+          "capa": "1.0.0",
+          "capaDatos": "1.0.0"
         },
         "compile": {
           "bin/placeholder/capaLogica.dll": {}
@@ -5753,15 +5757,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "capa/1.0.0": {
+      "type": "project",
+      "path": "../capa/capaEntidad.csproj",
+      "msbuildProject": "../capa/capaEntidad.csproj"
+    },
     "capaDatos/1.0.0": {
       "type": "project",
       "path": "../capaDatos/capaDatos.csproj",
       "msbuildProject": "../capaDatos/capaDatos.csproj"
-    },
-    "capaEntidad/1.0.0": {
-      "type": "project",
-      "path": "../capa/capaEntidad.csproj",
-      "msbuildProject": "../capa/capaEntidad.csproj"
     },
     "capaLogica/1.0.0": {
       "type": "project",
@@ -5773,7 +5777,7 @@
     "net8.0": [
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
       "System.Data.SqlClient >= 4.9.0",
-      "capaEntidad >= 1.0.0",
+      "capa >= 1.0.0",
       "capaLogica >= 1.0.0"
     ]
   },
@@ -5783,11 +5787,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "projectUniqueName": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "projectName": "Sistema-ventas-polleria",
-      "projectPath": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "packagesPath": "C:\\Users\\Nelson Juarez\\.nuget\\packages\\",
-      "outputPath": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+      "outputPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nelson Juarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5805,11 +5809,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DIARS\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
-              "projectPath": "D:\\DIARS\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
+            "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+              "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
             },
-            "D:\\DIARS\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
-              "projectPath": "D:\\DIARS\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
+            "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+              "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
             }
           }
         }

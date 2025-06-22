@@ -1,0 +1,58 @@
+﻿@model List<capa.entCategoria>
+
+<h2>Lista de Categoria</h2>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID Categoria</th>
+            <th>Nombre Categoria</th>
+            <th>Estado</th>           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categoria in Model)
+        {
+            <tr>
+                <td>@categoria.idCategoria</td>
+                <td>@categoria.nombreCategoria</td>
+                <td>@(categoria.estado == 1 ? "Activo" : "Deshabilitado")</td>
+                <td>
+                    @if (categoria.estado == 1)
+                    {
+                        <form method="post" action="@Url.Action("DeshabilitarCategoria", "MantenedorCategoria")">
+                            <input type="hidden" name="idCategoria" value="@categoria.idCategoria" />
+                            <button type="submit" class="btn btn-warning">Deshabilitar</button>
+                        </form>
+                    }
+                    else
+					{
+						<form method="post" action="@Url.Action("HabilitarCategoria", "MantenedorCategoria")">
+							<input type="hidden" name="idCategoria" value="@categoria.idCategoria" />
+							<button type="submit" class="btn btn-success">Habilitar</button>
+						</form>
+					}
+                   
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
