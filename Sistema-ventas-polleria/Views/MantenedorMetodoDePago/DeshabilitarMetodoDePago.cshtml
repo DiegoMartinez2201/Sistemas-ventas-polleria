@@ -1,0 +1,58 @@
+﻿@model List<capa.entMetodoDePago>
+
+<h2>Lista de Metodos de Pago</h2>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID Metodo de Pago</th>
+            <th>Nombre </th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var metodoPago in Model)
+        {
+            <tr>
+                <td>@metodoPago.idMetodoPago</td>
+                <td>@metodoPago.nombreMetodo</td>
+                <td>@(metodoPago.estado == 1 ? "Activo" : "Deshabilitado")</td>
+                <td>
+                    @if (metodoPago.estado == 1)
+                    {
+                        <form method="post" action="@Url.Action("DeshabilitarMetodoDePago", "MantenedorMetodoDePago")">
+                            <input type="hidden" name="idMetodoPago" value="@metodoPago.idMetodoPago" />
+                            <button type="submit" class="btn btn-warning">Deshabilitar</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form method="post" action="@Url.Action("HabilitarMetodoDePago", "MantenedorMetodoDePago")">
+                            <input type="hidden" name="idMetodoPago" value="@metodoPago.idMetodoPago" />
+                            <button type="submit" class="btn btn-success">Habilitar</button>
+                        </form>
+                    }
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

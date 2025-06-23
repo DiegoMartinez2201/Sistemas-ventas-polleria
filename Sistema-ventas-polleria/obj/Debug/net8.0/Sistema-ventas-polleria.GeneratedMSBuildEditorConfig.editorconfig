@@ -17,81 +17,147 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Sistema_ventas_polleria
 build_property.RootNamespace = Sistema_ventas_polleria
-build_property.ProjectDir = G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria\
+build_property.ProjectDir = C:\Proyecto\Sistemas-ventas-polleria\Sistema-ventas-polleria\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\DIARS\Polleria\Sistema-ventas-polleria\Sistema-ventas-polleria
+build_property.MSBuildProjectDirectory = C:\Proyecto\Sistemas-ventas-polleria\Sistema-ventas-polleria
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Administrador/dashboard.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Administrador/dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvclxkYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Cliente/Clientelog.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Cliente/Clientelog.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDbGllbnRlbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Home/Index.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Home/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Home/Privacy.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorCliente/ListarCliente.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorCategoria/DeshabilitarCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckNhdGVnb3JpYVxEZXNoYWJpbGl0YXJDYXRlZ29yaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorCategoria/EditarCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckNhdGVnb3JpYVxFZGl0YXJDYXRlZ29yaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorCategoria/InsertarCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckNhdGVnb3JpYVxJbnNlcnRhckNhdGVnb3JpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorCategoria/ListarCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckNhdGVnb3JpYVxMaXN0YXJDYXRlZ29yaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorCliente/ListarCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvckNsaWVudGVcTGlzdGFyQ2xpZW50ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTipoCliente/DeshabilitaTipoCliente.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorMarca/DeshabilitarMarca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvck1hcmNhXERlc2hhYmlsaXRhck1hcmNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorMarca/EditarMarca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvck1hcmNhXEVkaXRhck1hcmNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorMarca/InsertarMarca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvck1hcmNhXEluc2VydGFyTWFyY2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorMarca/ListarMarca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvck1hcmNhXExpc3Rhck1hcmNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorMetodoDePago/DeshabilitarMetodoDePago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvck1ldG9kb0RlUGFnb1xEZXNoYWJpbGl0YXJNZXRvZG9EZVBhZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorMetodoDePago/EditarMetodoDePago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvck1ldG9kb0RlUGFnb1xFZGl0YXJNZXRvZG9EZVBhZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorMetodoDePago/InsertarMetodoDePago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvck1ldG9kb0RlUGFnb1xJbnNlcnRhck1ldG9kb0RlUGFnby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorMetodoDePago/ListarMetodoDePago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvck1ldG9kb0RlUGFnb1xMaXN0YXJNZXRvZG9EZVBhZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTamaño/DeshabilitarTamaño.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclRhbWHDsW9cRGVzaGFiaWxpdGFyVGFtYcOxby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTamaño/EditarTamaño.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclRhbWHDsW9cRWRpdGFyVGFtYcOxby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTamaño/InsertarTamaño.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclRhbWHDsW9cSW5zZXJ0YXJUYW1hw7FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTamaño/ListarTamaño.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclRhbWHDsW9cTGlzdGFyVGFtYcOxby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTipoCliente/DeshabilitaTipoCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclRpcG9DbGllbnRlXERlc2hhYmlsaXRhVGlwb0NsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTipoCliente/EditaTipoCliente.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTipoCliente/EditaTipoCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclRpcG9DbGllbnRlXEVkaXRhVGlwb0NsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTipoCliente/InsertarTipoCliente.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTipoCliente/InsertarTipoCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclRpcG9DbGllbnRlXEluc2VydGFyVGlwb0NsaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTipoCliente/ListarTipoCliente.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/MantenedorTipoCliente/ListarTipoCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclRpcG9DbGllbnRlXExpc3RhclRpcG9DbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Shared/Error.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_Layout.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_LayoutCliente.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_LayoutCliente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/_ViewImports.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/Views/_ViewStart.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/DIARS/Polleria/Sistema-ventas-polleria/Sistema-ventas-polleria/_ViewImports.cshtml]
+[C:/Proyecto/Sistemas-ventas-polleria/Sistema-ventas-polleria/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = X1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

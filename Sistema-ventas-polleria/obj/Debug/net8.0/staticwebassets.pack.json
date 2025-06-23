@@ -1,559 +1,559 @@
 {
   "Files": [
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\bootstrap-icons.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\bootstrap-icons.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-icons.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\fontawesome.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\fontawesome.min.css",
       "PackagePath": "staticwebassets\\css\\fontawesome.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\fullcalendar.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\fullcalendar.min.css",
       "PackagePath": "staticwebassets\\css\\fullcalendar.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\tooplate-barista.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\tooplate-barista.css",
       "PackagePath": "staticwebassets\\css\\tooplate-barista.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\tooplate.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\tooplate.css",
       "PackagePath": "staticwebassets\\css\\tooplate.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\vegas.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\vegas.min.css",
       "PackagePath": "staticwebassets\\css\\vegas.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\fonts\\bootstrap-icons.woff",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\fonts\\bootstrap-icons.woff",
       "PackagePath": "staticwebassets\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\fonts\\bootstrap-icons.woff2",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\fonts\\bootstrap-icons.woff2",
       "PackagePath": "staticwebassets\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\barman-with-fruits.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\barman-with-fruits.jpg",
       "PackagePath": "staticwebassets\\images\\barman-with-fruits.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\coffee-beans.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\coffee-beans.png",
       "PackagePath": "staticwebassets\\images\\coffee-beans.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg",
       "PackagePath": "staticwebassets\\images\\happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg",
       "PackagePath": "staticwebassets\\images\\happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\logoKialChiken.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\logoKialChiken.jpg",
       "PackagePath": "staticwebassets\\images\\logoKialChiken.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg",
       "PackagePath": "staticwebassets\\images\\mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\senior-man-white-sweater-eyeglasses.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\senior-man-white-sweater-eyeglasses.jpg",
       "PackagePath": "staticwebassets\\images\\reviews\\senior-man-white-sweater-eyeglasses.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg",
       "PackagePath": "staticwebassets\\images\\reviews\\young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\young-woman-with-round-glasses-yellow-sweater.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\young-woman-with-round-glasses-yellow-sweater.jpg",
       "PackagePath": "staticwebassets\\images\\reviews\\young-woman-with-round-glasses-yellow-sweater.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\slides\\sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\slides\\sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg",
       "PackagePath": "staticwebassets\\images\\slides\\sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg",
       "PackagePath": "staticwebassets\\images\\team\\cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\portrait-elegant-old-man-wearing-suit.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\portrait-elegant-old-man-wearing-suit.jpg",
       "PackagePath": "staticwebassets\\images\\team\\portrait-elegant-old-man-wearing-suit.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\small-business-owner-drinking-coffee.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\small-business-owner-drinking-coffee.jpg",
       "PackagePath": "staticwebassets\\images\\team\\small-business-owner-drinking-coffee.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\smiley-business-woman-working-cashier.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\smiley-business-woman-working-cashier.jpg",
       "PackagePath": "staticwebassets\\images\\team\\smiley-business-woman-working-cashier.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg",
       "PackagePath": "staticwebassets\\images\\young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-01.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-01.jpg",
       "PackagePath": "staticwebassets\\img\\dash-bg-01.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-02.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-02.jpg",
       "PackagePath": "staticwebassets\\img\\dash-bg-02.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-03.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-03.jpg",
       "PackagePath": "staticwebassets\\img\\dash-bg-03.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\product-image.jpg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\product-image.jpg",
       "PackagePath": "staticwebassets\\img\\product-image.jpg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\profile-image.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\profile-image.png",
       "PackagePath": "staticwebassets\\img\\profile-image.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\AUTHORS.txt",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\AUTHORS.txt",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\AUTHORS.txt"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\LICENSE.txt",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\LICENSE.txt",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\LICENSE.txt"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\external\\jquery\\jquery.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\external\\jquery\\jquery.js",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\external\\jquery\\jquery.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_75_d0e5f5_1x400.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_75_d0e5f5_1x400.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-bg_glass_75_d0e5f5_1x400.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_85_dfeffc_1x400.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_85_dfeffc_1x400.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-bg_glass_85_dfeffc_1x400.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_95_fef1ec_1x400.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_95_fef1ec_1x400.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-bg_glass_95_fef1ec_1x400.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_gloss-wave_55_5c9ccc_500x100.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_gloss-wave_55_5c9ccc_500x100.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-bg_gloss-wave_55_5c9ccc_500x100.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_f5f8f9_1x100.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_f5f8f9_1x100.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_f5f8f9_1x100.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_fcfdfd_1x100.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_fcfdfd_1x100.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_fcfdfd_1x100.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_217bc0_256x240.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_217bc0_256x240.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-icons_217bc0_256x240.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_2e83ff_256x240.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_2e83ff_256x240.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-icons_2e83ff_256x240.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_469bdd_256x240.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_469bdd_256x240.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-icons_469bdd_256x240.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_6da8d5_256x240.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_6da8d5_256x240.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-icons_6da8d5_256x240.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_cd0a0a_256x240.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_cd0a0a_256x240.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-icons_cd0a0a_256x240.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_d8e7f3_256x240.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_d8e7f3_256x240.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-icons_d8e7f3_256x240.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_f9bd01_256x240.png",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_f9bd01_256x240.png",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\images\\ui-icons_f9bd01_256x240.png"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\index.html",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\index.html",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\index.html"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.css",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\jquery-ui.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.js",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\jquery-ui.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.min.css",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\jquery-ui.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.min.js",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\jquery-ui.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.css",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\jquery-ui.structure.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.min.css",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\jquery-ui.structure.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.css",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\jquery-ui.theme.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.min.css",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\jquery-ui.theme.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\package.json",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\package.json",
       "PackagePath": "staticwebassets\\jquery-ui-datepicker\\package.json"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\Chart.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\Chart.min.js",
       "PackagePath": "staticwebassets\\js\\Chart.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\click-scroll.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\click-scroll.js",
       "PackagePath": "staticwebassets\\js\\click-scroll.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\custom.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\custom.js",
       "PackagePath": "staticwebassets\\js\\custom.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\fullcalendar.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\fullcalendar.min.js",
       "PackagePath": "staticwebassets\\js\\fullcalendar.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery-3.3.1.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery.sticky.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery.sticky.js",
       "PackagePath": "staticwebassets\\js\\jquery.sticky.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\moment.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\moment.min.js",
       "PackagePath": "staticwebassets\\js\\moment.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\tooplate-scripts.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\tooplate-scripts.js",
       "PackagePath": "staticwebassets\\js\\tooplate-scripts.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\utils.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\utils.js",
       "PackagePath": "staticwebassets\\js\\utils.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\vegas.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\vegas.min.js",
       "PackagePath": "staticwebassets\\js\\vegas.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\videos\\pexels-mike-jones-9046237.mp4",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\videos\\pexels-mike-jones-9046237.mp4",
       "PackagePath": "staticwebassets\\videos\\pexels-mike-jones-9046237.mp4"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Id": "D:\\DIARS\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "Id": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
     },
     {

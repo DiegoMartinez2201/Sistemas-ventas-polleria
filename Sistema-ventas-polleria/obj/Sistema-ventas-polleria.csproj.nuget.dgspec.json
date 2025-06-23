@@ -1,83 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj": {}
+    "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj": {}
   },
   "projects": {
-    "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj": {
-      "restore": {
-        "projectUniqueName": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj",
-        "projectName": "capaDatos",
-        "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
-                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj": {
-      "restore": {
-        "projectUniqueName": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj",
-        "projectName": "capaLogica",
-        "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj": {
-                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaDatos\\capaDatos.csproj"
-              },
-              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
-                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
-      "restore": {
-        "projectUniqueName": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj",
-        "projectName": "capaEntidad",
-        "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj": {
+    "C:\\Proyecto\\Sistemas-ventas-polleria\\capaDatos\\capaDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
-        "projectName": "Sistema-ventas-polleria",
-        "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
-        "packagesPath": "C:\\Users\\Martinez\\.nuget\\packages\\",
-        "outputPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+        "projectUniqueName": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaDatos\\capaDatos.csproj",
+        "projectName": "capaDatos",
+        "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaDatos\\capaDatos.csproj",
+        "packagesPath": "C:\\Users\\Nelson Juarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaDatos\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Martinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Nelson Juarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,18 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://www.nuget.org/api/v2": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj": {
-                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capaLogica\\capaLogica.csproj"
-              },
-              "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj": {
-                "projectPath": "G:\\DIARS\\Polleria\\Sistema-ventas-polleria\\capa\\capaEntidad.csproj"
+              "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+                "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
               }
             }
           }
@@ -110,8 +44,210 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj",
+        "projectName": "capaLogica",
+        "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj",
+        "packagesPath": "C:\\Users\\Nelson Juarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nelson Juarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Proyecto\\Sistemas-ventas-polleria\\capaDatos\\capaDatos.csproj": {
+                "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaDatos\\capaDatos.csproj"
+              },
+              "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+                "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj",
+        "projectName": "capa",
+        "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj",
+        "packagesPath": "C:\\Users\\Nelson Juarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nelson Juarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+        "projectName": "Sistema-ventas-polleria",
+        "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+        "packagesPath": "C:\\Users\\Nelson Juarez\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nelson Juarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+                "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
+              },
+              "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+                "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -145,7 +281,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<capa.entMarca>
+
+@{
+    ViewData["Title"] = "ListarMarca";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>ListarMarca</h1>
+
+<p>
+    @Html.ActionLink("Inserta", "InsertarMarca")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idMarca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombreMarca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idMarca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombreMarca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "EditarMarca", new { idMarca = item.idMarca }) |
+                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Delete", "DeshabilitarMarca", new { idMarca = item.idMarca })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<capa.entTamaño>
+
+@{
+    ViewData["Title"] = "ListarTamaño";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1>ListarTamaño</h1>
+
+<p>
+    @Html.ActionLink("Inserta", "InsertarTamaño")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idTamaño)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idTamaño)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+            <td>
+                    @Html.ActionLink("Edit", "EditarTamaño", new { idtamaño = item.idTamaño }) |
+                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Delete", "DeshabilitarTamaño", new { idTamaño = item.idTamaño })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

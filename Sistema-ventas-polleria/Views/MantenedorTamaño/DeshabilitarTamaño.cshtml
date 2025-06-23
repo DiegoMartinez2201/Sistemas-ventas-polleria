@@ -1,0 +1,58 @@
+﻿@model List<capa.entTamaño>
+
+<h2>Lista de Tamaños</h2>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID Tamaño</th>
+            <th>Nombre </th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tamaño in Model)
+        {
+            <tr>
+                <td>@tamaño.idTamaño</td>
+                <td>@tamaño.nombre</td>
+                <td>@(tamaño.estado == 1 ? "Activo" : "Deshabilitado")</td>
+                <td>
+                    @if (tamaño.estado == 1)
+                    {
+                        <form method="post" action="@Url.Action("DeshabilitarTamaño", "MantenedorTamaño")">
+                            <input type="hidden" name="idtamaño" value="@tamaño.idTamaño" />
+                            <button type="submit" class="btn btn-warning">Deshabilitar</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form method="post" action="@Url.Action("Habilitartamaño", "MantenedorTamaño")">
+                            <input type="hidden" name="idTamaño" value="@tamaño.idTamaño" />
+                            <button type="submit" class="btn btn-success">Habilitar</button>
+                        </form>
+                    }
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
