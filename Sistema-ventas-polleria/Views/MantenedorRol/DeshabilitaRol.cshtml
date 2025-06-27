@@ -1,0 +1,47 @@
+﻿@model capa.entRol
+
+@{
+    ViewData["Title"] = "Deshabilitar Rol";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="max-width: 500px; width: 100%;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-3 font-weight-bold text-danger">
+                ¿Estás seguro que deseas deshabilitar este rol?
+            </h2>
+            <p class="text-center text-muted mb-4">
+                Esta acción puede afectar a los usuarios que tengan este rol asignado.
+            </p>
+            <dl class="row">
+                <dt class="col-sm-4">ID Rol</dt>
+                <dd class="col-sm-8">@Model.idRol</dd>
+                <dt class="col-sm-4">Nombre</dt>
+                <dd class="col-sm-8">@Model.nombreRol</dd>
+                <dt class="col-sm-4">Estado</dt>
+                <dd class="col-sm-8">
+                    @if (Model.estado == 1)
+                    {
+                        <span class="badge bg-success">Activo</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Inactivo</span>
+                    }
+                </dd>
+            </dl>
+            <form asp-action="DeshabilitaRol" method="post" class="mt-4">
+                <input type="hidden" asp-for="idRol" />
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-danger btn-lg">
+                        Sí, deshabilitar
+                    </button>
+                    <a asp-action="ListarRol" class="btn btn-secondary btn-lg">
+                        Cancelar
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

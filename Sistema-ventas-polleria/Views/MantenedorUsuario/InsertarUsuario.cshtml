@@ -1,0 +1,115 @@
+﻿@model capa.entUsuario
+
+@{
+    ViewData["Title"] = "InsertarUsuario";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="max-width: 600px; width: 100%;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-3 font-weight-bold">Registrar Nuevo Usuario</h2>
+            <p class="text-center text-muted mb-4">Completa los datos para agregar un usuario al sistema.</p>
+            <form asp-action="InsertarUsuario" autocomplete="off">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Tipo de Usuario -->
+                <div class="form-group mb-3">
+                    <label>Tipo de Usuario</label>
+                    <select id="tipoUsuario" class="form-control">
+                        <option value="natural">Persona Natural</option>
+                        <option value="empresa">Empresa</option>
+                    </select>
+                </div>
+
+                <!-- Datos Comunes -->
+                <div class="form-group mb-3">
+                    <label asp-for="correo" class="control-label"></label>
+                    <input asp-for="correo" class="form-control" placeholder="ejemplo@correo.com" />
+                    <span asp-validation-for="correo" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="contraseña" class="control-label"></label>
+                    <input asp-for="contraseña" class="form-control" type="password" placeholder="Contraseña segura" />
+                    <span asp-validation-for="contraseña" class="text-danger"></span>
+                </div>
+
+                <!-- Persona Natural -->
+                <div id="naturalFields">
+                    <div class="form-group mb-3">
+                        <label asp-for="dni" class="control-label"></label>
+                        <input asp-for="dni" class="form-control" placeholder="DNI" />
+                        <span asp-validation-for="dni" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="nombreCli" class="control-label"></label>
+                        <input asp-for="nombreCli" class="form-control" placeholder="Nombres" />
+                        <span asp-validation-for="nombreCli" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="apellidoCli" class="control-label"></label>
+                        <input asp-for="apellidoCli" class="form-control" placeholder="Apellidos" />
+                        <span asp-validation-for="apellidoCli" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Empresa -->
+                <div id="empresaFields" style="display:none;">
+                    <div class="form-group mb-3">
+                        <label asp-for="ruc" class="control-label"></label>
+                        <input asp-for="ruc" class="form-control" placeholder="RUC" />
+                        <span asp-validation-for="ruc" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="razonSocial" class="control-label"></label>
+                        <input asp-for="razonSocial" class="form-control" placeholder="Razón Social" />
+                        <span asp-validation-for="razonSocial" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Campos comunes -->
+                <div class="form-group mb-3">
+                    <label asp-for="direccion" class="control-label"></label>
+                    <input asp-for="direccion" class="form-control" placeholder="Dirección" />
+                    <span asp-validation-for="direccion" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="telefono" class="control-label"></label>
+                    <input asp-for="telefono" class="form-control" placeholder="Teléfono" />
+                    <span asp-validation-for="telefono" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="idRol" class="control-label"></label>
+                    <select asp-for="idRol" class="form-control" asp-items="ViewBag.Roles">
+                        <option value="">-- Selecciona un rol --</option>
+                    </select>
+                    <span asp-validation-for="idRol" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Registrar" class="btn btn-primary btn-lg w-100" />
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a asp-action="ListarUsuario" class="btn btn-link">Volver a la lista</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function () {
+            $('#tipoUsuario').on('change', function () {
+                var tipo = $(this).val();
+                if (tipo === 'empresa') {
+                    $('#empresaFields').show();
+                    $('#naturalFields').hide();
+                } else {
+                    $('#empresaFields').hide();
+                    $('#naturalFields').show();
+                }
+            });
+        });
+    </script>
+}

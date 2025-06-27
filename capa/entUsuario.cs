@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace capa
 {
-    public class entCliente
+    public class entUsuario
     {
-        public int idCliente { get; set; }
+        public int idUsuario { get; set; }
         public string correo { get; set; }
         public string contraseña { get; set; }  
         public string dni { get; set; }
@@ -18,7 +18,7 @@ namespace capa
         public string razonSocial { get; set; }
         public string direccion { get; set; }   
         public string telefono { get; set; }
-        public int idTipoCliente { get; set; }  
+        public int idRol { get; set; }  
         public int estado { get; set; } 
 
     }

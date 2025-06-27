@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="cConexion.cs" />
     <Compile Include="datCategoria.cs" />
-    <Compile Include="datCliente.cs" />
+    <Compile Include="datUsuario.cs" />
     <Compile Include="datComprobanteDePago.cs" />
     <Compile Include="datEstado.cs" />
     <Compile Include="datFormaEnvio.cs" />

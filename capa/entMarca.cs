@@ -8,5 +8,9 @@ namespace capa
 {
     public class entMarca
     {
+        public int idMarca { get; set; }
+        public string nombre { get; set; }
+        public int estado { get; set; } 
+        
     }
 }

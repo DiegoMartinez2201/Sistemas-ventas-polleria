@@ -8,5 +8,11 @@ namespace capa
 {
     public class entPedidoDetalle
     {
+        public int idPedidoDatalle { get; set; }
+        public int idProducto { get; set; }
+        public int idPedidoOnline { get; set; }
+        public int cantidad { get; set; }
+        public decimal precioUnitario { get; set; }
+        public decimal subtotal { get; set; }
     }
 }

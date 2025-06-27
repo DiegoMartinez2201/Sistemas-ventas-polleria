@@ -8,5 +8,8 @@ namespace capa
 {
     public class entEstado
     {
+        public int idEstado { get; set; }
+        public string nombre { get; set; }
+        public int estado { get; set; }
     }
 }

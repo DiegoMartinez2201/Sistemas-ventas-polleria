@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace capa
 {
-    internal class entRol
+    public class entRol
     {
+        public int idRol { get; set; }
+        public string nombreRol { get; set; }
+        public int estado { get; set; } 
+       
     }
 }
