@@ -6805,19 +6805,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nelson Juarez\\.nuget\\packages\\": {}
+    "C:\\Users\\Martinez\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "projectUniqueName": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "projectName": "Sistema-ventas-polleria",
-      "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
-      "packagesPath": "C:\\Users\\Nelson Juarez\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+      "projectPath": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "packagesPath": "C:\\Users\\Martinez\\.nuget\\packages\\",
+      "outputPath": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Nelson Juarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Martinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6825,18 +6830,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.nuget.org/api/v2": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
-              "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
+            "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+              "projectPath": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
             },
-            "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
-              "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
+            "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+              "projectPath": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
             }
           }
         }
@@ -6850,7 +6855,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -6884,7 +6890,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

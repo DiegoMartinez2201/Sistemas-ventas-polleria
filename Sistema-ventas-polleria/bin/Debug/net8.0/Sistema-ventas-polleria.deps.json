@@ -1821,8 +1821,7 @@
       "capa/1.0.0": {
         "runtime": {
           "capa.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": ""
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1833,7 +1832,7 @@
         },
         "runtime": {
           "capaDatos.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1845,7 +1844,7 @@
         },
         "runtime": {
           "capaLogica.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
