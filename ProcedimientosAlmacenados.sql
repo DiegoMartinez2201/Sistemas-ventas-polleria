@@ -239,4 +239,63 @@ begin
 	select idUsuario,dni, nombreCli,apellidoCli, correo, contraseña, ruc, razonSocial, direccion, telefono, idRol, estado from Usuario
 	where idUsuario=@idUsuario
 end
+--Rol
+--ListarRol
+create or ALTER   procedure [dbo].[spListarRol]
+as
+	select idRol, nombreRol,  estado from Rol
+	where estado = 1
+--InsertarRol
+create or ALTER   procedure [dbo].[spInsertarRol]
+	@nombreRol varchar (50)
+	
+as
+begin
+	insert into Rol(nombreRol, estado)
+	values (@nombreRol,1);
+end
 
+--Editar
+create or ALTER   procedure [dbo].[spEditaUsuario]
+	@idUsuario int,
+	@dni varchar(8),
+	@nombreCli varchar(100),
+	@apellidoCli varchar(100),
+	@correo varchar(100),
+	@contraseña varchar(100),
+	@ruc varchar(11),
+	@razonSocial varchar(200),
+	@direccion varchar(200),
+	@telefono varchar(11)
+as
+begin
+	update Usuario set
+	dni = @idUsuario,
+	nombreCli = @nombreCli,
+	apellidoCli = @apellidoCli,
+	correo = @correo,
+	contraseña = @contraseña,
+	ruc = @ruc,
+	razonSocial = @razonSocial,
+	direccion = @direccion,
+	telefono = @telefono
+	where
+	idUsuario=@idUsuario
+end
+----deshabilitar
+create or ALTER   procedure [dbo].[spDeshabilitarRol]
+	@idRol int
+as
+begin
+	update Rol set
+	estado = 0
+	where idRol = @idRol
+end
+---buscar
+create or ALTER   procedure [dbo].[spBuscarRol]
+	@idRol int
+as
+begin
+	select idRol,nombreRol from Rol
+	where idRol=@idRol
+end
