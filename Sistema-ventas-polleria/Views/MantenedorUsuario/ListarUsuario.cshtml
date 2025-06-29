@@ -1,0 +1,67 @@
+﻿@model IEnumerable<capa.entUsuario>
+
+@{
+    ViewData["Title"] = "ListarUsuario";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@functions {
+    string MostrarEstado(int estado)
+    {
+        return estado == '1'
+            ? "<span class='badge bg-danger'>Inactivo</span>"
+            : "<span class='badge bg-success'>Activo</span>";
+    }
+}
+<div class="bg-white shadow rounded p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 font-weight-bold">Usuarios Registrados</h1>
+        <a class="btn btn-success" href="@Url.Action("InsertarUsuario", "MantenedorUsuario")">
+            <i class="fas fa-user-plus"></i> Nuevo Usuario
+        </a>
+    </div>
+</div>
+<div class="table-responsive bg-white shadow rounded p-3">
+    <table class="table table-striped table-hover table-bordered align-middle">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.idUsuario)</th>
+                <th>@Html.DisplayNameFor(model => model.correo)</th>
+                <th>@Html.DisplayNameFor(model => model.dni)</th>
+                <th>@Html.DisplayNameFor(model => model.nombreCli)</th>
+                <th>@Html.DisplayNameFor(model => model.apellidoCli)</th>
+                <th>@Html.DisplayNameFor(model => model.ruc)</th>
+                <th>@Html.DisplayNameFor(model => model.razonSocial)</th>
+                <th>@Html.DisplayNameFor(model => model.direccion)</th>
+                <th>@Html.DisplayNameFor(model => model.telefono)</th>
+                <th>@Html.DisplayNameFor(model => model.idRol)</th>
+                <th>@Html.DisplayNameFor(model => model.estado)</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.idUsuario</td>
+                    <td>@item.correo</td>
+                    <td>@item.dni</td>
+                    <td>@item.nombreCli</td>
+                    <td>@item.apellidoCli</td>
+                    <td>@item.ruc</td>
+                    <td>@item.razonSocial</td>
+                    <td>@item.direccion</td>
+                    <td>@item.telefono</td>
+                    <td>@item.idRol</td>
+
+
+                    <td>@Html.Raw(MostrarEstado(item.estado))</td>
+                    <td class="text-center">
+                        @Html.ActionLink("Edit", "EditaUsuario", new { idUsuario = item.idUsuario }) |
+                        @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                        @Html.ActionLink("Delete", "DeshabilitaUsuario", new { idUsuario = item.idUsuario })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

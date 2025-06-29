@@ -1,0 +1,294 @@
+﻿@model capa.entUsuario
+
+@{
+    ViewData["Title"] = "Registrar Usuario";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid bg-light py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+            <!-- Header Card -->
+            <div class="card border-0 shadow-lg mb-4">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h1 class="display-5 mb-2">
+                        <i class="fas fa-user-plus me-3"></i>Registrar Nuevo Usuario
+                    </h1>
+                    <p class="lead mb-0">Completa los datos para agregar un usuario al sistema</p>
+                </div>
+            </div>
+
+            <!-- Main Form Card -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <form asp-action="InsertarUsuario" method="post" autocomplete="off" id="usuarioForm">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Error:</strong> Por favor, corrija los errores indicados.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+
+                        <!-- Tipo de Usuario -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
+                                    <i class="fas fa-user-tag me-2"></i>Tipo de Usuario
+                                </h4>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">
+                                    <i class="fas fa-users me-1"></i>Selecciona el Tipo
+                                </label>
+                                <select id="tipoUsuario" class="form-select form-select-lg" required>
+                                    <option value="">-- Selecciona el tipo --</option>
+                                    <option value="natural">Persona Natural</option>
+                                    <option value="empresa">Empresa</option>
+                                </select>
+                                <div class="invalid-feedback">Debe seleccionar un tipo de usuario</div>
+                            </div>
+                        </div>
+
+                        <!-- Información de Acceso -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
+                                    <i class="fas fa-lock me-2"></i>Información de Acceso
+                                </h4>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="correo" class="form-label fw-bold">
+                                    <i class="fas fa-envelope me-1"></i>Correo Electrónico
+                                </label>
+                                <input asp-for="correo" type="email" class="form-control form-control-lg" placeholder="ejemplo@correo.com" required />
+                                <span asp-validation-for="correo" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="contraseña" class="form-label fw-bold">
+                                    <i class="fas fa-key me-1"></i>Contraseña
+                                </label>
+                                <input asp-for="contraseña" type="password" class="form-control form-control-lg" placeholder="Contraseña segura" required />
+                                <span asp-validation-for="contraseña" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Información Personal (Persona Natural) -->
+                        <div id="naturalFields">
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
+                                        <i class="fas fa-user me-2"></i>Información Personal
+                                    </h4>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label asp-for="dni" class="form-label fw-bold">
+                                        <i class="fas fa-id-card me-1"></i>DNI
+                                    </label>
+                                    <input asp-for="dni" class="form-control form-control-lg natural-field" placeholder="Ingrese el DNI" />
+                                    <span asp-validation-for="dni" class="text-danger small"></span>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label asp-for="nombreCli" class="form-label fw-bold">
+                                        <i class="fas fa-user me-1"></i>Nombres
+                                    </label>
+                                    <input asp-for="nombreCli" class="form-control form-control-lg natural-field" placeholder="Ingrese los nombres" />
+                                    <span asp-validation-for="nombreCli" class="text-danger small"></span>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label asp-for="apellidoCli" class="form-label fw-bold">
+                                        <i class="fas fa-user me-1"></i>Apellidos
+                                    </label>
+                                    <input asp-for="apellidoCli" class="form-control form-control-lg natural-field" placeholder="Ingrese los apellidos" />
+                                    <span asp-validation-for="apellidoCli" class="text-danger small"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Información Empresarial -->
+                        <div id="empresaFields" style="display:none;">
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
+                                        <i class="fas fa-building me-2"></i>Información Empresarial
+                                    </h4>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="ruc" class="form-label fw-bold">
+                                        <i class="fas fa-file-invoice me-1"></i>RUC
+                                    </label>
+                                    <input asp-for="ruc" class="form-control form-control-lg empresa-field" placeholder="Ingrese el RUC" />
+                                    <span asp-validation-for="ruc" class="text-danger small"></span>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="razonSocial" class="form-label fw-bold">
+                                        <i class="fas fa-building me-1"></i>Razón Social
+                                    </label>
+                                    <input asp-for="razonSocial" class="form-control form-control-lg empresa-field" placeholder="Ingrese la razón social" />
+                                    <span asp-validation-for="razonSocial" class="text-danger small"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Información de Contacto -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
+                                    <i class="fas fa-address-book me-2"></i>Información de Contacto
+                                </h4>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="direccion" class="form-label fw-bold">
+                                    <i class="fas fa-map-marker-alt me-1"></i>Dirección
+                                </label>
+                                <input asp-for="direccion" class="form-control form-control-lg" placeholder="Ingrese la dirección completa" required />
+                                <span asp-validation-for="direccion" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="telefono" class="form-label fw-bold">
+                                    <i class="fas fa-phone me-1"></i>Teléfono
+                                </label>
+                                <input asp-for="telefono" class="form-control form-control-lg" placeholder="Ingrese el número telefónico" required />
+                                <span asp-validation-for="telefono" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Configuración del Sistema -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
+                                    <i class="fas fa-cogs me-2"></i>Configuración del Sistema
+                                </h4>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="idRol" class="form-label fw-bold">
+                                    <i class="fas fa-user-tag me-1"></i>Rol del Usuario
+                                </label>
+                                <select asp-for="idRol" class="form-select form-select-lg" asp-items="ViewBag.Roles" required>
+                                    <option value="">-- Selecciona un rol --</option>
+                                </select>
+                                <span asp-validation-for="idRol" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Botones de Acción -->
+                        <div class="row">
+                            <div class="col-12">
+                                <hr class="my-4">
+                                <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                                    <a asp-action="ListarUsuario" class="btn btn-outline-secondary btn-lg px-4">
+                                        <i class="fas fa-arrow-left me-2"></i>Volver al Listado
+                                    </a>
+                                    <button type="submit" class="btn btn-primary btn-lg px-4">
+                                        <i class="fas fa-save me-2"></i>Registrar Usuario
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function() {
+            var tipoUsuario = '';
+
+            // Control de campos según tipo de usuario
+            $('#tipoUsuario').on('change', function() {
+                tipoUsuario = $(this).val();
+
+                if (tipoUsuario === 'empresa') {
+                    $('#empresaFields').fadeIn();
+                    $('#naturalFields').fadeOut();
+
+                    // Limpiar campos de persona natural
+                    $('.natural-field').val('').prop('disabled', true);
+
+                    // Habilitar campos de empresa
+                    $('.empresa-field').prop('disabled', false);
+
+                } else if (tipoUsuario === 'natural') {
+                    $('#empresaFields').fadeOut();
+                    $('#naturalFields').fadeIn();
+
+                    // Limpiar campos de empresa
+                    $('.empresa-field').val('').prop('disabled', true);
+
+                    // Habilitar campos de persona natural
+                    $('.natural-field').prop('disabled', false);
+                }
+            });
+
+            // Validación en tiempo real
+            $('.form-control, .form-select').on('input change', function() {
+                $(this).removeClass('is-invalid');
+                $(this).next('.text-danger').hide();
+            });
+
+            // Manejo del envío del formulario
+            $('#usuarioForm').on('submit', function(e) {
+                e.preventDefault();
+
+                // Validar que se haya seleccionado un tipo de usuario
+                if (!tipoUsuario) {
+                    alert('Debe seleccionar un tipo de usuario');
+                    $('#tipoUsuario').focus();
+                    return false;
+                }
+
+                // Limpiar campos no necesarios según el tipo
+                if (tipoUsuario === 'empresa') {
+                    // Limpiar campos de persona natural
+                    $('.natural-field').val('');
+                } else if (tipoUsuario === 'natural') {
+                    // Limpiar campos de empresa
+                    $('.empresa-field').val('');
+                }
+
+                // Confirmación antes de enviar
+                if (confirm('¿Está seguro de que desea registrar este usuario?')) {
+                    // Habilitar todos los campos antes de enviar
+                    $('.natural-field, .empresa-field').prop('disabled', false);
+
+                    // Enviar el formulario
+                    this.submit();
+                }
+            });
+
+            // Mostrar información sobre el tipo de usuario
+            $('#tipoUsuario').on('change', function() {
+                var tipo = $(this).val();
+                if (tipo === 'empresa') {
+                    showAlert('info', 'Se han habilitado los campos empresariales. Los campos de persona natural se enviarán como nulos.');
+                } else if (tipo === 'natural') {
+                    showAlert('info', 'Se han habilitado los campos de persona natural. Los campos empresariales se enviarán como nulos.');
+                }
+            });
+
+            function showAlert(type, message) {
+                var alertClass = type === 'info' ? 'alert-info' : 'alert-warning';
+                var alertHtml = `
+                    <div class="alert ${alertClass} alert-dismissible fade show" role="alert">
+                        <i class="fas fa-info-circle me-2"></i>
+                        ${message}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                `;
+
+                // Insertar alerta después del header
+                $('.card-header').after(alertHtml);
+
+                // Remover alerta después de 5 segundos
+                setTimeout(function() {
+                    $('.alert').fadeOut();
+                }, 5000);
+            }
+        });
+    </script>
+}

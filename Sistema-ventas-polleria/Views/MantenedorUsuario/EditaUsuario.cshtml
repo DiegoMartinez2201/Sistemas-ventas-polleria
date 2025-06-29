@@ -1,0 +1,231 @@
+﻿@model capa.entUsuario
+
+@{
+    ViewData["Title"] = "Editar Usuario";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid bg-light py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+            <!-- Header Card -->
+            <div class="card border-0 shadow-lg mb-4">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h1 class="display-4 mb-2">
+                        <i class="fas fa-user-edit me-3"></i>Editar Usuario
+                    </h1>
+                    <p class="lead mb-0">Modifica la información del usuario del sistema</p>
+                </div>
+            </div>
+
+            <!-- Main Form Card -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <form asp-action="EditaUsuario" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Error:</strong> Por favor, corrija los errores indicados.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+
+                        <!-- Información Personal -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h3 class="text-primary border-bottom border-primary pb-2 mb-4">
+                                    <i class="fas fa-user me-2"></i>Información Personal
+                                </h3>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="nombreCli" class="form-label fw-bold">
+                                    <i class="fas fa-user me-1"></i>Nombre
+                                </label>
+                                <input asp-for="nombreCli" class="form-control form-control-lg" placeholder="Ingrese el nombre completo" />
+                                <span asp-validation-for="nombreCli" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="apellidoCli" class="form-label fw-bold">
+                                    <i class="fas fa-user me-1"></i>Apellido
+                                </label>
+                                <input asp-for="apellidoCli" class="form-control form-control-lg" placeholder="Ingrese el apellido" />
+                                <span asp-validation-for="apellidoCli" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="dni" class="form-label fw-bold">
+                                    <i class="fas fa-id-card me-1"></i>DNI
+                                </label>
+                                <input asp-for="dni" class="form-control form-control-lg" placeholder="Ingrese el número de DNI" />
+                                <span asp-validation-for="dni" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="telefono" class="form-label fw-bold">
+                                    <i class="fas fa-phone me-1"></i>Teléfono
+                                </label>
+                                <input asp-for="telefono" class="form-control form-control-lg" placeholder="Ingrese el número telefónico" />
+                                <span asp-validation-for="telefono" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Información de Acceso -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h3 class="text-primary border-bottom border-primary pb-2 mb-4">
+                                    <i class="fas fa-lock me-2"></i>Información de Acceso
+                                </h3>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="correo" class="form-label fw-bold">
+                                    <i class="fas fa-envelope me-1"></i>Correo Electrónico
+                                </label>
+                                <input asp-for="correo" type="email" class="form-control form-control-lg" placeholder="ejemplo@correo.com" />
+                                <span asp-validation-for="correo" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="contraseña" class="form-label fw-bold">
+                                    <i class="fas fa-key me-1"></i>Contraseña
+                                </label>
+                                <input asp-for="contraseña" type="password" class="form-control form-control-lg" placeholder="Ingrese la contraseña" />
+                                <span asp-validation-for="contraseña" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Información Empresarial -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h3 class="text-primary border-bottom border-primary pb-2 mb-4">
+                                    <i class="fas fa-building me-2"></i>Información Empresarial
+                                </h3>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="ruc" class="form-label fw-bold">
+                                    <i class="fas fa-file-invoice me-1"></i>RUC
+                                </label>
+                                <input asp-for="ruc" class="form-control form-control-lg" placeholder="Ingrese el número de RUC" />
+                                <span asp-validation-for="ruc" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="razonSocial" class="form-label fw-bold">
+                                    <i class="fas fa-building me-1"></i>Razón Social
+                                </label>
+                                <input asp-for="razonSocial" class="form-control form-control-lg" placeholder="Ingrese la razón social" />
+                                <span asp-validation-for="razonSocial" class="text-danger small"></span>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label asp-for="direccion" class="form-label fw-bold">
+                                    <i class="fas fa-map-marker-alt me-1"></i>Dirección
+                                </label>
+                                <input asp-for="direccion" class="form-control form-control-lg" placeholder="Ingrese la dirección completa" />
+                                <span asp-validation-for="direccion" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Configuración del Sistema -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h3 class="text-primary border-bottom border-primary pb-2 mb-4">
+                                    <i class="fas fa-cogs me-2"></i>Configuración del Sistema
+                                </h3>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="idUsuario" class="form-label fw-bold">
+                                    <i class="fas fa-hashtag me-1"></i>ID Usuario
+                                </label>
+                                <input asp-for="idUsuario" class="form-control form-control-lg bg-light" readonly />
+                                <span asp-validation-for="idUsuario" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="idRol" class="form-label fw-bold">
+                                    <i class="fas fa-user-tag me-1"></i>Rol
+                                </label>
+                                <select asp-for="idRol" class="form-select form-select-lg">
+                                    <option value="">Seleccione un rol</option>
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Cliente</option>
+                                    <option value="3">Empleado</option>
+                                </select>
+                                <span asp-validation-for="idRol" class="text-danger small"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="estado" class="form-label fw-bold">
+                                    <i class="fas fa-toggle-on me-1"></i>Estado
+                                </label>
+                                <select asp-for="estado" class="form-select form-select-lg">
+                                    <option value="1">Activo</option>
+                                    <option value="0">Inactivo</option>
+                                </select>
+                                <span asp-validation-for="estado" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <!-- Botones de Acción -->
+                        <div class="row">
+                            <div class="col-12">
+                                <hr class="my-4">
+                                <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                                    <a asp-action="ListarUsuario" class="btn btn-outline-secondary btn-lg px-4">
+                                        <i class="fas fa-arrow-left me-2"></i>Volver al Listado
+                                    </a>
+                                    <button type="submit" class="btn btn-primary btn-lg px-4">
+                                        <i class="fas fa-save me-2"></i>Guardar Cambios
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Success Alert (hidden by default) -->
+            <div class="alert alert-success alert-dismissible fade show mt-3" role="alert" style="display: none;">
+                <i class="fas fa-check-circle me-2"></i>
+                <strong>¡Éxito!</strong> Los cambios se han guardado correctamente.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function() {
+            // Agregar clases de Bootstrap para mejorar la apariencia
+            $('.form-control, .form-select').addClass('border-2');
+
+            // Efecto hover en los inputs
+            $('.form-control, .form-select').hover(
+                function() {
+                    $(this).addClass('border-primary');
+                },
+                function() {
+                    if (!$(this).is(':focus')) {
+                        $(this).removeClass('border-primary');
+                    }
+                }
+            );
+
+            // Validación en tiempo real
+            $('.form-control, .form-select').on('input change', function() {
+                $(this).removeClass('is-invalid');
+                $(this).next('.text-danger').hide();
+            });
+
+            // Confirmación antes de enviar
+            $('form').on('submit', function(e) {
+                if (!confirm('¿Está seguro de que desea guardar los cambios?')) {
+                    e.preventDefault();
+                } else {
+                    // Mostrar alerta de éxito (simulado)
+                    setTimeout(function() {
+                        $('.alert-success').fadeIn();
+                    }, 1000);
+                }
+            });
+
+            // Tooltips para los iconos
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    </script>
+}
