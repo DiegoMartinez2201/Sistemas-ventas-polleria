@@ -1,0 +1,42 @@
+﻿@model capa.entRol
+
+@{
+    ViewData["Title"] = "EditaRol";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="max-width: 500px; width: 100%;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-3 font-weight-bold">Editar Rol</h2>
+            <p class="text-center text-muted mb-4">Modifica los datos del rol seleccionado.</p>
+            <form asp-action="EditaRol">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group mb-3">
+                    <label asp-for="idRol" class="control-label"></label>
+                    <input asp-for="idRol" class="form-control" readonly />
+                    <span asp-validation-for="idRol" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="nombreRol" class="control-label"></label>
+                    <input asp-for="nombreRol" class="form-control" placeholder="Nombre del Rol" />
+                    <span asp-validation-for="nombreRol" class="text-danger"></span>
+                </div>
+
+                <div class="form-group text-center">
+                    <input type="submit" value="Guardar Cambios" class="btn btn-primary btn-lg w-100" />
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a asp-action="ListarRol" class="btn btn-link">Volver a la lista</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
