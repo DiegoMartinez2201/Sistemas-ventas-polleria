@@ -1,0 +1,83 @@
+﻿@model IEnumerable<capa.entComboProducto>
+
+@{
+    ViewData["Title"] = "Lista de Detalle Combo-Producto";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+<div class="container-fluid bg-light py-5">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <!-- Header Card -->
+            <div class="card border-0 shadow-lg mb-4">
+                <div class="card-header bg-primary text-white py-4 d-flex flex-wrap align-items-center justify-content-between">
+                    <div>
+                        <h1 class="display-6 mb-0">
+                            <i class="fas fa-link me-3"></i>Detalle de Combos y Productos
+                        </h1>
+                        <p class="lead mb-0">Relación de productos incluidos en cada combo</p>
+                    </div>
+                    <div>
+                        <a asp-action="InsertarComboProducto" asp-route-idCombo="@ViewBag.idCombo" class="btn btn-light btn-lg px-4 mt-3 mt-md-0">
+                            <i class="fas fa-plus me-2"></i>Nuevo Detalle
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalle Combo-Producto Table Card -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-header bg-white py-3">
+                    <h5 class="mb-0 text-primary">
+                        <i class="fas fa-list me-2"></i>Lista de Detalles Combo-Producto
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="text-center">#</th>
+                                    <th>ID Combo</th>
+                                    <th>ID Producto</th>
+                                    <th class="text-center">Cantidad</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="text-center">
+                                            <span class="badge bg-secondary">@item.idComboProducto</span>
+                                        </td>
+                                        <td>@item.idCombo</td>
+                                        <td>@item.idProducto</td>
+                                        <td class="text-center">@item.cantidad</td>
+                                        <td class="text-center">
+                                            <div class="btn-group" role="group">
+                                                <a asp-action="EditaComboProducto" asp-route-idComboProducto="@item.idComboProducto" class="btn btn-outline-primary btn-sm" title="Editar">
+                                                    <i class="fas fa-edit">Editar</i>
+                                                </a>
+                                               
+                                                <a asp-action="Delete" asp-route-idComboProducto="@item.idComboProducto" class="btn btn-outline-danger btn-sm" title="Eliminar">
+                                                    <i class="fas fa-trash">Eliminar</i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer bg-white py-3">
+                    <small class="text-muted">
+                        Mostrando <strong>@Model.Count()</strong> detalles en total
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

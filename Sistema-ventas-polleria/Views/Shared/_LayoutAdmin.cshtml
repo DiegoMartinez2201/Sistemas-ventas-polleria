@@ -22,6 +22,25 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
     <!-- https://getbootstrap.com/ -->
     <link rel="stylesheet" href="~/css/tooplate.css">
+    <style>
+        /* Navbar flex-wrap for responsive multi-line menu */
+        .navbar-nav.flex-wrap {
+            flex-wrap: wrap !important;
+        }
+        media (max-width: 991.98px) {
+            .navbar-nav.flex-wrap {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+            }
+        }
+        /* Optional: make dropdowns full width on small screens */
+        media (max-width: 575.98px) {
+            .navbar .dropdown-menu {
+                width: 100vw;
+                left: -16px;
+            }
+        }
+    </style>
 </head>
 <body id="reportsPage">
     <div class="" id="home">
@@ -29,17 +48,17 @@
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-xl navbar-light bg-light">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand d-flex align-items-center" href="#">
                             <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
-                            <h1 class="tm-site-title mb-0">Dashboard</h1>
+                            <h1 class="tm-site-title mb-0 ms-2">Dashboard</h1>
                         </a>
-                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mx-auto">
+                            <ul class="navbar-nav mx-auto flex-wrap">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#">
                                         Dashboard
@@ -47,7 +66,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                        aria-expanded="false">
                                         Reports
                                     </a>
@@ -75,12 +94,19 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="@Url.Action("ListarRol", "MantenedorRol")">Roles</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("ListarProducto", "MantenedorProducto")">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="@Url.Action("ListarCombo", "MantenedorCombo")">Combo</a>
+                                </li>
+                                
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSettings" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
                                        aria-expanded="false">
                                         Settings
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownSettings">
                                         <a class="dropdown-item" href="#">Profile</a>
                                         <a class="dropdown-item" href="#">Billing</a>
                                         <a class="dropdown-item" href="#">Customize</a>

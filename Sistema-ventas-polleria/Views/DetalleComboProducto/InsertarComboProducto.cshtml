@@ -1,0 +1,103 @@
+﻿@model capa.entComboProducto
+
+@{
+    ViewData["Title"] = "Registrar Detalle Combo-Producto";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid bg-light py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+            <!-- Header Card -->
+            <div class="card border-0 shadow-lg mb-4">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h1 class="display-5 mb-2">
+                        <i class="fas fa-link me-3"></i>Registrar Producto en <span class="text-warning">@ViewBag.NombreCombo</span>
+                    </h1>
+                    <p class="lead mb-0">Asocia productos a un combo y define la cantidad</p>
+                </div>
+            </div>
+
+            <!-- Main Form Card -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <form asp-action="InsertarComboProducto" method="post" autocomplete="off" id="comboProductoForm">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Error:</strong> Por favor, corrija los errores indicados.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                        <input type="hidden" asp-for="idCombo" value="@ViewBag.idCombo" />
+                        <div class="mb-4">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-layer-group me-1"></i>ID Combo Seleccionado
+                            </label>
+                            <input type="text" class="form-control form-control-lg" value="@ViewBag.idCombo" readonly />
+                        </div>
+                        <div class="mb-4">
+                            <label asp-for="idProducto" class="form-label fw-bold">
+                                <i class="fas fa-box me-1"></i>Producto
+                            </label>
+                            <select asp-for="idProducto" class="form-select form-select-lg" asp-items="ViewBag.Productos" required>
+                                <option value="">-- Selecciona un producto --</option>
+                            </select>
+                            <span asp-validation-for="idProducto" class="text-danger small"></span>
+                        </div>
+                        <div class="mb-4">
+                            <label asp-for="cantidad" class="form-label fw-bold">
+                                <i class="fas fa-sort-numeric-up me-1"></i>Cantidad
+                            </label>
+                            <input asp-for="cantidad" type="number" min="1" class="form-control form-control-lg" placeholder="Cantidad" required />
+                            <span asp-validation-for="cantidad" class="text-danger small"></span>
+                        </div>
+                        <!-- Botones de Acción -->
+                        <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                            <a asp-action="ListarComboProducto" asp-route-idCombo="@ViewBag.idCombo" class="btn btn-outline-secondary btn-lg px-4">
+                                <i class="fas fa-arrow-left me-2"></i>Volver al Listado
+                            </a>
+                            <button type="submit" class="btn btn-primary btn-lg px-4">
+                                <i class="fas fa-save me-2"></i>Registrar Detalle
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function() {
+            // Validación en tiempo real
+            $('.form-control, .form-select').on('input change', function() {
+                $(this).removeClass('is-invalid');
+                $(this).next('.text-danger').hide();
+            });
+
+            // Manejo del envío del formulario
+            $('#comboProductoForm').on('submit', function(e) {
+                // Validar que todos los campos requeridos estén completos
+                var isValid = true;
+                $('input[required], select[required]').each(function() {
+                    if (!$(this).val()) {
+                        $(this).addClass('is-invalid');
+                        isValid = false;
+                    }
+                });
+
+                if (!isValid) {
+                    e.preventDefault();
+                    return false;
+                }
+
+                // Confirmación antes de enviar
+                if (!confirm('¿Está seguro de que desea registrar este detalle?')) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+        });
+    </script>
+}

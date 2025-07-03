@@ -6811,11 +6811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "projectUniqueName": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "projectName": "Sistema-ventas-polleria",
-      "projectPath": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "projectPath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "packagesPath": "C:\\Users\\Martinez\\.nuget\\packages\\",
-      "outputPath": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+      "outputPath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6837,11 +6837,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
-              "projectPath": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
+            "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+              "projectPath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
             },
-            "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
-              "projectPath": "G:\\DIARS\\Polleria\\Main\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
+            "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+              "projectPath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
             }
           }
         }
