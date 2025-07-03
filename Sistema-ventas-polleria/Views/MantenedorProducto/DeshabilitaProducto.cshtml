@@ -1,0 +1,67 @@
+﻿@model capa.entProducto
+
+@{
+    ViewData["Title"] = "Deshabilitar Producto";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+            <div class="card border-danger shadow-lg">
+                <div class="card-header bg-danger text-white text-center py-4">
+                    <h2 class="mb-2">
+                        <i class="fas fa-exclamation-triangle me-2"></i>Deshabilitar Producto
+                    </h2>
+                    <p class="lead mb-0">¿Estás seguro que deseas deshabilitar este producto?</p>
+                </div>
+                <div class="card-body p-5">
+                    <div class="alert alert-warning d-flex align-items-center mb-4" role="alert">
+                        <i class="fas fa-exclamation-circle fa-2x me-3"></i>
+                        <div>
+                            Esta acción no eliminará el producto, pero lo dejará inactivo y no estará disponible para ventas.
+                        </div>
+                    </div>
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4">ID Producto</dt>
+                        <dd class="col-sm-8">@Model.idProducto</dd>
+                        <dt class="col-sm-4">Nombre</dt>
+                        <dd class="col-sm-8">@Model.nombreProducto</dd>
+                        <dt class="col-sm-4">Categoría</dt>
+                        <dd class="col-sm-8">@Model.idCategoria</dd>
+                        <dt class="col-sm-4">Marca</dt>
+                        <dd class="col-sm-8">@Model.idMarca</dd>
+                        <dt class="col-sm-4">Tamaño</dt>
+                        <dd class="col-sm-8">@Model.idTamaño</dd>
+                        <dt class="col-sm-4">Precio Venta</dt>
+                        <dd class="col-sm-8">S/ @Model.precioVenta.ToString("F2")</dd>
+                        <dt class="col-sm-4">Stock</dt>
+                        <dd class="col-sm-8">@Model.stock</dd>
+                        <dt class="col-sm-4">Estado</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.estado == 1)
+                            {
+                                <span class="badge bg-success"><i class="fas fa-check me-1"></i>Activo</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger"><i class="fas fa-times me-1"></i>Inactivo</span>
+                            }
+                        </dd>
+                        <dt class="col-sm-4">Descripción</dt>
+                        <dd class="col-sm-8">@Model.descripcionP</dd>
+                    </dl>
+                </div>
+                <div class="card-footer bg-white text-end py-4">
+                    <form asp-action="ConfirmarDeshabilitarProducto" class="d-inline">
+                        <input type="hidden" name="idProducto" value="@Model.idProducto" />
+                        <input type="submit" value="Deshabilitar" class="btn btn-danger btn-lg px-4 me-2" />
+                    </form>
+                    <a asp-action="ListarProducto" class="btn btn-outline-secondary btn-lg px-4">
+                        <i class="fas fa-arrow-left me-2"></i>Cancelar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

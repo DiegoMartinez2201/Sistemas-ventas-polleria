@@ -1,0 +1,198 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Delivery";
+    Layout = "~/Views/Shared/_LayoutCliente.cshtml";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Barista Cafe HTML CSS Template</title>
+
+</head>
+
+<body>
+
+    <main>
+        <section class="menu-section" id="section_1" style="padding-top: 170px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="card shadow-lg">
+                                <div class="card-body p-4">
+                                    <h2 class="card-title text-center mb-4 fw-bold">Confirmar Envío</h2>
+
+                                    <!-- Resumen del Pedido -->
+                                    <div class="mb-4">
+                                        <h5 class="fw-bold mb-3">
+                                            <i class="bi bi-cart-check me-2"></i>Resumen del Pedido
+                                        </h5>
+                                        <div id="resumen-pedido" class="border rounded p-3 bg-light">
+                                            <!-- Los items del carrito se cargarán aquí -->
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-3 p-2 bg-light rounded">
+                                            <strong>Total:</strong>
+                                            <strong id="total-pedido" class="text-danger">S/ 0.00</strong>
+                                        </div>
+                                    </div>
+
+                                    <!-- Formulario de Dirección -->
+                                    <form id="form-direccion" class="mb-4">
+                                        <h5 class="fw-bold mb-3">
+                                            <i class="bi bi-geo-alt me-2"></i>Información de Envío
+                                        </h5>
+                                        <div class="mb-3">
+                                            <label for="direccion" class="form-label fw-semibold">Dirección de Envío</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-house"></i></span>
+                                                <input type="text" class="form-control" id="direccion" required
+                                                       placeholder="Ingresa tu dirección completa">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="referencia" class="form-label fw-semibold">Referencia</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-signpost"></i></span>
+                                                <input type="text" class="form-control" id="referencia"
+                                                       placeholder="Puntos de referencia (opcional)">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="enlaceGoogleMaps" class="form-label fw-semibold">Ubicación en Google Maps</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-map"></i></span>
+                                                <input type="url" class="form-control" id="enlaceGoogleMaps"
+                                                       placeholder="Pega aquí el enlace de Google Maps">
+                                            </div>
+                                            <div class="form-text text-muted">
+                                                <i class="bi bi-info-circle me-1"></i>
+                                                Copia y pega el enlace de tu ubicación desde Google Maps
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <label for="telefono" class="form-label fw-semibold">Teléfono de Contacto</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                                <input type="tel" class="form-control" id="telefono" required
+                                                       placeholder="Número de teléfono"
+                                                       pattern="[0-9]{9}" title="Ingresa un número de 9 dígitos">
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <!-- Botones de Navegación -->
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <button type="button" class="btn btn-outline-secondary px-4" onclick="window.history.back()">
+                                            <i class="bi bi-arrow-left me-2"></i> Cancelar
+                                        </button>
+                                        <button type="button" class="btn btn-danger px-4" onclick="confirmarEnvio()">
+                                            Siguiente <i class="bi bi-arrow-right ms-2"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/delivery-carrito.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Obtener los botones y modales
+            const registerBtn = document.querySelector('[data-bs-target="#modalRegistroCliente"]');
+            const loginBtn = document.querySelector('[data-bs-target="#loginModal"]');
+            const registerModal = document.getElementById('modalRegistroCliente');
+            const loginModal = document.getElementById('loginModal');
+
+            // Función para deshabilitar/habilitar botones
+            const toggleButtons = (disableRegister, disableLogin) => {
+                if (registerBtn) {
+                    registerBtn.disabled = disableRegister;
+                    registerBtn.style.pointerEvents = disableRegister ? 'none' : 'auto';
+                    registerBtn.style.opacity = disableRegister ? '0.5' : '1';
+                }
+                if (loginBtn) {
+                    loginBtn.disabled = disableLogin;
+                    loginBtn.style.pointerEvents = disableLogin ? 'none' : 'auto';
+                    loginBtn.style.opacity = disableLogin ? '0.5' : '1';
+                }
+            };
+
+            // Evento cuando se abre el modal de registro
+            registerModal.addEventListener('show.bs.modal', () => {
+                toggleButtons(false, true); // Deshabilitar login, mantener registro habilitado
+            });
+
+            // Evento cuando se abre el modal de login
+            loginModal.addEventListener('show.bs.modal', () => {
+                toggleButtons(true, false); // Deshabilitar registro, mantener login habilitado
+            });
+
+            // Evento cuando se cierra cualquier modal
+            [registerModal, loginModal].forEach(modal => {
+                modal.addEventListener('hidden.bs.modal', () => {
+                    // Habilitar ambos botones cuando se cierra cualquier modal
+                    toggleButtons(false, false);
+
+                    // Limpiar el backdrop
+                    const backdrop = document.querySelector('.modal-backdrop');
+                    if (backdrop) {
+                        backdrop.remove();
+                    }
+
+                    // Restaurar estilos del body
+                    document.body.classList.remove('modal-open');
+                    document.body.style.overflow = '';
+                    document.body.style.paddingRight = '';
+                });
+            });
+
+            // Manejar la transición de login a registro
+            const registerLink = loginModal.querySelector('a[data-bs-target="#modalRegistroCliente"]');
+            if (registerLink) {
+                registerLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const loginModalInstance = bootstrap.Modal.getInstance(loginModal);
+                    if (loginModalInstance) {
+                        loginModalInstance.hide();
+                        setTimeout(() => {
+                            const registerModalInstance = new bootstrap.Modal(registerModal);
+                            registerModalInstance.show();
+                        }, 150);
+                    }
+                });
+            }
+
+            // Prevenir la propagación de eventos en el header cuando hay un modal abierto
+            const header = document.querySelector('header');
+            if (header) {
+                header.addEventListener('click', (e) => {
+                    if (document.querySelector('.modal.show')) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    }
+                }, true);
+            }
+        });
+    </script>
+
+</body>
+</html>

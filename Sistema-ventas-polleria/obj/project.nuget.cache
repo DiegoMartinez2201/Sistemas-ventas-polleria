@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "6uBgfiVX32o=",
   "success": true,
   "projectFilePath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+=======
+  "dgSpecHash": "0KKdy2Snp8A=",
+  "success": true,
+  "projectFilePath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+>>>>>>> 51aa4df3cba3b0727fd212386a1f7795f8c188ff
   "expectedPackageFiles": [
     "C:\\Users\\Nelson Juarez\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Nelson Juarez\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

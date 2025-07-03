@@ -6810,11 +6810,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "projectName": "Sistema-ventas-polleria",
       "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "packagesPath": "C:\\Users\\Nelson Juarez\\.nuget\\packages\\",
       "outputPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+=======
+      "projectUniqueName": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "projectName": "Sistema-ventas-polleria",
+      "projectPath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "packagesPath": "C:\\Users\\Martinez\\.nuget\\packages\\",
+      "outputPath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+>>>>>>> 51aa4df3cba3b0727fd212386a1f7795f8c188ff
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nelson Juarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6832,11 +6840,19 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
               "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
             },
             "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
               "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
+=======
+            "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
+              "projectPath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
+            },
+            "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
+              "projectPath": "G:\\DIARS\\Polleria\\DIEGO\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
+>>>>>>> 51aa4df3cba3b0727fd212386a1f7795f8c188ff
             }
           }
         }

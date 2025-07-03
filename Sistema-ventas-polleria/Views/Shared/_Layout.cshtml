@@ -75,14 +75,14 @@
         </nav>
     </header>
     <main>
-    <div class="">
-        <main role="main" class="">
-            @RenderBody()
-               
-        </main>
+        <div class="">
+            <main role="main" class="">
+                @RenderBody()
 
-    </div>
-    <footer class="site-footer">
+            </main>
+
+        </div>
+        <footer class="site-footer">
             <div class="container">
                 <div class="row">
 
@@ -167,15 +167,15 @@
                         </p>
                     </div>
                 </div>
-                </div>
-    </footer>
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/click-scroll.js"></script>
-    <script src="js/vegas.min.js"></script>
-    <script src="js/custom.js"></script>
+            </div>
+        </footer>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/vegas.min.js"></script>
+        <script src="js/custom.js"></script>
         <script>
             function mostrarFormulario() {
               var tipo = document.getElementById("tipoCliente").value;
@@ -184,6 +184,5 @@
             }
         </script>
     </main>
-    @RenderSection("Scripts", required: false)
 </body>
 </html>

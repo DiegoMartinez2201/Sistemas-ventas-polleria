@@ -1,0 +1,115 @@
+﻿@model capa.entCombo
+
+@{
+    ViewData["Title"] = "Editar Combo";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid bg-light py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+            <!-- Header Card -->
+            <div class="card border-0 shadow-lg mb-4">
+                <div class="card-header bg-primary text-white text-center py-4">
+                    <h1 class="display-5 mb-2">
+                        <i class="fas fa-layer-group me-3"></i>Editar Combo
+                    </h1>
+                    <p class="lead mb-0">Modifica los datos del combo seleccionado</p>
+                </div>
+            </div>
+
+            <!-- Main Form Card -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <form asp-action="EditaCombo" method="post" autocomplete="off" id="comboEditForm">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Error:</strong> Por favor, corrija los errores indicados.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                        <input asp-for="idCombo" type="hidden" />
+                        <!-- Información del Combo -->
+                        <div class="mb-4">
+                            <label asp-for="nombreCombo" class="form-label fw-bold">
+                                <i class="fas fa-tag me-1"></i>Nombre del Combo
+                            </label>
+                            <input asp-for="nombreCombo" class="form-control form-control-lg" placeholder="Ingrese el nombre del combo" required />
+                            <span asp-validation-for="nombreCombo" class="text-danger small"></span>
+                        </div>
+                        <div class="mb-4">
+                            <label asp-for="descripcion" class="form-label fw-bold">
+                                <i class="fas fa-align-left me-1"></i>Descripción
+                            </label>
+                            <textarea asp-for="descripcion" class="form-control form-control-lg" rows="3" placeholder="Descripción del combo"></textarea>
+                            <span asp-validation-for="descripcion" class="text-danger small"></span>
+                        </div>
+                        <div class="mb-4">
+                            <label asp-for="precioVenta" class="form-label fw-bold">
+                                <i class="fas fa-money-bill-wave me-1"></i>Precio de Venta
+                            </label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text">S/.</span>
+                                <input asp-for="precioVenta" type="number" step="0.01" min="0" class="form-control" placeholder="0.00" required />
+                            </div>
+                            <span asp-validation-for="precioVenta" class="text-danger small"></span>
+                        </div>
+                        
+                        <!-- Botones de Acción -->
+                        <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                            <a asp-action="ListarCombo" class="btn btn-outline-secondary btn-lg px-4">
+                                <i class="fas fa-arrow-left me-2"></i>Volver al Listado
+                            </a>
+                            <button type="submit" class="btn btn-primary btn-lg px-4">
+                                <i class="fas fa-save me-2"></i>Guardar Cambios
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function() {
+            // Validación en tiempo real
+            $('.form-control, .form-select').on('input change', function() {
+                $(this).removeClass('is-invalid');
+                $(this).next('.text-danger').hide();
+            });
+
+            // Formateo automático del precio
+            $('#precioVenta').on('input', function() {
+                var value = $(this).val();
+                if (value && !isNaN(value)) {
+                    $(this).val(parseFloat(value).toFixed(2));
+                }
+            });
+
+            // Manejo del envío del formulario
+            $('#comboEditForm').on('submit', function(e) {
+                // Validar que todos los campos requeridos estén completos
+                var isValid = true;
+                $('select[required], input[required]').each(function() {
+                    if (!$(this).val()) {
+                        $(this).addClass('is-invalid');
+                        isValid = false;
+                    }
+                });
+
+                if (!isValid) {
+                    e.preventDefault();
+                    return false;
+                }
+
+                // Confirmación antes de enviar
+                if (!confirm('¿Está seguro de que desea guardar los cambios de este combo?')) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+        });
+    </script>
+}
