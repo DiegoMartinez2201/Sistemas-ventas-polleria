@@ -1,42 +1,81 @@
 ﻿@model capa.entCategoria
 
 @{
-    ViewData["Title"] = "EditarCategoria";
+    ViewData["Title"] = "Editar Categoría";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>EditarCategoria</h1>
-
-<h4>entCategoria</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="EditarCategoria">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="idCategoria" class="control-label"></label>
-                <input asp-for="idCategoria" class="form-control" />
-                <span asp-validation-for="idCategoria" class="text-danger"></span>
+<div class="container-fluid mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-dark">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-edit me-2"></i>
+                        <h4 class="mb-0">Editar Categoría</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form asp-action="EditarCategoria" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="idCategoria" class="form-label fw-bold">
+                                <i class="fas fa-hashtag me-1"></i>ID de Categoría
+                            </label>
+                            <input asp-for="idCategoria" class="form-control" readonly />
+                            <span asp-validation-for="idCategoria" class="text-danger"></span>
+                            <div class="form-text">
+                                <i class="fas fa-info-circle me-1"></i>
+                                El ID no se puede modificar
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="nombreCategoria" class="form-label fw-bold">
+                                <i class="fas fa-tag me-1"></i>Nombre de la Categoría
+                            </label>
+                            <input asp-for="nombreCategoria" class="form-control form-control-lg" 
+                                   placeholder="Ingrese el nombre de la categoría" />
+                            <span asp-validation-for="nombreCategoria" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-toggle-on me-1"></i>Estado
+                            </label>
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input" id="estadoSwitch" name="estadoSwitch" @(Model.estado == 1 ? "checked" : "") />
+                                <label class="form-check-label" for="estadoSwitch">
+                                    Categoría Activa
+                                </label>
+                                <input type="hidden" name="estado" id="estadoHidden" value="@(Model.estado)" />
+                            </div>
+                            <span asp-validation-for="estado" class="text-danger"></span>
+                        </div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                var checkbox = document.getElementById('estadoSwitch');
+                                var hidden = document.getElementById('estadoHidden');
+                                checkbox.addEventListener('change', function() {
+                                    hidden.value = checkbox.checked ? 1 : 0;
+                                });
+                            });
+                        </script>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="@Url.Action("ListarCategoria", "MantenedorCategoria")" 
+                               class="btn btn-secondary me-md-2">
+                                <i class="fas fa-arrow-left me-1"></i>Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-save me-1"></i>Actualizar Categoría
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="nombreCategoria" class="control-label"></label>
-                <input asp-for="nombreCategoria" class="form-control" />
-                <span asp-validation-for="nombreCategoria" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="estado" class="control-label"></label>
-                <input asp-for="estado" class="form-control" />
-                <span asp-validation-for="estado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    @Html.ActionLink("Volver", "ListarCategoria")
 </div>
 
 @section Scripts {

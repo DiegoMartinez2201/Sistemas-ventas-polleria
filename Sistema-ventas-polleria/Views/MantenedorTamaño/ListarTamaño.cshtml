@@ -1,48 +1,87 @@
 ﻿@model IEnumerable<capa.entTamaño>
 
 @{
-    ViewData["Title"] = "ListarTamaño";
+    ViewData["Title"] = "Gestión de Tamaños";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>ListarTamaño</h1>
-
-<p>
-    @Html.ActionLink("Inserta", "InsertarTamaño")
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.idTamaño)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.estado)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.idTamaño)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.estado)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "EditarTamaño", new { idtamaño = item.idTamaño }) |
-                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
-                    @Html.ActionLink("Delete", "DeshabilitarTamaño", new { idTamaño = item.idTamaño })
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="mb-0">
+                            <i class="fas fa-ruler-combined me-2"></i>Gestión de Tamaños
+                        </h3>
+                        <a href="@Url.Action("InsertarTamaño", "MantenedorTamaño")" class="btn btn-light">
+                            <i class="fas fa-plus me-1"></i>Nuevo Tamaño
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @if (Model != null && Model.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nombre del Tamaño</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col" class="text-center">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.idTamaño</td>
+                                            <td>
+                                                <span class="fw-bold">@item.nombre</span>
+                                            </td>
+                                            <td>
+                                                @if (item.estado == 1)
+                                                {
+                                                    <span class="badge bg-success">Activo</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-danger">Inactivo</span>
+                                                }
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="btn-group" role="group">
+                                                    <a href="@Url.Action("EditarTamaño", "MantenedorTamaño", new { idtamaño = item.idTamaño })" 
+                                                       class="btn btn-sm btn-outline-primary" title="Editar">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="@Url.Action("DeshabilitarTamaño", "MantenedorTamaño", new { idTamaño = item.idTamaño })" 
+                                                       class="btn btn-sm btn-outline-danger" title="Deshabilitar"
+                                                       onclick="return confirm('¿Está seguro de que desea deshabilitar este tamaño?')">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="text-center py-5">
+                            <i class="fas fa-ruler-combined fa-3x text-muted mb-3"></i>
+                            <h5 class="text-muted">No hay tamaños registrados</h5>
+                            <p class="text-muted">Comience agregando un nuevo tamaño</p>
+                            <a href="@Url.Action("InsertarTamaño", "MantenedorTamaño")" class="btn btn-success">
+                                <i class="fas fa-plus me-1"></i>Agregar Primer Tamaño
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

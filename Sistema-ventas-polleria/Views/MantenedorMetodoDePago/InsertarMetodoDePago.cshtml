@@ -1,34 +1,47 @@
 ﻿@model capa.entMetodoDePago
 
 @{
-    ViewData["Title"] = "InsertarMetodoDePago";
+    ViewData["Title"] = "Nuevo Método de Pago";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>InsertarMetodoDePago</h1>
-
-<h4>entMetodoDePago</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="InsertarMetodoDePago">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-            <div class="form-group">
-                <label asp-for="nombreMetodo" class="control-label"></label>
-                <input asp-for="nombreMetodo" class="form-control" />
-                <span asp-validation-for="nombreMetodo" class="text-danger"></span>
+<div class="container-fluid mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow">
+                <div class="card-header bg-secondary text-white">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-plus-circle me-2"></i>
+                        <h4 class="mb-0">Nuevo Método de Pago</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form asp-action="InsertarMetodoDePago" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="nombreMetodo" class="form-label fw-bold">
+                                <i class="fas fa-credit-card me-1"></i>Nombre del Método
+                            </label>
+                            <input asp-for="nombreMetodo" class="form-control form-control-lg" 
+                                   placeholder="Ingrese el nombre del método de pago" />
+                            <span asp-validation-for="nombreMetodo" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="@Url.Action("ListarMetodoDePago", "MantenedorMetodoDePago")" 
+                               class="btn btn-secondary me-md-2">
+                                <i class="fas fa-arrow-left me-1"></i>Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="fas fa-save me-1"></i>Guardar Método
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-<div>
-    @Html.ActionLink("Volver", "ListarMetodoDePago")
 </div>
 
 @section Scripts {
