@@ -1,5 +1,5 @@
 ﻿using capa;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -143,6 +143,30 @@ namespace capaDatos
                     cmd.Connection.Close();
             }
             return c;
+        }
+
+        public Boolean EliminarComboProducto(int idComboProducto)
+        {
+            SqlCommand cmd = null;
+            Boolean elimina = false;
+            try
+            {
+                SqlConnection cn = cConexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEliminarComboProducto", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idComboProducto", idComboProducto);
+
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0) { elimina = true; }
+            }
+            catch (Exception e) { throw e; }
+            finally
+            {
+                if (cmd != null && cmd.Connection != null)
+                    cmd.Connection.Close();
+            }
+            return elimina;
         }
         #endregion metodos
     }

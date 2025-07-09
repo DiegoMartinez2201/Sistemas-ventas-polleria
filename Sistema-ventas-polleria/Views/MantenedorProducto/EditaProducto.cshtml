@@ -5,151 +5,124 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<div class="container-fluid bg-light py-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-10 col-xl-8">
-            <!-- Header Card -->
-            <div class="card border-0 shadow-lg mb-4">
-                <div class="card-header bg-primary text-white text-center py-4">
-                    <h1 class="display-5 mb-2">
-                        <i class="fas fa-edit me-3"></i>Editar Producto
-                    </h1>
-                    <p class="lead mb-0">Modifica los datos del producto seleccionado</p>
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="max-width: 800px; width: 100%;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-3 font-weight-bold">
+                <i class="fas fa-edit me-2"></i>Editar Producto
+            </h2>
+            <p class="text-center text-muted mb-4">Modifica los datos del producto seleccionado.</p>
+            
+            <form asp-action="EditaProducto" autocomplete="off" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input asp-for="idProducto" type="hidden" />
+                
+                <!-- Información Básica -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="nombreProducto" class="control-label fw-bold">
+                            <i class="fas fa-tag me-1"></i>Nombre del Producto
+                        </label>
+                        <input asp-for="nombreProducto" class="form-control" placeholder="Ingrese el nombre del producto" required />
+                        <span asp-validation-for="nombreProducto" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="descripcionP" class="control-label fw-bold">
+                            <i class="fas fa-align-left me-1"></i>Descripción
+                        </label>
+                        <textarea asp-for="descripcionP" class="form-control" rows="2" placeholder="Descripción del producto"></textarea>
+                        <span asp-validation-for="descripcionP" class="text-danger"></span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Main Form Card -->
-            <div class="card border-0 shadow-lg">
-                <div class="card-body p-5">
-                    <form asp-action="EditaProducto" method="post" autocomplete="off" id="productoEditForm">
-                        <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" role="alert">
-                            <i class="fas fa-exclamation-triangle me-2"></i>
-                            <strong>Error:</strong> Por favor, corrija los errores indicados.
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                        </div>
-                        <input asp-for="idProducto" type="hidden" />
-
-                        <!-- Información Básica del Producto -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
-                                    <i class="fas fa-info-circle me-2"></i>Información Básica
-                                </h4>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="nombreProducto" class="form-label fw-bold">
-                                    <i class="fas fa-tag me-1"></i>Nombre del Producto
-                                </label>
-                                <input asp-for="nombreProducto" class="form-control form-control-lg" placeholder="Ingrese el nombre del producto" required />
-                                <span asp-validation-for="nombreProducto" class="text-danger small"></span>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="descripcionP" class="form-label fw-bold">
-                                    <i class="fas fa-align-left me-1"></i>Descripción
-                                </label>
-                                <textarea asp-for="descripcionP" class="form-control form-control-lg" rows="3" placeholder="Descripción detallada del producto"></textarea>
-                                <span asp-validation-for="descripcionP" class="text-danger small"></span>
-                            </div>
-                        </div>
-
-                        <!-- Clasificación del Producto -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
-                                    <i class="fas fa-tags me-2"></i>Clasificación del Producto
-                                </h4>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label asp-for="idCategoria" class="form-label fw-bold">
-                                    <i class="fas fa-list me-1"></i>Categoría
-                                </label>
-                                <select asp-for="idCategoria" class="form-select form-select-lg" asp-items="ViewBag.Categorias" required>
-                                    <option value="">-- Selecciona una categoría --</option>
-                                </select>
-                                <span asp-validation-for="idCategoria" class="text-danger small"></span>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label asp-for="idMarca" class="form-label fw-bold">
-                                    <i class="fas fa-certificate me-1"></i>Marca
-                                </label>
-                                <select asp-for="idMarca" class="form-select form-select-lg" asp-items="ViewBag.Marcas" required>
-                                    <option value="">-- Selecciona una marca --</option>
-                                </select>
-                                <span asp-validation-for="idMarca" class="text-danger small"></span>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label asp-for="idTamaño" class="form-label fw-bold">
-                                    <i class="fas fa-ruler me-1"></i>Tamaño
-                                </label>
-                                <select asp-for="idTamaño" class="form-select form-select-lg" asp-items="ViewBag.Tamaños" required>
-                                    <option value="">-- Selecciona un tamaño --</option>
-                                </select>
-                                <span asp-validation-for="idTamaño" class="text-danger small"></span>
-                            </div>
-                        </div>
-
-                        <!-- Información Comercial -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
-                                    <i class="fas fa-dollar-sign me-2"></i>Información Comercial
-                                </h4>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="precioVenta" class="form-label fw-bold">
-                                    <i class="fas fa-money-bill-wave me-1"></i>Precio de Venta
-                                </label>
-                                <div class="input-group input-group-lg">
-                                    <span class="input-group-text">S/.</span>
-                                    <input asp-for="precioVenta" type="number" step="0.01" min="0" class="form-control" placeholder="0.00" required />
-                                </div>
-                                <span asp-validation-for="precioVenta" class="text-danger small"></span>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="stock" class="form-label fw-bold">
-                                    <i class="fas fa-boxes me-1"></i>Stock Disponible
-                                </label>
-                                <input asp-for="stock" type="number" min="0" class="form-control form-control-lg" placeholder="Cantidad en inventario" required />
-                                <span asp-validation-for="stock" class="text-danger small"></span>
-                            </div>
-                        </div>
-
-                        <!-- Estado del Producto -->
-                        <div class="row mb-4">
-                            <div class="col-12">
-                                <h4 class="text-primary border-bottom border-primary pb-2 mb-3">
-                                    <i class="fas fa-toggle-on me-2"></i>Estado del Producto
-                                </h4>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label asp-for="estado" class="form-label fw-bold">
-                                    <i class="fas fa-check-circle me-1"></i>Estado
-                                </label>
-                                <select asp-for="estado" class="form-select form-select-lg" required>
-                                    <option value="">-- Selecciona el estado --</option>
-                                    <option value="1">Activo</option>
-                                    <option value="0">Inactivo</option>
-                                </select>
-                                <span asp-validation-for="estado" class="text-danger small"></span>
-                            </div>
-                        </div>
-
-                        <!-- Botones de Acción -->
-                        <div class="row">
-                            <div class="col-12">
-                                <hr class="my-4">
-                                <div class="d-grid gap-3 d-md-flex justify-content-md-end">
-                                    <a asp-action="ListarProducto" class="btn btn-outline-secondary btn-lg px-4">
-                                        <i class="fas fa-arrow-left me-2"></i>Volver al Listado
-                                    </a>
-                                    <button type="submit" class="btn btn-primary btn-lg px-4">
-                                        <i class="fas fa-save me-2"></i>Guardar Cambios
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                <!-- Clasificación -->
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <label asp-for="idCategoria" class="control-label fw-bold">
+                            <i class="fas fa-list me-1"></i>Categoría
+                        </label>
+                        <select asp-for="idCategoria" class="form-select" asp-items="ViewBag.Categorias" required>
+                            <option value="">-- Selecciona una categoría --</option>
+                        </select>
+                        <span asp-validation-for="idCategoria" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-4">
+                        <label asp-for="idMarca" class="control-label fw-bold">
+                            <i class="fas fa-certificate me-1"></i>Marca
+                        </label>
+                        <select asp-for="idMarca" class="form-select" asp-items="ViewBag.Marcas" required>
+                            <option value="">-- Selecciona una marca --</option>
+                        </select>
+                        <span asp-validation-for="idMarca" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-4">
+                        <label asp-for="idTamaño" class="control-label fw-bold">
+                            <i class="fas fa-ruler me-1"></i>Tamaño
+                        </label>
+                        <select asp-for="idTamaño" class="form-select" asp-items="ViewBag.Tamaños" required>
+                            <option value="">-- Selecciona un tamaño --</option>
+                        </select>
+                        <span asp-validation-for="idTamaño" class="text-danger"></span>
+                    </div>
                 </div>
+
+                <!-- Información Comercial -->
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="precioVenta" class="control-label fw-bold">
+                            <i class="fas fa-money-bill-wave me-1"></i>Precio de Venta
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text">S/.</span>
+                            <input asp-for="precioVenta" type="number" step="0.01" min="0" class="form-control" placeholder="0.00" required />
+                        </div>
+                        <span asp-validation-for="precioVenta" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="stock" class="control-label fw-bold">
+                            <i class="fas fa-boxes me-1"></i>Stock Disponible
+                        </label>
+                        <input asp-for="stock" type="number" min="0" class="form-control" placeholder="Cantidad en inventario" required />
+                        <span asp-validation-for="stock" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Estado -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label asp-for="estado" class="control-label fw-bold">
+                            <i class="fas fa-toggle-on me-1"></i>Estado
+                        </label>
+                        <select asp-for="estado" class="form-select" required>
+                            <option value="">-- Selecciona el estado --</option>
+                            <option value="1">Activo</option>
+                            <option value="0">Inactivo</option>
+                        </select>
+                        <span asp-validation-for="estado" class="text-danger"></span>
+                    </div>
+                </div>
+
+                @if (!string.IsNullOrEmpty(Model.imagen))
+                {
+                    <div class="mb-3">
+                        <img src="@Model.imagen" alt="Imagen actual" style="max-width: 150px;" />
+                    </div>
+                }
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label class="control-label fw-bold">
+                            <i class="fas fa-image me-1"></i>Imagen del Producto
+                        </label>
+                        <input type="file" name="ImagenFile" accept="image/*" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="form-group text-center">
+                    <input type="submit" value="Guardar Cambios" class="btn btn-primary btn-lg w-100" />
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a asp-action="ListarProducto" class="btn btn-link">Volver a la lista</a>
             </div>
         </div>
     </div>
@@ -159,75 +132,4 @@
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
-    <script>
-        $(document).ready(function() {
-            // Validación en tiempo real
-            $('.form-control, .form-select').on('input change', function() {
-                $(this).removeClass('is-invalid');
-                $(this).next('.text-danger').hide();
-            });
-
-            // Formateo automático del precio
-            $('#precioVenta').on('input', function() {
-                var value = $(this).val();
-                if (value && !isNaN(value)) {
-                    $(this).val(parseFloat(value).toFixed(2));
-                }
-            });
-
-            // Validación del stock
-            $('#stock').on('input', function() {
-                var value = $(this).val();
-                if (value && parseInt(value) < 0) {
-                    $(this).val(0);
-                }
-            });
-
-            // Manejo del envío del formulario
-            $('#productoEditForm').on('submit', function(e) {
-                // Validar que todos los campos requeridos estén completos
-                var isValid = true;
-                $('select[required], input[required]').each(function() {
-                    if (!$(this).val()) {
-                        $(this).addClass('is-invalid');
-                        isValid = false;
-                    }
-                });
-
-                if (!isValid) {
-                    showAlert('warning', 'Por favor, complete todos los campos requeridos.');
-                    e.preventDefault();
-                    return false;
-                }
-
-                // Confirmación antes de enviar
-                if (!confirm('¿Está seguro de que desea guardar los cambios de este producto?')) {
-                    e.preventDefault();
-                    return false;
-                }
-            });
-
-            function showAlert(type, message) {
-                var alertClass = type === 'info' ? 'alert-info' : 'alert-warning';
-                var alertHtml = `
-                    <div class="alert ${alertClass} alert-dismissible fade show" role="alert">
-                        <i class="fas fa-info-circle me-2"></i>
-                        ${message}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                `;
-
-                // Remover alertas anteriores
-                $('.alert').remove();
-
-                // Insertar alerta después del header
-                $('.card-header').after(alertHtml);
-
-                // Remover alerta después de 5 segundos
-                setTimeout(function() {
-                    $('.alert').fadeOut();
-                }, 5000);
-            }
-        });
-    </script>
 }

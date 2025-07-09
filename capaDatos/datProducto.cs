@@ -1,5 +1,5 @@
 ﻿using capa;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -46,6 +46,8 @@ namespace capaDatos
                     c.precioVenta = Convert.ToDecimal(dr["precioVenta"]);
                     c.stock = Convert.ToInt32(dr["stock"]);
                     c.estado = Convert.ToInt32(dr["estado"]);
+                    c.descripcionP = dr["descripcionP"] == DBNull.Value ? null : dr["descripcionP"].ToString();
+                    c.imagen = dr["imagen"] == DBNull.Value ? null : dr["imagen"].ToString();
                     lista.Add(c);
                 }
             }
@@ -72,6 +74,7 @@ namespace capaDatos
                 cmd.Parameters.AddWithValue("@precioVenta", c.precioVenta);
                 cmd.Parameters.AddWithValue("@stock", c.stock);
                 cmd.Parameters.AddWithValue("@descripcionP", c.descripcionP);
+                cmd.Parameters.AddWithValue("@imagen", c.imagen ?? (object)DBNull.Value);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -95,6 +98,7 @@ namespace capaDatos
                 SqlConnection cn = cConexion.Instancia.Conectar();
                 cmd = new SqlCommand("spEditaProducto", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idProducto", c.idProducto);
                 cmd.Parameters.AddWithValue("@idCategoria", c.idCategoria);
                 cmd.Parameters.AddWithValue("@idMarca", c.idMarca);
                 cmd.Parameters.AddWithValue("@idTamaño", c.idTamaño);
@@ -102,6 +106,7 @@ namespace capaDatos
                 cmd.Parameters.AddWithValue("@precioVenta", c.precioVenta);
                 cmd.Parameters.AddWithValue("@stock", c.stock);
                 cmd.Parameters.AddWithValue("@descripcionP", c.descripcionP);
+                cmd.Parameters.AddWithValue("@imagen", c.imagen ?? (object)DBNull.Value);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -170,6 +175,33 @@ namespace capaDatos
             finally { cmd.Connection.Close(); }
             return delete;
 
+        }
+        public List<entProducto> ListarProductoPorCategoria(int idCategoria)
+        {
+            SqlCommand cmd = null;
+            List<entProducto> lista = new List<entProducto>();
+            try
+            {
+                SqlConnection cn = cConexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarProductoPorCategoria", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idCategoria", idCategoria);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entProducto c = new entProducto();
+                    c.idProducto = Convert.ToInt32(dr["idProducto"]);
+                    c.idCategoria = Convert.ToInt32(dr["idCategoria"]);
+                    c.nombreProducto = dr["nombreProducto"].ToString();
+                    c.precioVenta = Convert.ToDecimal(dr["precioVenta"]);
+                    c.descripcionP = dr["descripcionP"].ToString();
+                    c.imagen = dr["imagen"] == DBNull.Value ? null : dr["imagen"].ToString();
+                    lista.Add(c);
+                }
+            }
+            finally { cmd.Connection.Close(); }
+            return lista;
         }
         #endregion metodos
     }

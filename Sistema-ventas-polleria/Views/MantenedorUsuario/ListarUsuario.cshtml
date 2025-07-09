@@ -1,24 +1,57 @@
 ﻿@model IEnumerable<capa.entUsuario>
 
 @{
-    ViewData["Title"] = "ListarUsuario";
+    ViewData["Title"] = "Gestión de Usuarios";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 @functions {
     string MostrarEstado(int estado)
     {
-        return estado == '1'
-            ? "<span class='badge bg-danger'>Inactivo</span>"
-            : "<span class='badge bg-success'>Activo</span>";
+        return estado == 1
+            ? "<span class='badge badge-success'>Activo</span>"
+            : "<span class='badge badge-danger'>Inactivo</span>";
+    }
+    
+    string ObtenerNombreRol(int idRol)
+    {
+        return idRol switch
+        {
+            1 => "Administrador",
+            2 => "Vendedor",
+            3 => "Cliente",
+            _ => "Desconocido"
+        };
     }
 }
 <div class="bg-white shadow rounded p-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1 class="h3 font-weight-bold">Usuarios Registrados</h1>
-        <a class="btn btn-success" href="@Url.Action("InsertarUsuario", "MantenedorUsuario")">
-            <i class="fas fa-user-plus"></i> Nuevo Usuario
-        </a>
+        <h1 class="h3 font-weight-bold">
+            <i class="fas fa-users"></i> Gestión de Usuarios
+        </h1>
+        <div>
+            <a class="btn btn-success" href="@Url.Action("InsertarUsuario", "MantenedorUsuario")">
+                <i class="fas fa-user-plus"></i> Nuevo Usuario
+            </a>
+            <a class="btn btn-info" href="@Url.Action("Logs", "Seguridad")">
+                <i class="fas fa-list-alt"></i> Ver Logs
+            </a>
+        </div>
     </div>
+    
+    @if (TempData["Mensaje"] != null)
+    {
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            @TempData["Mensaje"]
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            @TempData["Error"]
+        </div>
+    }
 </div>
 <div class="table-responsive bg-white shadow rounded p-3">
     <table class="table table-striped table-hover table-bordered align-middle">
@@ -33,8 +66,8 @@
                 <th>@Html.DisplayNameFor(model => model.razonSocial)</th>
                 <th>@Html.DisplayNameFor(model => model.direccion)</th>
                 <th>@Html.DisplayNameFor(model => model.telefono)</th>
-                <th>@Html.DisplayNameFor(model => model.idRol)</th>
-                <th>@Html.DisplayNameFor(model => model.estado)</th>
+                <th>Rol</th>
+                <th>Estado</th>
                 <th class="text-center">Acciones</th>
             </tr>
         </thead>
@@ -51,14 +84,20 @@
                     <td>@item.razonSocial</td>
                     <td>@item.direccion</td>
                     <td>@item.telefono</td>
-                    <td>@item.idRol</td>
-
-
+                    <td>
+                        <span class="badge badge-info">@ObtenerNombreRol(item.idRol)</span>
+                    </td>
                     <td>@Html.Raw(MostrarEstado(item.estado))</td>
                     <td class="text-center">
-                        @Html.ActionLink("Edit", "EditaUsuario", new { idUsuario = item.idUsuario }) |
-                        @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
-                        @Html.ActionLink("Delete", "DeshabilitaUsuario", new { idUsuario = item.idUsuario })
+                        <a href="@Url.Action("EditaUsuario", new { idUsuario = item.idUsuario })" class="btn btn-sm btn-info">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+                        @if (item.estado == 1)
+                        {
+                            <a href="@Url.Action("DeshabilitaUsuario", new { idUsuario = item.idUsuario })" class="btn btn-sm btn-warning">
+                                <i class="fas fa-ban"></i> Deshabilitar
+                            </a>
+                        }
                     </td>
                 </tr>
             }

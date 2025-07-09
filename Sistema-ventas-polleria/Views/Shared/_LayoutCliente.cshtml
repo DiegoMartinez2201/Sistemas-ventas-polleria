@@ -37,7 +37,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="@Url.Action("Clientelog", "Cliente")">Inicio</a>
+                                <a class="nav-link" href="@Url.Action("Logout", "Cuenta")" data-bs-toggle="modal" data-bs-target="#loginModal">Cerrar Sesión</a>
                             </li>
 
                             <li class="nav-item">
@@ -62,7 +62,7 @@
                                 <a class="nav-link click-scroll" href="#section_5">Perfil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Cerrar Sesión</a>
+                                <a class="nav-link" href="@Url.Action("Logout", "Cuenta")">Cerrar Sesión</a>
                             </li>
                         </ul>
 
@@ -179,6 +179,7 @@
         <script src="js/click-scroll.js"></script>
         <script src="js/vegas.min.js"></script>
         <script src="js/custom.js"></script>
+        @RenderSection("Scripts", required: false)
     </main>
 </body>
 </html>

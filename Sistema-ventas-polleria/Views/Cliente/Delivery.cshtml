@@ -45,61 +45,66 @@
                                     </div>
 
                                     <!-- Formulario de Dirección -->
-                                    <form id="form-direccion" class="mb-4">
+                                    <form asp-action="RealizarPedido" method="post" id="formPedido">
+                                        <input type="hidden" name="CarritoJson" id="CarritoJson" />
                                         <h5 class="fw-bold mb-3">
                                             <i class="bi bi-geo-alt me-2"></i>Información de Envío
                                         </h5>
                                         <div class="mb-3">
+                                            <label for="formaEnvio" class="form-label fw-semibold">Forma de envío</label>
+                                            <select class="form-select" id="formaEnvio" name="formaEnvio" required>
+                                                <option value="1">Delivery</option>
+                                                <option value="2">Recojo en tienda</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3" id="direccionDiv">
                                             <label for="direccion" class="form-label fw-semibold">Dirección de Envío</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="bi bi-house"></i></span>
-                                                <input type="text" class="form-control" id="direccion" required
-                                                       placeholder="Ingresa tu dirección completa">
+                                                <input type="text" class="form-control" name="direccion" id="direccion" required placeholder="Ingresa tu dirección completa">
                                             </div>
                                         </div>
-
                                         <div class="mb-3">
                                             <label for="referencia" class="form-label fw-semibold">Referencia</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="bi bi-signpost"></i></span>
-                                                <input type="text" class="form-control" id="referencia"
-                                                       placeholder="Puntos de referencia (opcional)">
+                                                <input type="text" class="form-control" name="referencia" id="referencia" placeholder="Puntos de referencia (opcional)">
                                             </div>
                                         </div>
-
                                         <div class="mb-3">
                                             <label for="enlaceGoogleMaps" class="form-label fw-semibold">Ubicación en Google Maps</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="bi bi-map"></i></span>
-                                                <input type="url" class="form-control" id="enlaceGoogleMaps"
-                                                       placeholder="Pega aquí el enlace de Google Maps">
+                                                <input type="url" class="form-control" name="enlaceGoogleMaps" id="enlaceGoogleMaps" placeholder="Pega aquí el enlace de Google Maps">
                                             </div>
                                             <div class="form-text text-muted">
                                                 <i class="bi bi-info-circle me-1"></i>
                                                 Copia y pega el enlace de tu ubicación desde Google Maps
                                             </div>
                                         </div>
-
+                                        <div class="mb-3">
+                                            <label for="metodoPago" class="form-label fw-semibold">Método de pago</label>
+                                            <select class="form-select" id="metodoPago" name="metodoPago" required>
+                                                <option value="1">Efectivo</option>
+                                                <option value="2">Tarjeta</option>
+                                            </select>
+                                        </div>
                                         <div class="mb-4">
                                             <label for="telefono" class="form-label fw-semibold">Teléfono de Contacto</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-                                                <input type="tel" class="form-control" id="telefono" required
-                                                       placeholder="Número de teléfono"
-                                                       pattern="[0-9]{9}" title="Ingresa un número de 9 dígitos">
+                                                <input type="tel" class="form-control" name="telefono" id="telefono" required placeholder="Número de teléfono" pattern="[0-9]{9}" title="Ingresa un número de 9 dígitos">
                                             </div>
                                         </div>
+                                        <div class="d-flex justify-content-between mt-4">
+                                            <button type="button" class="btn btn-outline-secondary px-4" onclick="window.history.back()">
+                                                <i class="bi bi-arrow-left me-2"></i> Cancelar
+                                            </button>
+                                            <button type="submit" class="btn btn-danger px-4">
+                                                Siguiente <i class="bi bi-arrow-right ms-2"></i>
+                                            </button>
+                                        </div>
                                     </form>
-
-                                    <!-- Botones de Navegación -->
-                                    <div class="d-flex justify-content-between mt-4">
-                                        <button type="button" class="btn btn-outline-secondary px-4" onclick="window.history.back()">
-                                            <i class="bi bi-arrow-left me-2"></i> Cancelar
-                                        </button>
-                                        <button type="button" class="btn btn-danger px-4" onclick="confirmarEnvio()">
-                                            Siguiente <i class="bi bi-arrow-right ms-2"></i>
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -114,83 +119,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/delivery-carrito.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Obtener los botones y modales
-            const registerBtn = document.querySelector('[data-bs-target="#modalRegistroCliente"]');
-            const loginBtn = document.querySelector('[data-bs-target="#loginModal"]');
-            const registerModal = document.getElementById('modalRegistroCliente');
-            const loginModal = document.getElementById('loginModal');
-
-            // Función para deshabilitar/habilitar botones
-            const toggleButtons = (disableRegister, disableLogin) => {
-                if (registerBtn) {
-                    registerBtn.disabled = disableRegister;
-                    registerBtn.style.pointerEvents = disableRegister ? 'none' : 'auto';
-                    registerBtn.style.opacity = disableRegister ? '0.5' : '1';
-                }
-                if (loginBtn) {
-                    loginBtn.disabled = disableLogin;
-                    loginBtn.style.pointerEvents = disableLogin ? 'none' : 'auto';
-                    loginBtn.style.opacity = disableLogin ? '0.5' : '1';
-                }
-            };
-
-            // Evento cuando se abre el modal de registro
-            registerModal.addEventListener('show.bs.modal', () => {
-                toggleButtons(false, true); // Deshabilitar login, mantener registro habilitado
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const tipoEnvio = urlParams.get('tipoEnvio');
+            const direccionTienda = "Av. Ejemplo 123, Ciudad";
+            const formaEnvioSelect = document.getElementById('formaEnvio');
+            const direccionDiv = document.getElementById('direccionDiv');
+            const direccionInput = document.getElementById('direccion');
+            // Mostrar resumen del carrito
+            const carrito = JSON.parse(localStorage.getItem('carrito') || '[]');
+            let resumenHtml = '';
+            let total = 0;
+            carrito.forEach(item => {
+                resumenHtml += `<div class="d-flex justify-content-between">
+            <span>${item.nombre} x${item.cantidad}</span>
+            <span>S/ ${(item.precio * item.cantidad).toFixed(2)}</span>
+        </div>`;
+                total += item.precio * item.cantidad;
             });
-
-            // Evento cuando se abre el modal de login
-            loginModal.addEventListener('show.bs.modal', () => {
-                toggleButtons(true, false); // Deshabilitar registro, mantener login habilitado
-            });
-
-            // Evento cuando se cierra cualquier modal
-            [registerModal, loginModal].forEach(modal => {
-                modal.addEventListener('hidden.bs.modal', () => {
-                    // Habilitar ambos botones cuando se cierra cualquier modal
-                    toggleButtons(false, false);
-
-                    // Limpiar el backdrop
-                    const backdrop = document.querySelector('.modal-backdrop');
-                    if (backdrop) {
-                        backdrop.remove();
-                    }
-
-                    // Restaurar estilos del body
-                    document.body.classList.remove('modal-open');
-                    document.body.style.overflow = '';
-                    document.body.style.paddingRight = '';
-                });
-            });
-
-            // Manejar la transición de login a registro
-            const registerLink = loginModal.querySelector('a[data-bs-target="#modalRegistroCliente"]');
-            if (registerLink) {
-                registerLink.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const loginModalInstance = bootstrap.Modal.getInstance(loginModal);
-                    if (loginModalInstance) {
-                        loginModalInstance.hide();
-                        setTimeout(() => {
-                            const registerModalInstance = new bootstrap.Modal(registerModal);
-                            registerModalInstance.show();
-                        }, 150);
-                    }
-                });
+            document.getElementById('resumen-pedido').innerHTML = resumenHtml;
+            document.getElementById('total-pedido').textContent = 'S/ ' + total.toFixed(2);
+            // Autocompletar dirección si es recojo
+            if (tipoEnvio === '2') {
+                document.getElementById('direccion').value = direccionTienda;
+                document.getElementById('direccion').readOnly = true;
             }
-
-            // Prevenir la propagación de eventos en el header cuando hay un modal abierto
-            const header = document.querySelector('header');
-            if (header) {
-                header.addEventListener('click', (e) => {
-                    if (document.querySelector('.modal.show')) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        return false;
-                    }
-                }, true);
+            // Mostrar/ocultar dirección según forma de envío
+            function actualizarDireccion() {
+                if (formaEnvioSelect.value === '2') {
+                    direccionDiv.style.display = 'none';
+                    direccionInput.value = direccionTienda;
+                    direccionInput.readOnly = true;
+                } else {
+                    direccionDiv.style.display = 'block';
+                    direccionInput.value = '';
+                    direccionInput.readOnly = false;
+                }
             }
+            formaEnvioSelect.addEventListener('change', actualizarDireccion);
+            actualizarDireccion(); // Inicial
+            // Guardar carrito en campo oculto antes de enviar
+            document.getElementById('formPedido').addEventListener('submit', function(e) {
+                document.getElementById('CarritoJson').value = JSON.stringify(carrito);
+            });
         });
     </script>
 

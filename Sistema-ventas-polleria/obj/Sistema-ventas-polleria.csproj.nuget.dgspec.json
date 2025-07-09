@@ -55,9 +55,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.Data.SqlClient": {
+            "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[4.8.6, )"
             }
           },
           "imports": [
@@ -273,13 +273,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
-              "version": "[4.9.0, )"
+              "version": "[4.8.6, )"
             }
           },
           "imports": [

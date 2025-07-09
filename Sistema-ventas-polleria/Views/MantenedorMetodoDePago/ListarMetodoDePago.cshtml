@@ -5,44 +5,47 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>ListarMetodoDePago</h1>
-
-<p>
-    @Html.ActionLink("Inserta", "InsertarMetodoDePago")
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.idMetodoPago)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.nombreMetodo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.estado)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.idMetodoPago)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombreMetodo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.estado)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "EditarMetodoDePago", new { idMetodoPago = item.idMetodoPago }) |
-                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
-                    @Html.ActionLink("Delete", "DeshabilitarMetodoDePago", new { idMetodoPago = item.idMetodoPago })
-            </td>
-        </tr>
+@functions {
+    string MostrarEstado(int estado)
+    {
+        return estado == 1
+            ? "<span class='badge bg-success'>Activo</span>"
+            : "<span class='badge bg-danger'>Inactivo</span>";
+    }
 }
-    </tbody>
-</table>
+
+<div class="bg-white shadow rounded p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 fw-bold">Métodos de Pago Registrados</h1>
+        <a class="btn btn-success" href="@Url.Action("InsertarMetodoDePago", "MantenedorMetodoDePago")" aria-label="Agregar nuevo método de pago">
+            <i class="fas fa-plus"></i> Nuevo Método de Pago
+        </a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.idMetodoPago)</th>
+                    <th>@Html.DisplayNameFor(model => model.nombreMetodo)</th>
+                    <th>@Html.DisplayNameFor(model => model.estado)</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.idMetodoPago</td>
+                        <td>@item.nombreMetodo</td>
+                        <td>@Html.Raw(MostrarEstado(item.estado))</td>
+                        <td class="text-center">
+                            @Html.ActionLink("Edit", "EditarMetodoDePago", new { idMetodoPago = item.idMetodoPago }) |
+                            @Html.ActionLink("Delete", "DeshabilitarMetodoDePago", new { idMetodoPago = item.idMetodoPago })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

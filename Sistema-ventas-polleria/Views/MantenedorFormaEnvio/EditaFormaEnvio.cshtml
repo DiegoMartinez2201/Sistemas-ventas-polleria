@@ -1,0 +1,42 @@
+﻿@model capa.entFormaEnvio
+
+@{
+    ViewData["Title"] = "Editar Forma de Envío";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="max-width: 500px; width: 100%;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-3 font-weight-bold">Editar Forma de Envío</h2>
+            <p class="text-center text-muted mb-4">Modifica los datos de la forma de envío seleccionada.</p>
+            <form asp-action="EditaFormaEnvio">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group mb-3">
+                    <label asp-for="idFormaEnvio" class="control-label"></label>
+                    <input asp-for="idFormaEnvio" class="form-control" readonly />
+                    <span asp-validation-for="idFormaEnvio" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="nombreForma" class="control-label"></label>
+                    <input asp-for="nombreForma" class="form-control" placeholder="Nombre de la Forma de Envío" />
+                    <span asp-validation-for="nombreForma" class="text-danger"></span>
+                </div>
+
+                <div class="form-group text-center">
+                    <input type="submit" value="Guardar Cambios" class="btn btn-primary btn-lg w-100" />
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a asp-action="ListarFormaEnvio" class="btn btn-link">Volver a la lista</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

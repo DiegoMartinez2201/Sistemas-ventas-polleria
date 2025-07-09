@@ -5,12 +5,51 @@ using System.Security.Claims;
 using capaDatos;
 using System.Data.SqlClient;
 using System.Data;
-
+using capa;
+using capaLogica;
 
 namespace Sistema_ventas_polleria.Controllers
 {
     public class CuentaController : Controller
-    {/*
+    {
+        [HttpGet]
+        public IActionResult Registrar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Registrar(
+            string tipoCliente, string dni, string nombreCli, string apellidoCli,
+            string ruc, string razonSocial, string correo, string contraseña,
+            string direccion, string telefono)
+        {
+            var usuario = new entUsuario
+            {
+                dni = tipoCliente == "persona" ? dni : null,
+                nombreCli = tipoCliente == "persona" ? nombreCli : null,
+                apellidoCli = tipoCliente == "persona" ? apellidoCli : null,
+                ruc = tipoCliente == "empresa" ? ruc : null,
+                razonSocial = tipoCliente == "empresa" ? razonSocial : null,
+                correo = correo,
+                contraseña = contraseña, // ¡En producción, hashea la contraseña!
+                direccion = direccion,
+                telefono = telefono,
+                idRol = 3, // Siempre cliente
+                estado = 1
+            };
+
+            var resultado = logUsuario.Instancia.InsertarUsuario(usuario);
+
+            if (resultado)
+                return RedirectToAction("Login", "Seguridad");
+            else
+            {
+                TempData["Error"] = "No se pudo registrar el usuario.";
+                return View();
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> Login(string correo, string contraseña)
         {
@@ -60,12 +99,11 @@ namespace Sistema_ventas_polleria.Controllers
             }
         }
 
-        [HttpPost]
+        [HttpGet]
         public async Task<IActionResult> Logout()
         {
-            await HttpContext.SignOutAsync();
-            return Json(new { success = true });
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Login", "Seguridad");
         }
-*/}
-
+    }
 }

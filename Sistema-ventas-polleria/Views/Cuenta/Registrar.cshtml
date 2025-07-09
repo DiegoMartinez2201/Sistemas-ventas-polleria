@@ -1,0 +1,76 @@
+@{
+    ViewData["Title"] = "Registro de Cliente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body p-5">
+                    <h2 class="text-center mb-4 fw-bold">Registro de Cliente</h2>
+                    <form asp-action="Registrar" method="post" autocomplete="off">
+                        <div class="mb-3">
+                            <label for="tipoCliente" class="form-label">Tipo de Cliente</label>
+                            <select class="form-select" id="tipoCliente" name="tipoCliente" onchange="mostrarFormulario()">
+                                <option value="persona">Persona Natural</option>
+                                <option value="empresa">Empresa</option>
+                            </select>
+                        </div>
+                        <div id="formPersona">
+                            <div class="mb-3">
+                                <label for="dni" class="form-label">DNI</label>
+                                <input type="text" class="form-control" id="dni" name="dni" maxlength="8" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombreCli" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombreCli" name="nombreCli" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellidoCli" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellidoCli" name="apellidoCli" />
+                            </div>
+                        </div>
+                        <div id="formEmpresa" style="display:none;">
+                            <div class="mb-3">
+                                <label for="ruc" class="form-label">RUC</label>
+                                <input type="text" class="form-control" id="ruc" name="ruc" maxlength="11" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="razonSocial" class="form-label">Razón Social</label>
+                                <input type="text" class="form-control" id="razonSocial" name="razonSocial" />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="contraseña" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" name="contraseña" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" name="telefono" maxlength="11" />
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button type="submit" class="btn btn-success btn-lg">Registrarse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        function mostrarFormulario() {
+            var tipo = document.getElementById("tipoCliente").value;
+            document.getElementById("formPersona").style.display = (tipo === "persona") ? "block" : "none";
+            document.getElementById("formEmpresa").style.display = (tipo === "empresa") ? "block" : "none";
+        }
+    </script>
+} 

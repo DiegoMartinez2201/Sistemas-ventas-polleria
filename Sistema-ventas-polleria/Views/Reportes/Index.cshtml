@@ -1,0 +1,220 @@
+@{
+    ViewData["Title"] = "Reportes de Seguridad";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fas fa-chart-bar"></i> Reportes de Seguridad y Auditoría
+                    </h3>
+                </div>
+                <div class="card-body">
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            @TempData["Error"]
+                        </div>
+                    }
+
+                    <div class="row">
+                        <div class="col-lg-3 col-6">
+                            <div class="small-box bg-info">
+                                <div class="inner">
+                                    <h3>150</h3>
+                                    <p>Logs Hoy</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-list-alt"></i>
+                                </div>
+                                <a href="@Url.Action("Logs", "Seguridad")" class="small-box-footer">
+                                    Ver Detalles <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="small-box bg-success">
+                                <div class="inner">
+                                    <h3>53</h3>
+                                    <p>Usuarios Activos</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <a href="@Url.Action("SesionesActivas")" class="small-box-footer">
+                                    Ver Detalles <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="small-box bg-warning">
+                                <div class="inner">
+                                    <h3>44</h3>
+                                    <p>Acciones Críticas</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <a href="@Url.Action("EstadisticasActividad")" class="small-box-footer">
+                                    Ver Detalles <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-6">
+                            <div class="small-box bg-danger">
+                                <div class="inner">
+                                    <h3>65</h3>
+                                    <p>Intentos Fallidos</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-ban"></i>
+                                </div>
+                                <a href="@Url.Action("ActividadUsuario", new { idUsuario = 0 })" class="small-box-footer">
+                                    Ver Detalles <i class="fas fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">
+                                        <i class="fas fa-chart-pie"></i> Actividad por Tipo
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="actividadChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">
+                                        <i class="fas fa-chart-line"></i> Actividad por Día
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="actividadDiariaChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">
+                                        <i class="fas fa-table"></i> Acciones Recientes
+                                    </h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Usuario</th>
+                                                    <th>Acción</th>
+                                                    <th>Tabla</th>
+                                                    <th>IP Address</th>
+                                                    <th>Fecha</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>admin@ejemplo.com</td>
+                                                    <td><span class="badge badge-success">INSERTAR</span></td>
+                                                    <td>Usuario</td>
+                                                    <td>192.168.1.100</td>
+                                                    <td>@DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>vendedor@ejemplo.com</td>
+                                                    <td><span class="badge badge-warning">EDITAR</span></td>
+                                                    <td>Producto</td>
+                                                    <td>192.168.1.101</td>
+                                                    <td>@DateTime.Now.AddMinutes(-5).ToString("dd/MM/yyyy HH:mm:ss")</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>cliente@ejemplo.com</td>
+                                                    <td><span class="badge badge-info">LOGIN</span></td>
+                                                    <td>Usuario</td>
+                                                    <td>192.168.1.102</td>
+                                                    <td>@DateTime.Now.AddMinutes(-10).ToString("dd/MM/yyyy HH:mm:ss")</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Gráfico de actividad por tipo
+        var ctx = document.getElementById('actividadChart').getContext('2d');
+        var actividadChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Login', 'Logout', 'Insertar', 'Editar', 'Eliminar'],
+                datasets: [{
+                    data: [30, 25, 20, 15, 10],
+                    backgroundColor: [
+                        '#28a745',
+                        '#6c757d',
+                        '#007bff',
+                        '#ffc107',
+                        '#dc3545'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Gráfico de actividad diaria
+        var ctx2 = document.getElementById('actividadDiariaChart').getContext('2d');
+        var actividadDiariaChart = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'],
+                datasets: [{
+                    label: 'Actividad',
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    borderColor: '#007bff',
+                    backgroundColor: 'rgba(0, 123, 255, 0.1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+} 

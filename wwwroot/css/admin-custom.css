@@ -1,0 +1,23 @@
+/* Estilos personalizados para el admin */
+.navbar-nav.flex-wrap {
+    flex-wrap: wrap !important;
+}
+@media (max-width: 991.98px) {
+    .navbar-nav.flex-wrap {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: 100%;
+    }
+    .navbar-collapse {
+        width: 100%;
+    }
+}
+@media (max-width: 575.98px) {
+    .navbar .dropdown-menu {
+        width: 100vw;
+        left: -16px;
+    }
+}
+.navbar-nav {
+    flex-wrap: wrap;
+} 

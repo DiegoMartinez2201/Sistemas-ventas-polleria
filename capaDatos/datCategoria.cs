@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using capa;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 using System.Data;
 
 namespace capaDatos

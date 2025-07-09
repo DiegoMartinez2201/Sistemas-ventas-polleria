@@ -1,0 +1,71 @@
+﻿@model IEnumerable<capa.entFormaEnvio>
+
+@{
+    ViewData["Title"] = "Formas de Envío";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@functions {
+    string MostrarEstado(int estado)
+    {
+        return estado == 1
+            ? "<span class='badge bg-success'>Activo</span>"
+            : "<span class='badge bg-danger'>Inactivo</span>";
+    }
+}
+
+<div class="bg-white shadow rounded p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 fw-bold mb-0">
+            <i class="fas fa-shipping-fast me-2"></i>Formas de Envío Registradas
+        </h1>
+        <a class="btn btn-success" href="@Url.Action("InsertarFormaEnvio", "MantenedorFormaEnvio")" aria-label="Agregar nueva forma de envío">
+            <i class="fas fa-plus"></i> Nueva Forma de Envío
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="text-center py-5">
+            <i class="fas fa-shipping-fast fa-3x text-muted mb-3"></i>
+            <h5 class="text-muted">No hay formas de envío registradas</h5>
+            <p class="text-muted">Comienza agregando una nueva forma de envío</p>
+            <a class="btn btn-primary" href="@Url.Action("InsertarFormaEnvio", "MantenedorFormaEnvio")">
+                <i class="fas fa-plus me-1"></i>Agregar Primera Forma de Envío
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-hover table-bordered align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="text-center">ID</th>
+                        <th>Nombre de la Forma de Envío</th>
+                        <th class="text-center">Estado</th>
+                        <th class="text-center">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center">@item.idFormaEnvio</td>
+                            <td><strong>@item.nombreForma</strong></td>
+                            <td class="text-center">@Html.Raw(MostrarEstado(item.estado))</td>
+                            <td class="text-center">
+                                <a class="btn btn-warning btn-sm me-1" href="@Url.Action("EditaFormaEnvio", "MantenedorFormaEnvio", new { idFormaEnvio = item.idFormaEnvio })" title="Editar Forma de Envío">
+                                    <i class="fas fa-edit"></i> Editar
+                                </a>
+                                <a class="btn btn-danger btn-sm" href="@Url.Action("DeshabilitaFormaEnvio", "MantenedorFormaEnvio", new { idFormaEnvio = item.idFormaEnvio })" title="Deshabilitar Forma de Envío">
+                                    <i class="fas fa-trash-alt"></i> Deshabilitar
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

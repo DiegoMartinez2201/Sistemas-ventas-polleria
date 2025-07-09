@@ -5,40 +5,36 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>EditarMarca</h1>
-
-<h4>entMarca</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="EditarMarca">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="idMarca" class="control-label"></label>
-                <input asp-for="idMarca" class="form-control" />
-                <span asp-validation-for="idMarca" class="text-danger"></span>
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="max-width: 500px; width: 100%;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-3 font-weight-bold">Editar Marca</h2>
+            <p class="text-center text-muted mb-4">Modifica los datos de la marca seleccionada.</p>
+            <form asp-action="EditarMarca">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group mb-3">
+                    <label asp-for="idMarca" class="control-label"></label>
+                    <input asp-for="idMarca" class="form-control" readonly />
+                    <span asp-validation-for="idMarca" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <label asp-for="nombreMarca" class="control-label"></label>
+                    <input asp-for="nombreMarca" class="form-control" placeholder="Nombre de la Marca" />
+                    <span asp-validation-for="nombreMarca" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Guardar Cambios" class="btn btn-primary btn-lg w-100" />
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a asp-action="ListarMarca" class="btn btn-link">Volver a la lista</a>
             </div>
-            <div class="form-group">
-                <label asp-for="nombreMarca" class="control-label"></label>
-                <input asp-for="nombreMarca" class="form-control" />
-                <span asp-validation-for="nombreMarca" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="estado" class="control-label"></label>
-                <input asp-for="estado" class="form-control" />
-                <span asp-validation-for="estado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    @Html.ActionLink("Volver", "ListarMarca")
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

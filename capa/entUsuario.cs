@@ -20,5 +20,11 @@ namespace capa
         public string telefono { get; set; }
         public int idRol { get; set; }
         public int estado { get; set; }
+        
+        // Campos de auditoría
+        public int? createdBy { get; set; }
+        public DateTime? createdAt { get; set; }
+        public int? updatedBy { get; set; }
+        public DateTime? updatedAt { get; set; }
     }
 }

@@ -11,6 +11,15 @@ namespace Sistema_ventas_polleria.Controllers
         {
             var lista = logComboProducto.Instancia.ListarComboProducto(idCombo);
             ViewBag.idCombo = idCombo; // Por si quieres usarlo en la vista (por ejemplo, para un botón de agregar)
+            
+            // Obtener información del combo
+            var combo = logCombo.Instancia.BuscarCombo(idCombo);
+            ViewBag.NombreCombo = combo?.nombreCombo ?? "Combo";
+            
+            // Obtener información de productos para mostrar nombres
+            var productos = logProducto.Instancia.ListarProducto();
+            ViewBag.Productos = productos.ToDictionary(p => p.idProducto, p => p.nombreProducto);
+            
             return View(lista);
         }
         [HttpGet]
@@ -97,5 +106,42 @@ namespace Sistema_ventas_polleria.Controllers
             }
         }
        
+        [HttpGet]
+        public ActionResult Delete(int idComboProducto)
+        {
+            entComboProducto c = logComboProducto.Instancia.BuscarComboProducto(idComboProducto);
+            if (c == null)
+            {
+                return NotFound();
+            }
+            return View(c);
+        }
+
+        [HttpPost]
+        public ActionResult DeleteConfirmed(int idComboProducto)
+        {
+            try
+            {
+                entComboProducto c = logComboProducto.Instancia.BuscarComboProducto(idComboProducto);
+                if (c == null)
+                {
+                    return NotFound();
+                }
+
+                Boolean elimina = logComboProducto.Instancia.EliminarComboProducto(idComboProducto);
+                if (elimina)
+                {
+                    return RedirectToAction("ListarComboProducto", new { idCombo = c.idCombo });
+                }
+                else
+                {
+                    return RedirectToAction("ListarComboProducto", new { idCombo = c.idCombo, error = "No se pudo eliminar el detalle" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("ListarComboProducto", new { error = ex.Message });
+            }
+        }
     }
 }

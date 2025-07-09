@@ -1,0 +1,78 @@
+@model capa.entComboProducto
+
+@{
+    ViewData["Title"] = "Eliminar Detalle Combo-Producto";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid bg-light py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-xl-4">
+            <!-- Header Card -->
+            <div class="card border-0 shadow-lg mb-4">
+                <div class="card-header bg-danger text-white text-center py-4">
+                    <h1 class="display-6 mb-2">
+                        <i class="fas fa-exclamation-triangle me-3"></i>Confirmar Eliminación
+                    </h1>
+                    <p class="lead mb-0">¿Está seguro de que desea eliminar este detalle?</p>
+                </div>
+            </div>
+
+            <!-- Confirmation Card -->
+            <div class="card border-0 shadow-lg">
+                <div class="card-body p-5">
+                    <div class="alert alert-warning" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <strong>Advertencia:</strong> Esta acción no se puede deshacer.
+                    </div>
+
+                    <div class="mb-4">
+                        <h5 class="text-primary mb-3">
+                            <i class="fas fa-info-circle me-2"></i>Detalles del registro a eliminar:
+                        </h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>ID Combo:</strong> @Model.idCombo</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>ID Producto:</strong> @Model.idProducto</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Cantidad:</strong> @Model.cantidad</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botones de Acción -->
+                    <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                        <a asp-action="ListarComboProducto" asp-route-idCombo="@Model.idCombo" class="btn btn-outline-secondary btn-lg px-4">
+                            <i class="fas fa-arrow-left me-2"></i>Cancelar
+                        </a>
+                        <form asp-action="DeleteConfirmed" method="post" style="display: inline;">
+                            <input type="hidden" name="idComboProducto" value="@Model.idComboProducto" />
+                            <button type="submit" class="btn btn-danger btn-lg px-4">
+                                <i class="fas fa-trash me-2"></i>Confirmar Eliminación
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Confirmación adicional antes de eliminar
+            $('form').on('submit', function(e) {
+                if (!confirm('¿Está completamente seguro de que desea eliminar este detalle? Esta acción no se puede deshacer.')) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+        });
+    </script>
+} 

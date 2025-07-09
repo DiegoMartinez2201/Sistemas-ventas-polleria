@@ -5,44 +5,47 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>ListarTamaño</h1>
-
-<p>
-    @Html.ActionLink("Inserta", "InsertarTamaño")
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.idTamaño)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.estado)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.idTamaño)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.estado)
-            </td>
-            <td>
-                    @Html.ActionLink("Edit", "EditarTamaño", new { idtamaño = item.idTamaño }) |
-                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
-                    @Html.ActionLink("Delete", "DeshabilitarTamaño", new { idTamaño = item.idTamaño })
-            </td>
-        </tr>
+@functions {
+    string MostrarEstado(int estado)
+    {
+        return estado == 1
+            ? "<span class='badge bg-success'>Activo</span>"
+            : "<span class='badge bg-danger'>Inactivo</span>";
+    }
 }
-    </tbody>
-</table>
+
+<div class="bg-white shadow rounded p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 fw-bold">Tamaños Registrados</h1>
+        <a class="btn btn-success" href="@Url.Action("InsertarTamaño", "MantenedorTamaño")" aria-label="Agregar nuevo tamaño">
+            <i class="fas fa-plus"></i> Nuevo Tamaño
+        </a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.idTamaño)</th>
+                    <th>@Html.DisplayNameFor(model => model.nombre)</th>
+                    <th>@Html.DisplayNameFor(model => model.estado)</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.idTamaño</td>
+                        <td>@item.nombre</td>
+                        <td>@Html.Raw(MostrarEstado(item.estado))</td>
+                        <td class="text-center">
+                            @Html.ActionLink("Edit", "EditarTamaño", new { idTamaño = item.idTamaño }) |
+                            @Html.ActionLink("Delete", "DeshabilitarTamaño", new { idTamaño = item.idTamaño })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

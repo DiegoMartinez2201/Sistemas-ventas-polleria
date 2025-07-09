@@ -1,12 +1,17 @@
 ﻿using capa;
 using capaLogica;
+using capaEntidad;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http;
 
 namespace Sistema_ventas_polleria.Controllers
 {
     public class MantenedorUsuario : Controller
     {
+        private logLogActividad objLogActividad = new logLogActividad();
+        private logSesionUsuario objLogSesion = new logSesionUsuario();
+
         public IActionResult ListarUsuario()
         {
             List<entUsuario> lista = logUsuario.Instancia.ListarUsuario();
@@ -29,6 +34,14 @@ namespace Sistema_ventas_polleria.Controllers
         {
             try
             {
+                // Verificar permisos
+                int? idUsuario = HttpContext.Session.GetInt32("IdUsuario");
+                if (!idUsuario.HasValue || !objLogSesion.VerificarPermiso(idUsuario.Value, "USUARIO_CREAR"))
+                {
+                    TempData["Error"] = "No tiene permisos para crear usuarios";
+                    return RedirectToAction("ListarUsuario");
+                }
+
                 // Recargar los roles en caso de error de validación
                 List<entRol> listaRoles = logRol.Instancia.ListarRol();
                 ViewBag.Roles = new SelectList(listaRoles, "idRol", "nombreRol");
@@ -36,6 +49,10 @@ namespace Sistema_ventas_polleria.Controllers
                 Boolean inserta = logUsuario.Instancia.InsertarUsuario(c);
                 if (inserta)
                 {
+                    // Registrar actividad
+                    objLogActividad.RegistrarActividadSimple(idUsuario.Value, "INSERTAR", "Usuario", c.idUsuario, HttpContext.Connection.RemoteIpAddress?.ToString());
+                    
+                    TempData["Mensaje"] = "Usuario insertado correctamente";
                     return RedirectToAction("ListarUsuario");
                 }
                 else
@@ -69,6 +86,14 @@ namespace Sistema_ventas_polleria.Controllers
         {
             try
             {
+                // Verificar permisos
+                int? idUsuario = HttpContext.Session.GetInt32("IdUsuario");
+                if (!idUsuario.HasValue || !objLogSesion.VerificarPermiso(idUsuario.Value, "USUARIO_EDITAR"))
+                {
+                    TempData["Error"] = "No tiene permisos para editar usuarios";
+                    return RedirectToAction("ListarUsuario");
+                }
+
                 // Recargar los roles en caso de error de validación
                 List<entRol> listaRoles = logRol.Instancia.ListarRol();
                 ViewBag.Roles = new SelectList(listaRoles, "idRol", "nombreRol");
@@ -76,6 +101,10 @@ namespace Sistema_ventas_polleria.Controllers
                 Boolean edita = logUsuario.Instancia.EditaUsuario(c);
                 if (edita)
                 {
+                    // Registrar actividad
+                    objLogActividad.RegistrarActividadSimple(idUsuario.Value, "EDITAR", "Usuario", c.idUsuario, HttpContext.Connection.RemoteIpAddress?.ToString());
+                    
+                    TempData["Mensaje"] = "Usuario editado correctamente";
                     return RedirectToAction("ListarUsuario");
                 }
                 else
@@ -103,10 +132,22 @@ namespace Sistema_ventas_polleria.Controllers
         {
             try
             {
+                // Verificar permisos
+                int? idUsuarioSesion = HttpContext.Session.GetInt32("IdUsuario");
+                if (!idUsuarioSesion.HasValue || !objLogSesion.VerificarPermiso(idUsuarioSesion.Value, "USUARIO_ELIMINAR"))
+                {
+                    TempData["Error"] = "No tiene permisos para deshabilitar usuarios";
+                    return RedirectToAction("ListarUsuario");
+                }
+
                 entUsuario c = new entUsuario { idUsuario = idUsuario };
                 bool resultado = logUsuario.Instancia.DeshabilitarUsuario(c);
                 if (resultado)
                 {
+                    // Registrar actividad
+                    objLogActividad.RegistrarActividadSimple(idUsuarioSesion.Value, "DESHABILITAR", "Usuario", idUsuario, HttpContext.Connection.RemoteIpAddress?.ToString());
+                    
+                    TempData["Mensaje"] = "Usuario deshabilitado correctamente";
                     return RedirectToAction("ListarUsuario");
                 }
                 else

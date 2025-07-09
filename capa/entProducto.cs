@@ -17,5 +17,6 @@ namespace capa
         public int stock { get; set; }
         public int estado { get; set; } 
         public string descripcionP { get; set; }
+        public string imagen { get; set; }
     }
 }

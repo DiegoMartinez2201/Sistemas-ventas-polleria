@@ -63,6 +63,10 @@ namespace capaLogica
             }
             catch (Exception e) { throw e; }
         }
+        public List<entProducto> ListarProductoPorCategoria(int idCategoria)
+        {
+            return datProducto.Instancia.ListarProductoPorCategoria(idCategoria);
+        }
         #endregion metodos
     }
 }

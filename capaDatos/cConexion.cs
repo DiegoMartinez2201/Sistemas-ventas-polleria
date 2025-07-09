@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.Data.SqlClient;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +23,7 @@ namespace capaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=DESKTOP-HNG11PV\\SQLEXPRESS;initial Catalog=DB_Polleria;" + "Integrated Security=true; Encrypt=False;";
+            cn.ConnectionString = "Data Source=DESKTOP-HNG11PV\\SQLEXPRESS;initial Catalog=DB_PolleriaAdv;" + "Integrated Security=true; Encrypt=False;";
             return cn;
         }
         #endregion metodos

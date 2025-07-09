@@ -1,0 +1,41 @@
+﻿@model capa.entEstado
+
+@{
+    ViewData["Title"] = "Insertar Estado";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h3 class="mb-4 text-center">Nuevo Estado</h3>
+                    <form asp-action="InsertarEstado" autocomplete="off">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                        <!-- Si idEstado es autoincremental, elimina este bloque -->
+                        
+                        <div class="mb-3">
+                            <label asp-for="nombreEstado" class="form-label"></label>
+                            <input asp-for="nombreEstado" class="form-control" />
+                            <span asp-validation-for="nombreEstado" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="ListarEstado" class="btn btn-outline-secondary">
+                                <i class="fas fa-arrow-left"></i> Volver
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Guardar Estado
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,90 @@
+@model System.Data.DataTable
+@{
+    ViewData["Title"] = "Gestión de Permisos";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Gestión de Permisos</h3>
+                    <div class="card-tools">
+                        <a href="@Url.Action("Insertar")" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Nuevo Permiso
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @if (TempData["Mensaje"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            @TempData["Mensaje"]
+                        </div>
+                    }
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            @TempData["Error"]
+                        </div>
+                    }
+
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre del Permiso</th>
+                                <th>Descripción</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Rows.Count > 0)
+                            {
+                                foreach (System.Data.DataRow row in Model.Rows)
+                                {
+                                    <tr>
+                                        <td>@row["idPermiso"]</td>
+                                        <td>@row["nombrePermiso"]</td>
+                                        <td>@row["descripcion"]</td>
+                                        <td>
+                                            @if (Convert.ToInt32(row["estado"]) == 1)
+                                            {
+                                                <span class="badge badge-success">Activo</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-danger">Inactivo</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("Editar", new { id = row["idPermiso"] })" class="btn btn-sm btn-info">
+                                                <i class="fas fa-edit"></i> Editar
+                                            </a>
+                                            @if (Convert.ToInt32(row["estado"]) == 1)
+                                            {
+                                                <a href="@Url.Action("Deshabilitar", new { id = row["idPermiso"] })" class="btn btn-sm btn-warning">
+                                                    <i class="fas fa-ban"></i> Deshabilitar
+                                                </a>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="5" class="text-center">No hay permisos registrados</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

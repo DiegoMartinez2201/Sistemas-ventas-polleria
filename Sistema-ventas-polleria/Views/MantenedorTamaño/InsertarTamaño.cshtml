@@ -5,32 +5,33 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>InsertarTamaño</h1>
-
-<h4>entTamaño</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="InsertarTamaño">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-           
-            <div class="form-group">
-                <label asp-for="nombre" class="control-label"></label>
-                <input asp-for="nombre" class="form-control" />
-                <span asp-validation-for="nombre" class="text-danger"></span>
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="max-width: 500px; width: 100%;">
+        <div class="card-body">
+            <h2 class="card-title text-center mb-3 font-weight-bold">Registrar Nuevo Tamaño</h2>
+            <p class="text-center text-muted mb-4">Completa los datos para agregar un nuevo tamaño al sistema.</p>
+            <form asp-action="InsertarTamaño" autocomplete="off">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group mb-3">
+                    <label asp-for="nombre" class="control-label"></label>
+                    <input asp-for="nombre" class="form-control" placeholder="Nombre del Tamaño" />
+                    <span asp-validation-for="nombre" class="text-danger"></span>
+                </div>
+                <!-- Estado por defecto a 1 (Activo) -->
+                <input type="hidden" asp-for="estado" value="1" />
+                <div class="form-group text-center">
+                    <input type="submit" value="Registrar" class="btn btn-primary btn-lg w-100" />
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <a asp-action="ListarTamaño" class="btn btn-link">Volver a la lista</a>
             </div>
-           
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
-<div>
-    @Html.ActionLink("Volver", "ListarTamaño")
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,0 +1,190 @@
+@model System.Data.DataTable
+@{
+    ViewData["Title"] = "Logs de Actividad";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <i class="fas fa-list-alt"></i> Logs de Actividad
+                    </h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-warning" onclick="limpiarLogs()">
+                            <i class="fas fa-trash"></i> Limpiar Logs Antiguos
+                        </button>
+                        <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Volver
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <label for="fechaInicio">Fecha Inicio:</label>
+                            <input type="date" id="fechaInicio" class="form-control" value="@DateTime.Now.AddDays(-7).ToString("yyyy-MM-dd")" />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="fechaFin">Fecha Fin:</label>
+                            <input type="date" id="fechaFin" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        </div>
+                        <div class="col-md-3">
+                            <label>&nbsp;</label>
+                            <button type="button" class="btn btn-primary btn-block" onclick="filtrarLogs()">
+                                <i class="fas fa-search"></i> Filtrar
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <label>&nbsp;</label>
+                            <button type="button" class="btn btn-info btn-block" onclick="exportarLogs()">
+                                <i class="fas fa-download"></i> Exportar
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped" id="logsTable">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Usuario</th>
+                                    <th>Acción</th>
+                                    <th>Tabla</th>
+                                    <th>ID Registro</th>
+                                    <th>IP Address</th>
+                                    <th>Fecha</th>
+                                    <th>Detalles</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model != null && Model.Rows.Count > 0)
+                                {
+                                    foreach (System.Data.DataRow row in Model.Rows)
+                                    {
+                                        <tr>
+                                            <td>@row["idLog"]</td>
+                                            <td>@row["nombreUsuario"]</td>
+                                            <td>
+                                                @{
+                                                    var accion = row["accion"].ToString();
+                                                    var badgeClass = accion switch
+                                                    {
+                                                        "INSERTAR" => "badge-success",
+                                                        "EDITAR" => "badge-warning",
+                                                        "ELIMINAR" => "badge-danger",
+                                                        "DESHABILITAR" => "badge-danger",
+                                                        "LOGIN" => "badge-info",
+                                                        "LOGOUT" => "badge-secondary",
+                                                        _ => "badge-primary"
+                                                    };
+                                                }
+                                                <span class="badge @badgeClass">@accion</span>
+                                            </td>
+                                            <td>@row["tabla"]</td>
+                                            <td>@row["idRegistro"]</td>
+                                            <td>@row["ipAddress"]</td>
+                                            <td>@Convert.ToDateTime(row["fecha"]).ToString("dd/MM/yyyy HH:mm:ss")</td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm btn-outline-info" onclick="verDetalles(@row["idLog"])">
+                                                    <i class="fas fa-eye"></i> Ver
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="8" class="text-center">No hay logs para mostrar</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para detalles -->
+<div class="modal fade" id="detallesModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalles del Log</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="detallesContent">
+                <!-- Contenido dinámico -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function filtrarLogs() {
+            const fechaInicio = document.getElementById('fechaInicio').value;
+            const fechaFin = document.getElementById('fechaFin').value;
+            
+            window.location.href = '@Url.Action("Logs")?fechaInicio=' + fechaInicio + '&fechaFin=' + fechaFin;
+        }
+
+        function limpiarLogs() {
+            if (confirm('¿Está seguro que desea limpiar los logs antiguos? Esta acción no se puede deshacer.')) {
+                const diasRetener = prompt('Ingrese el número de días a retener (por defecto 90):', '90');
+                
+                $.post('@Url.Action("LimpiarLogs")', { diasRetener: diasRetener })
+                    .done(function(response) {
+                        if (response.success) {
+                            alert('Logs limpiados correctamente');
+                            location.reload();
+                        } else {
+                            alert('Error: ' + response.message);
+                        }
+                    })
+                    .fail(function() {
+                        alert('Error al limpiar logs');
+                    });
+            }
+        }
+
+        function exportarLogs() {
+            const fechaInicio = document.getElementById('fechaInicio').value;
+            const fechaFin = document.getElementById('fechaFin').value;
+            
+            window.open('@Url.Action("ExportarLogs")?fechaInicio=' + fechaInicio + '&fechaFin=' + fechaFin, '_blank');
+        }
+
+        function verDetalles(idLog) {
+            // Aquí puedes implementar la lógica para mostrar los detalles del log
+            $('#detallesContent').html('<p>Cargando detalles...</p>');
+            $('#detallesModal').modal('show');
+            
+            // Ejemplo de carga de detalles
+            setTimeout(function() {
+                $('#detallesContent').html(`
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Datos Anteriores:</h6>
+                            <pre class="bg-light p-2">JSON de datos anteriores</pre>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Datos Nuevos:</h6>
+                            <pre class="bg-light p-2">JSON de datos nuevos</pre>
+                        </div>
+                    </div>
+                `);
+            }, 500);
+        }
+    </script>
+} 

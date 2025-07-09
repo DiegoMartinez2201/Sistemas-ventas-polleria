@@ -1,311 +1,75 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Sistema_ventas_polleria.Models.CartaPedidoViewModel
 @{
     ViewData["Title"] = "Carta";
     Layout = "~/Views/Shared/_LayoutCarta.cshtml";
 }
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Barista Cafe HTML CSS Template</title>
-
-</head>
-
-<body>
-
-    <main>
-        <section class="menu-section section-padding" id="pollos">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 col-lg-10">
-                        <div class="menu-block-wrap">
-                            <div class="text-center mb-4 pb-lg-2">
-                                <em class="text-white">Delicioso Pollo</em>
-                                <h4 class="text-white">Pollos a la braza</h4>
-                            </div>
-                            <!-- Seccion-->
-                            <div class="container my-4">
-                                <div class="row g-4">
-
-                                    <!-- Productos -->
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/unpollochicha.webp" class="card-img-top" alt="Pollo Entero a la braza">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Pollo Entero a la braza</h5>
-                                                <p class="card-text">
-                                                    Exquisito Pollo grande a la brasa horneado al carbón + doraditas y abundantes papas fritas + mix de ensalada  fresca + cremas de la casa
-                                                </p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Pollo Entero a la braza', 69.90, '/img/unpollochicha.webp')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Agrega más productos duplicando el bloque de arriba y cambiando datos -->
-
-                                </div>
-                            </div>
+<main>
+    <section class="menu-section section-padding" id="carta-productos">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="menu-block-wrap">
+                        <div class="text-center mb-4 pb-lg-2">
+                            <em class="text-white">Elige tus productos</em>
+                            <h4 class="text-white">Carta</h4>
                         </div>
+                        @foreach (var categoria in Model.Categorias)
+                        {
+                            <h5 class="text-white mt-4">@categoria.nombreCategoria</h5>
+                            <div class="row g-4">
+                                @foreach (var producto in Model.Productos.Where(p => p.idCategoria == categoria.idCategoria))
+                                {
+                                    <div class="col-md-4">
+                                        <div class="card h-100">
+                                            <img src="@(string.IsNullOrEmpty(producto.imagen) ? "/img/product-image.jpg" : producto.imagen)" class="card-img-top" alt="@producto.nombreProducto">
+                                            <div class="card-body">
+                                                <h5 class="card-title">@producto.nombreProducto</h5>
+                                                <p class="card-text">@producto.descripcionP</p>
+                                                <p class="text-danger fw-bold">S/ @producto.precioVenta.ToString("0.00")</p>
+                                                <button type="button" class="btn btn-danger w-100" onclick="agregarAlCarrito('@producto.nombreProducto', @producto.precioVenta, '@(string.IsNullOrEmpty(producto.imagen) ? "/img/product-image.jpg" : producto.imagen)', @producto.idProducto)">Agregar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
+                        <!-- NUEVO: Sección de combos -->
+                        @if (Model.Combos != null && Model.Combos.Count > 0)
+                        {
+                            <h4 class="text-white mt-5">Combos Especiales</h4>
+                            <div class="row g-4">
+                                @foreach (var combo in Model.Combos)
+                                {
+                                    <div class="col-md-4">
+                                        <div class="card h-100 border-warning">
+                                            <div class="card-header bg-warning text-dark fw-bold">Combo</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">@combo.nombreCombo</h5>
+                                                <p class="card-text">@combo.descripcion</p>
+                                                <!-- Mostrar productos del combo -->
+                                                @if (Model.ComboProductos.ContainsKey(combo.idCombo) && Model.ComboProductos[combo.idCombo].Count > 0)
+                                                {
+                                                    <ul class="list-group list-group-flush mb-2">
+                                                        @foreach (var cp in Model.ComboProductos[combo.idCombo])
+                                                        {
+                                                            var prod = Model.Productos.FirstOrDefault(p => p.idProducto == cp.idProducto);
+                                                            <li class="list-group-item small">
+                                                                <span class="fw-bold">@cp.cantidad x</span> @prod?.nombreProducto
+                                                            </li>
+                                                        }
+                                                    </ul>
+                                                }
+                                                <p class="text-danger fw-bold">S/ @combo.precioVenta.ToString("0.00")</p>
+                                                <button type="button" class="btn btn-warning w-100" onclick="agregarAlCarrito('@combo.nombreCombo', @combo.precioVenta, '/img/product-image.jpg', null)">Agregar Combo</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        }
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="menu-section section-padding" id="bebidas">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 col-lg-10">
-                        <div class="menu-block-wrap">
-                            <div class="text-center mb-4 pb-lg-2">
-                                <em class="text-white">Refrescantes Bebidas</em>
-                                <h4 class="text-white">Bebidas</h4>
-                            </div>
-
-
-                            <!-- Seccion-->
-                            <div class="container my-4">
-                                <div class="row g-4">
-
-                                    <!-- Productos -->
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Agrega más productos duplicando el bloque de arriba y cambiando datos -->
-
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-
-
-
-
-                </div>
-            </div>
-        </section>
-
-        <section class="menu-section section-padding" id="personalizado">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 col-lg-10">
-                        <div class="menu-block-wrap">
-                            <div class="text-center mb-4 pb-lg-2">
-                                <em class="text-white">Personaliza tu Pedido</em>
-                                <h4 class="text-white">Personalizado</h4>
-                            </div>
-
-
-                            <!-- Seccion-->
-                            <div class="container my-4">
-                                <div class="row g-4">
-
-                                    <!-- Productos -->
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card h-100">
-                                            <img src="~/img/mediopollodosgaseosaysalsas.png" class="card-img-top" alt="Duo Papá">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Duo Papá</h5>
-                                                <p class="card-text">1/2 pollo, 2 guarniciones, 2 gaseosas</p>
-                                                <p class="text-danger fw-bold">S/ 35.90 <span class="text-muted text-decoration-line-through">S/ 69.90</span></p>
-                                                <button class="btn btn-danger w-100" onclick="agregarAlCarrito('Duo Papá', 35.90, '/img/mediopollodosgaseosaysalsas.png')">Agregar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Agrega más productos duplicando el bloque de arriba y cambiando datos -->
-
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-
-
-
-
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section section-padding" id="section_5">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12">
-                        <em class="text-white">Say Hello</em>
-                        <h2 class="text-white mb-4 pb-lg-2">Contact</h2>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <form action="#" method="post" class="custom-form contact-form" role="form">
-
-                            <div class="row">
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="name" class="form-label">Name <sup class="text-danger">*</sup></label>
-
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Jackson" required="">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="email" class="form-label">Email Address</label>
-
-                                    <input type="email" name="email" id="email" pattern="" class="form-control" placeholder="Jack@gmail.com" required="">
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="message" class="form-label">How can we help?</label>
-
-                                    <textarea name="message" rows="4" class="form-control" id="message" placeholder="Message" required=""></textarea>
-
-                                </div>
-                            </div>
-
-                            <div class="col-lg-5 col-12 mx-auto mt-3">
-                                <button type="submit" class="form-control">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="col-lg-6 col-12 mx-auto mt-5 mt-lg-0 ps-lg-5">
-                        <iframe class="google-map"
-                                src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d498.2017824319147!2d-79.43797004340216!3d-7.70138110536985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-8.0883791!2d-79.007373!4m5!1s0x9052abb26a5d135f%3A0x87f5a1a25f93b253!2sPuerto%20Malabrigo!3m2!1d-7.7013485!2d-79.4379893!5e1!3m2!1ses!2spe!4v1748989457537!5m2!1ses!2spe"
-                                width="250"
-                                height="150"
-                                style="border:0;"
-                                allowfullscreen
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    </main>
-</body>
-</html>
+        </div>
+    </section>
+</main>

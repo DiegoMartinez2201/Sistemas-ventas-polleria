@@ -56,6 +56,15 @@ namespace capaLogica
             catch (Exception) { throw; }
         }
         
+        public Boolean EliminarComboProducto(int idComboProducto)
+        {
+            try
+            {
+                return datComboProducto.Instancia.EliminarComboProducto(idComboProducto);
+            }
+            catch (Exception) { throw; }
+        }
+        
         #endregion metodos
     }
 }

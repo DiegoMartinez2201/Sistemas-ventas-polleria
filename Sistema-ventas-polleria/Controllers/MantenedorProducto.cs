@@ -2,6 +2,8 @@
 using capaLogica;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace Sistema_ventas_polleria.Controllers
 {
@@ -29,43 +31,34 @@ namespace Sistema_ventas_polleria.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult InsertarProducto(entProducto c)
+        public ActionResult InsertarProducto(entProducto c, IFormFile ImagenFile)
         {
-            try
+            // Recargar los roles en caso de error de validación
+            List<entCategoria> listaCategorias = logCategoria.Instancia.ListarCategoria();
+            List<entMarca> listaMarcas = logMarca.Instancia.ListarMarca();
+            List<entTamaño> listaTamaños = logTamaño.Instancia.ListarTamaño();
+            ViewBag.Categorias = new SelectList(listaCategorias, "idCategoria", "nombreCategoria");
+            ViewBag.Marcas = new SelectList(listaMarcas, "idMarca", "nombreMarca");
+            ViewBag.Tamaños = new SelectList(listaTamaños, "idTamaño", "nombre");
+
+            if (ImagenFile != null && ImagenFile.Length > 0)
             {
-                // Recargar los roles en caso de error de validación
-                List<entCategoria> listaCategorias = logCategoria.Instancia.ListarCategoria();
-                List<entMarca> listaMarcas = logMarca.Instancia.ListarMarca();
-                List<entTamaño> listaTamaños = logTamaño.Instancia.ListarTamaño();
-
-                // Crear SelectList para el dropdown de Categorias, Marcas y Tamaños
-                ViewBag.Categorias = new SelectList(listaCategorias, "idCategoria", "nombreCategoria");
-                ViewBag.Marcas = new SelectList(listaMarcas, "idMarca", "nombreMarca");
-                ViewBag.Tamaños = new SelectList(listaTamaños, "idTamaño", "nombre");
-
-                Boolean inserta = logProducto.Instancia.InsertarProducto(c);
-                if (inserta)
+                var fileName = Path.GetFileName(ImagenFile.FileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", fileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    return RedirectToAction("ListarProducto");
+                    ImagenFile.CopyTo(stream);
                 }
-                else
-                {
-                    return View(c);
-                }
+                c.imagen = "/img/" + fileName;
             }
-            catch (ApplicationException ex)
+            Boolean inserta = logProducto.Instancia.InsertarProducto(c);
+            if (inserta)
             {
-                // Recargar los roles en caso de excepción
-                List<entCategoria> listaCategorias = logCategoria.Instancia.ListarCategoria();
-                List<entMarca> listaMarcas = logMarca.Instancia.ListarMarca();
-                List<entTamaño> listaTamaños = logTamaño.Instancia.ListarTamaño();
-
-                // Crear SelectList para el dropdown de Categorias, Marcas y Tamaños
-                ViewBag.Categorias = new SelectList(listaCategorias, "idCategoria", "nombreCategoria");
-                ViewBag.Marcas = new SelectList(listaMarcas, "idMarca", "nombreMarca");
-                ViewBag.Tamaños = new SelectList(listaTamaños, "idTamaño", "nombre");
-
-                return RedirectToAction("InsertarProducto", new { msjExceptio = ex.Message });
+                return RedirectToAction("ListarProducto");
+            }
+            else
+            {
+                return View(c);
             }
         }
         [HttpGet]
@@ -87,43 +80,33 @@ namespace Sistema_ventas_polleria.Controllers
             return View(c);
         }
         [HttpPost]
-        public ActionResult EditaProducto(entProducto c)
+        public ActionResult EditaProducto(entProducto c, IFormFile ImagenFile)
         {
-            try
+            List<entCategoria> listaCategorias = logCategoria.Instancia.ListarCategoria();
+            List<entMarca> listaMarcas = logMarca.Instancia.ListarMarca();
+            List<entTamaño> listaTamaños = logTamaño.Instancia.ListarTamaño();
+            ViewBag.Categorias = new SelectList(listaCategorias, "idCategoria", "nombreCategoria");
+            ViewBag.Marcas = new SelectList(listaMarcas, "idMarca", "nombreMarca");
+            ViewBag.Tamaños = new SelectList(listaTamaños, "idTamaño", "nombre");
+
+            if (ImagenFile != null && ImagenFile.Length > 0)
             {
-                // Recargar los roles en caso de error de validación
-                List<entCategoria> listaCategorias = logCategoria.Instancia.ListarCategoria();
-                List<entMarca> listaMarcas = logMarca.Instancia.ListarMarca();
-                List<entTamaño> listaTamaños = logTamaño.Instancia.ListarTamaño();
-
-                // Crear SelectList para el dropdown de Categorias, Marcas y Tamaños
-                ViewBag.Categorias = new SelectList(listaCategorias, "idCategoria", "nombreCategoria");
-                ViewBag.Marcas = new SelectList(listaMarcas, "idMarca", "nombreMarca");
-                ViewBag.Tamaños = new SelectList(listaTamaños, "idTamaño", "nombre");
-
-                Boolean edita = logProducto.Instancia.EditaProducto(c);
-                if (edita)
+                var fileName = Path.GetFileName(ImagenFile.FileName);
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img", fileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    return RedirectToAction("ListarProducto");
+                    ImagenFile.CopyTo(stream);
                 }
-                else
-                {
-                    return View(c);
-                }
+                c.imagen = "/img/" + fileName;
             }
-            catch (ApplicationException ex)
+            Boolean edita = logProducto.Instancia.EditaProducto(c);
+            if (edita)
             {
-                // Recargar los roles en caso de excepción
-                List<entCategoria> listaCategorias = logCategoria.Instancia.ListarCategoria();
-                List<entMarca> listaMarcas = logMarca.Instancia.ListarMarca();
-                List<entTamaño> listaTamaños = logTamaño.Instancia.ListarTamaño();
-
-                // Crear SelectList para el dropdown de Categorias, Marcas y Tamaños
-                ViewBag.Categorias = new SelectList(listaCategorias, "idCategoria", "nombreCategoria");
-                ViewBag.Marcas = new SelectList(listaMarcas, "idMarca", "nombreMarca");
-                ViewBag.Tamaños = new SelectList(listaTamaños, "idTamaño", "nombre");
-
-                return RedirectToAction("EditaProducto", new { msjExceptio = ex.Message });
+                return RedirectToAction("ListarProducto");
+            }
+            else
+            {
+                return View(c);
             }
         }
         [HttpGet]
