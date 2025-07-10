@@ -137,6 +137,30 @@ namespace capaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
+        public List<entTamaño> ListarTodosTamaños()
+        {
+            SqlCommand cmd = null;
+            List<entTamaño> lista = new List<entTamaño>();
+            try
+            {
+                SqlConnection cn = cConexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarTodosTamaños", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entTamaño c = new entTamaño();
+                    c.idTamaño = Convert.ToInt32(dr["idTamaño"]);
+                    c.nombre = Convert.ToString(dr["nombre"]);
+                    c.estado = Convert.ToInt32(dr["estado"]);
+                    lista.Add(c);
+                }
+            }
+            catch (Exception) { throw; }
+            finally { cmd.Connection.Close(); }
+            return lista;
+        }
         #endregion metodos
     }
 } 

@@ -63,6 +63,10 @@ namespace capaLogica
             }
             catch (Exception e) { throw e; }
         }
+        public List<entRol> ListarTodosRoles()
+        {
+            return datRol.Instancia.ListarTodosRoles();
+        }
         #endregion metodos
     }
 }

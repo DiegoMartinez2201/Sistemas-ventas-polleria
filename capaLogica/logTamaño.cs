@@ -63,6 +63,10 @@ namespace capaLogica
             }
             catch (Exception) { throw; }
         }
+        public List<entTamaño> ListarTodosTamaños()
+        {
+            return datTamaño.Instancia.ListarTodosTamaños();
+        }
         #endregion metodos
     }
 }

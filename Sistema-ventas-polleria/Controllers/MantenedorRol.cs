@@ -91,5 +91,11 @@ namespace Sistema_ventas_polleria.Controllers
                 return View("Error", new { message = ex.Message });
             }
         }
+        public IActionResult ListarTodosRoles()
+        {
+            List<entRol> lista = logRol.Instancia.ListarTodosRoles();
+            ViewBag.lista = lista;
+            return View(lista);
+        }
     }
 }

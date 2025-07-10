@@ -120,7 +120,7 @@ namespace capaDatos
             try
             {
                 SqlConnection cn = cConexion.Instancia.Conectar();
-                cmd = new SqlCommand("DeshabilitarMarca", cn);
+                cmd = new SqlCommand("spDeshabilitarMarca", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idMarca", c.idMarca);
                 cn.Open();
@@ -136,6 +136,30 @@ namespace capaDatos
             }
             finally { cmd.Connection.Close(); }
             return delete;
+        }
+        public List<entMarca> ListarTodasMarcas()
+        {
+            SqlCommand cmd = null;
+            List<entMarca> lista = new List<entMarca>();
+            try
+            {
+                SqlConnection cn = cConexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarTodasMarcas", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entMarca c = new entMarca();
+                    c.idMarca = Convert.ToInt32(dr["idMarca"]);
+                    c.nombreMarca = Convert.ToString(dr["nombreMarca"]);
+                    c.estado = Convert.ToInt32(dr["estado"]);
+                    lista.Add(c);
+                }
+            }
+            catch (Exception) { throw; }
+            finally { cmd.Connection.Close(); }
+            return lista;
         }
         #endregion metodos
     }

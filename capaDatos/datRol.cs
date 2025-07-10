@@ -156,6 +156,30 @@ namespace capaDatos
             return delete;
 
         }
+        public List<entRol> ListarTodosRoles()
+        {
+            SqlCommand cmd = null;
+            List<entRol> lista = new List<entRol>();
+            try
+            {
+                SqlConnection cn = cConexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarTodosRoles", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entRol c = new entRol();
+                    c.idRol = Convert.ToInt32(dr["idRol"]);
+                    c.nombreRol = Convert.ToString(dr["nombreRol"]);
+                    c.estado = Convert.ToInt32(dr["estado"]);
+                    lista.Add(c);
+                }
+            }
+            catch (Exception) { throw; }
+            finally { cmd.Connection.Close(); }
+            return lista;
+        }
         #endregion metodos
     }
 }

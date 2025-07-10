@@ -88,7 +88,7 @@ namespace capaDatos
             try
             {
                 SqlConnection cn = cConexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditaCategoria", cn);
+                cmd = new SqlCommand("spEditarCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idCategoria", c.idCategoria);
                 cmd.Parameters.AddWithValue("@nombreCategoria", c.nombreCategoria);
@@ -147,6 +147,30 @@ namespace capaDatos
             }
             finally { cmd.Connection.Close (); }
             return delete;
+        }
+        public List<entCategoria> ListarTodasCategorias()
+        {
+            SqlCommand cmd = null;
+            List<entCategoria> lista = new List<entCategoria>();
+            try
+            {
+                SqlConnection cn = cConexion.Instancia.Conectar();
+                cmd = new SqlCommand("spListarTodasCategorias", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entCategoria c = new entCategoria();
+                    c.idCategoria = Convert.ToInt32(dr["idCategoria"]);
+                    c.nombreCategoria = Convert.ToString(dr["nombreCategoria"]);
+                    c.estado = Convert.ToInt32(dr["estado"]);
+                    lista.Add(c);
+                }
+            }
+            catch (Exception) { throw; }
+            finally { cmd.Connection.Close(); }
+            return lista;
         }
         #endregion metodos
     }

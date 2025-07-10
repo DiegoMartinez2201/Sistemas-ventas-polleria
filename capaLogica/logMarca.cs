@@ -63,6 +63,10 @@ namespace capaLogica
             }
             catch (Exception) { throw; }
         }
+        public List<entMarca> ListarTodasMarcas()
+        {
+            return datMarca.Instancia.ListarTodasMarcas();
+        }
         #endregion metodos
     }
 }

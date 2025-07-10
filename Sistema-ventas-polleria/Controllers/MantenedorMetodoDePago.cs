@@ -65,10 +65,10 @@ namespace Sistema_ventas_polleria.Controllers
             }
         }
         [HttpGet]
-        public ActionResult DeshabilitarMetodoDePago()
+        public ActionResult DeshabilitarMetodoDePago(int idMetodoPago)
         {
-            List<entMetodoDePago> listaMetodoDePago = logMetodoDePago.Instancia.ListarMetodoDePago();
-            return View(listaMetodoDePago);
+            entMetodoDePago metodoPago = logMetodoDePago.Instancia.BuscarMetodoDePago(idMetodoPago);
+            return View(metodoPago);
         }
         [HttpPost]
         public ActionResult DeshabilitarMetodoDePago(entMetodoDePago c)
@@ -89,6 +89,32 @@ namespace Sistema_ventas_polleria.Controllers
             {
                 return View("Error", new { message = ex.Message });
             }
+        }
+        [HttpPost]
+        public ActionResult ConfirmarDeshabilitarMetodoDePago(entMetodoDePago c)
+        {
+            try
+            {
+                bool resultado = logMetodoDePago.Instancia.DeshabilitarMetodoDePago(c);
+                if (resultado)
+                {
+                    return RedirectToAction("ListarMetodoDePago");
+                }
+                else
+                {
+                    return View("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+                return View("Error", new { message = ex.Message });
+            }
+        }
+        public IActionResult ListarTodosMetodosDePago()
+        {
+            List<entMetodoDePago> lista = logMetodoDePago.Instancia.ListarTodosMetodosDePago();
+            ViewBag.lista = lista;
+            return View(lista);
         }
     }
 }

@@ -1,0 +1,64 @@
+@model IEnumerable<capa.entTamaño>
+
+@{
+    ViewData["Title"] = "Todos los Tamaños";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@functions {
+    string MostrarEstado(int estado)
+    {
+        return estado == 1
+            ? "<span class='badge bg-success'>Activo</span>"
+            : "<span class='badge bg-danger'>Inactivo</span>";
+    }
+}
+
+<div class="bg-white shadow rounded p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 fw-bold">Todos los Tamaños (Incluyendo Deshabilitados)</h1>
+        <div>
+            <a class="btn btn-success me-2" href="@Url.Action("InsertarTamaño", "MantenedorTamaño")" aria-label="Agregar nuevo tamaño">
+                <i class="fas fa-plus"></i> Nuevo Tamaño
+            </a>
+            <a class="btn btn-primary" href="@Url.Action("ListarTamaño", "MantenedorTamaño")" aria-label="Ver solo tamaños activos">
+                <i class="fas fa-eye"></i> Solo Activos
+            </a>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.idTamaño)</th>
+                    <th>@Html.DisplayNameFor(model => model.nombre)</th>
+                    <th>@Html.DisplayNameFor(model => model.estado)</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="@(item.estado == 0 ? "table-danger" : "")">
+                        <td>@item.idTamaño</td>
+                        <td>@item.nombre</td>
+                        <td>@Html.Raw(MostrarEstado(item.estado))</td>
+                        <td class="text-center">
+                            @if (item.estado == 1)
+                            {
+                                @Html.ActionLink("Edit", "EditarTamaño", new { idTamaño = item.idTamaño }) 
+                                <span>|</span>
+                                @Html.ActionLink("Delete", "DeshabilitarTamaño", new { idTamaño = item.idTamaño })
+                            }
+                            else
+                            {
+                                <span class="text-muted">Deshabilitado</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div> 

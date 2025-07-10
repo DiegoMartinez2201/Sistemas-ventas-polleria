@@ -1,7 +1,7 @@
-﻿@model IEnumerable<capa.entCategoria>
+@model IEnumerable<capa.entRol>
 
 @{
-    ViewData["Title"] = "Listar Categorías";
+    ViewData["Title"] = "Todos los Roles";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
@@ -19,22 +19,22 @@
     <div class="row mb-4">
         <div class="col-12">
             <div class="card border-0 shadow-sm">
-                <div class="card-header bg-primary bg-gradient text-white">
+                <div class="card-header bg-purple bg-gradient text-white" style="background: linear-gradient(135deg, #6f42c1 0%, #8b5cf6 100%) !important;">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h3 class="mb-0">
-                                <i class="fas fa-list me-2"></i>Categorías Registradas
+                                <i class="fas fa-user-shield me-2"></i>Todos los Roles (Incluyendo Deshabilitados)
                             </h3>
-                            <p class="mb-0 opacity-75">Gestión de categorías del sistema</p>
+                            <p class="mb-0 opacity-75">Gestión completa de roles y permisos del sistema</p>
                         </div>
                         <div class="btn-group" role="group">
-                            <a class="btn btn-light btn-sm" href="@Url.Action("InsertarCategoria", "MantenedorCategoria")" 
-                               data-bs-toggle="tooltip" title="Agregar nueva categoría">
-                                <i class="fas fa-plus me-1"></i>Nueva Categoría
+                            <a class="btn btn-light btn-sm" href="@Url.Action("InsertarRol", "MantenedorRol")" 
+                               data-bs-toggle="tooltip" title="Agregar nuevo rol">
+                                <i class="fas fa-plus me-1"></i>Nuevo Rol
                             </a>
-                            <a class="btn btn-info btn-sm" href="@Url.Action("ListarTodasCategorias", "MantenedorCategoria")" 
-                               data-bs-toggle="tooltip" title="Ver todas las categorías">
-                                <i class="fas fa-list me-1"></i>Ver Todas
+                            <a class="btn btn-primary btn-sm" href="@Url.Action("ListarRol", "MantenedorRol")" 
+                               data-bs-toggle="tooltip" title="Ver solo roles activos">
+                                <i class="fas fa-eye me-1"></i>Solo Activos
                             </a>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                                         <i class="fas fa-hashtag me-1"></i>ID
                                     </th>
                                     <th>
-                                        <i class="fas fa-tag me-1"></i>Nombre de la Categoría
+                                        <i class="fas fa-user-shield me-1"></i>Nombre del Rol
                                     </th>
                                     <th class="text-center" style="width: 120px;">
                                         <i class="fas fa-toggle-on me-1"></i>Estado
@@ -69,18 +69,18 @@
                             <tbody>
                                 @foreach (var item in Model)
                                 {
-                                    <tr class="align-middle">
+                                    <tr class="align-middle @(item.estado == 0 ? "table-danger" : "")">
                                         <td class="text-center">
-                                            <span class="badge bg-secondary rounded-pill">@item.idCategoria</span>
+                                            <span class="badge bg-secondary rounded-pill">@item.idRol</span>
                                         </td>
                                         <td>
                                             <div class="d-flex align-items-center">
-                                                <div class="bg-primary bg-opacity-10 rounded-circle p-2 me-3">
-                                                    <i class="fas fa-folder text-primary"></i>
+                                                <div class="bg-purple bg-opacity-10 rounded-circle p-2 me-3" style="background-color: rgba(111, 66, 193, 0.1) !important;">
+                                                    <i class="fas fa-user-shield text-purple" style="color: #6f42c1 !important;"></i>
                                                 </div>
                                                 <div>
-                                                    <h6 class="mb-0 fw-bold">@item.nombreCategoria</h6>
-                                                    <small class="text-muted">Categoría del sistema</small>
+                                                    <h6 class="mb-0 fw-bold">@item.nombreRol</h6>
+                                                    <small class="text-muted">Rol del sistema</small>
                                                 </div>
                                             </div>
                                         </td>
@@ -88,18 +88,26 @@
                                             @Html.Raw(MostrarEstado(item.estado))
                                         </td>
                                         <td class="text-center">
-                                            <div class="btn-group" role="group">
-                                                <a href="@Url.Action("EditarCategoria", "MantenedorCategoria", new { idCategoria = item.idCategoria })" 
-                                                   class="btn btn-primary btn-lg px-4 me-2 d-flex align-items-center justify-content-center" 
-                                                   data-bs-toggle="tooltip" title="Editar categoría">
-                                                    <i class="fas fa-edit me-2"></i> Edit
-                                                </a>
-                                                <a href="@Url.Action("DeshabilitarCategoria", "MantenedorCategoria", new { idCategoria = item.idCategoria })" 
-                                                   class="btn btn-danger btn-lg px-4 d-flex align-items-center justify-content-center" 
-                                                   data-bs-toggle="tooltip" title="Deshabilitar categoría">
-                                                    <i class="fas fa-trash me-2"></i> Delete
-                                                </a>
-                                            </div>
+                                            @if (item.estado == 1)
+                                            {
+                                                <div class="btn-group btn-group-sm" role="group">
+                                                    <a href="@Url.Action("EditaRol", "MantenedorRol", new { idRol = item.idRol })" 
+                                                       class="btn btn-outline-purple" 
+                                                       data-bs-toggle="tooltip" title="Editar rol"
+                                                       style="border-color: #6f42c1; color: #6f42c1;">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a href="@Url.Action("DeshabilitaRol", "MantenedorRol", new { idRol = item.idRol })" 
+                                                       class="btn btn-outline-danger" 
+                                                       data-bs-toggle="tooltip" title="Deshabilitar rol">
+                                                        <i class="fas fa-trash"></i>
+                                                    </a>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-muted">Deshabilitado</span>
+                                            }
                                         </td>
                                     </tr>
                                 }
@@ -119,12 +127,12 @@
                 <div class="card border-0 shadow-sm">
                     <div class="card-body text-center py-5">
                         <div class="mb-3">
-                            <i class="fas fa-folder-open text-muted" style="font-size: 3rem;"></i>
+                            <i class="fas fa-user-shield text-muted" style="font-size: 3rem;"></i>
                         </div>
-                        <h5 class="text-muted">No hay categorías registradas</h5>
-                        <p class="text-muted mb-3">Comienza agregando tu primera categoría</p>
-                        <a href="@Url.Action("InsertarCategoria", "MantenedorCategoria")" class="btn btn-primary">
-                            <i class="fas fa-plus me-1"></i>Agregar Primera Categoría
+                        <h5 class="text-muted">No hay roles registrados</h5>
+                        <p class="text-muted mb-3">Comienza agregando tu primer rol</p>
+                        <a href="@Url.Action("InsertarRol", "MantenedorRol")" class="btn btn-purple" style="background-color: #6f42c1; border-color: #6f42c1;">
+                            <i class="fas fa-plus me-1"></i>Agregar Primer Rol
                         </a>
                     </div>
                 </div>
@@ -156,4 +164,4 @@
             $('.card').hide().fadeIn(800);
         });
     </script>
-}
+} 

@@ -65,10 +65,10 @@ namespace Sistema_ventas_polleria.Controllers
             }
         }
         [HttpGet]
-        public ActionResult DeshabilitarMarca()
+        public ActionResult DeshabilitarMarca(int idMarca)
         {
-            List<entMarca> listaMarca = logMarca.Instancia.ListarMarca();
-            return View(listaMarca);
+            entMarca marca = logMarca.Instancia.BuscarMarca(idMarca);
+            return View(marca);
         }
         [HttpPost]
         public ActionResult DeshabilitarMarca(entMarca c)
@@ -89,6 +89,32 @@ namespace Sistema_ventas_polleria.Controllers
             {
                 return View("Error", new { message = ex.Message });
             }
+        }
+        [HttpPost]
+        public ActionResult ConfirmarDeshabilitarMarca(entMarca c)
+        {
+            try
+            {
+                bool resultado = logMarca.Instancia.DeshabilitarMarca(c);
+                if (resultado)
+                {
+                    return RedirectToAction("ListarMarca");
+                }
+                else
+                {
+                    return View("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+                return View("Error", new { message = ex.Message });
+            }
+        }
+        public IActionResult ListarTodasMarcas()
+        {
+            List<entMarca> lista = logMarca.Instancia.ListarTodasMarcas();
+            ViewBag.lista = lista;
+            return View(lista);
         }
     }
     

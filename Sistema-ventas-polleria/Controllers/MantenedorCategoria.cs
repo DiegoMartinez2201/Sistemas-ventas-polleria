@@ -65,10 +65,10 @@ namespace Sistema_ventas_polleria.Controllers
             }
         }
         [HttpGet]
-        public ActionResult DeshabilitarCategoria()
+        public ActionResult DeshabilitarCategoria(int idCategoria)
         {
-            List<entCategoria> listaCategoria = logCategoria.Instancia.ListarCategoria();
-            return View(listaCategoria);
+            entCategoria categoria = logCategoria.Instancia.BuscarCategoria(idCategoria);
+            return View(categoria);
         }
         [HttpPost]
         public ActionResult DeshabilitarCategoria(entCategoria c)
@@ -89,6 +89,32 @@ namespace Sistema_ventas_polleria.Controllers
             {
                 return View("Error", new { message = ex.Message });
             }
+        }
+        [HttpPost]
+        public ActionResult ConfirmarDeshabilitarCategoria(entCategoria c)
+        {
+            try
+            {
+                bool resultado = logCategoria.Instancia.DeshabilitarCategoria(c);
+                if (resultado)
+                {
+                    return RedirectToAction("ListarCategoria");
+                }
+                else
+                {
+                    return View("Error");
+                }
+            }
+            catch (Exception ex)
+            {
+                return View("Error", new { message = ex.Message });
+            }
+        }
+        public IActionResult ListarTodasCategorias()
+        {
+            List<entCategoria> lista = logCategoria.Instancia.ListarTodasCategorias();
+            ViewBag.lista = lista;
+            return View(lista);
         }
     }
 }
