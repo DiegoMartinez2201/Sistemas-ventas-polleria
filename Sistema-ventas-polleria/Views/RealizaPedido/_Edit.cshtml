@@ -1,0 +1,23 @@
+﻿@* Views/RealizaPedido/_Edit.cshtml *@
+@model Sistema_ventas_polleria.Models.PedidoEstadoViewModel
+
+<form id="frmEditEstado" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="IdPedido" />
+
+    <div class="form-group">
+        <label asp-for="IdEstadoNuevo"></label>
+        <select asp-for="IdEstadoNuevo" asp-items="Model.Estados" class="form-control">
+            <option value="">-- Selecciona un estado --</option>
+        </select>
+        <span asp-validation-for="IdEstadoNuevo" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="button" id="btnCancelar" class="btn btn-secondary">Cancelar</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

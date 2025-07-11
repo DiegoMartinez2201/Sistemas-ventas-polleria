@@ -168,6 +168,33 @@ namespace capaDatos
             }
             return elimina;
         }
+
+        /// <summary>
+        /// Lista los combos asociados a un pedido online.
+        /// </summary>
+        public List<entPedidoCombo> ListarPorPedido(int idPedidoOnline)
+        {
+            var lista = new List<entPedidoCombo>();
+            using var cn = cConexion.Instancia.Conectar();
+            using var cmd = new SqlCommand("spListarPedidoComboPorPedido", cn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            cmd.Parameters.AddWithValue("@idPedidoOnline", idPedidoOnline);
+            cn.Open();
+            using var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                lista.Add(new entPedidoCombo
+                {
+                    idPedidoCombo = dr.GetInt32(dr.GetOrdinal("idPedidoCombo")),
+                    idPedidoOnline = dr.GetInt32(dr.GetOrdinal("idPedidoOnline")),
+                    idCombo = dr.GetInt32(dr.GetOrdinal("idCombo")),
+                    cantidad = dr.GetInt32(dr.GetOrdinal("cantidad"))
+                });
+            }
+            return lista;
+        }
         #endregion metodos
     }
 }

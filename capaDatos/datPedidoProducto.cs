@@ -260,6 +260,34 @@ namespace capaDatos
             }
             return inserta;
         }
+
+        /// <summary>
+        /// Lista los productos asociados a un pedido online.
+        /// </summary>
+        public List<entPedidoProducto> ListarPorPedido(int idPedidoOnline)
+        {
+            var lista = new List<entPedidoProducto>();
+            using var cn = cConexion.Instancia.Conectar();
+            using var cmd = new SqlCommand("spListarPedidoProductoPorPedido", cn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            cmd.Parameters.AddWithValue("@idPedidoOnline", idPedidoOnline);
+            cn.Open();
+            using var dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                lista.Add(new entPedidoProducto
+                {
+                    idPedidoProducto = dr.GetInt32(dr.GetOrdinal("idPedidoProducto")),
+                    idPedidoOnline = dr.GetInt32(dr.GetOrdinal("idPedidoOnline")),
+                    idProducto = dr.GetInt32(dr.GetOrdinal("idProducto")),
+                    cantidad = dr.GetInt32(dr.GetOrdinal("cantidad"))
+                });
+            }
+            return lista;
+        }
+
         #endregion metodos
 
 
