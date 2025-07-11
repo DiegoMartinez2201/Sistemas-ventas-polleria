@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CRRc8EKOBhIymAYJONoqq5xWnFqOAp8FwZL2QSX5vDU=",
+  "Hash": "XyvgR0nxCUH6gBUxXvyH5C3L8Xdpyf0vG6uXA5M6yc4=",
   "Source": "Sistema-ventas-polleria",
   "BasePath": "_content/Sistema-ventas-polleria",
   "Mode": "Default",
@@ -984,6 +984,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\profile-image.png"
+    },
+    {
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\sticker rufo jato.png",
+      "SourceId": "Sistema-ventas-polleria",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
+      "BasePath": "_content/Sistema-ventas-polleria",
+      "RelativePath": "img/sticker rufo jato.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\sticker rufo jato.png"
     },
     {
       "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\unpolloalabraza.jpeg",
