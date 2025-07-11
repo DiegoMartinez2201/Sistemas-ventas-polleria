@@ -6,12 +6,24 @@ wwwroot\css\tooplate-barista.css
 wwwroot\css\vegas.min.css
 wwwroot\fonts\bootstrap-icons.woff
 wwwroot\fonts\bootstrap-icons.woff2
+wwwroot\images\alan.png
+wwwroot\images\alayo.jpg
 wwwroot\images\barman-with-fruits.jpg
+wwwroot\images\calvito.jpg
+wwwroot\images\chamo.jpg
 wwwroot\images\coffee-beans.png
+wwwroot\images\family.jpg
+wwwroot\images\fuego.gif
+wwwroot\images\gringos.jpg
 wwwroot\images\happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg
 wwwroot\images\happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg
 wwwroot\images\logoKialChiken.jpg
+wwwroot\images\melissa loza.png
 wwwroot\images\mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg
+wwwroot\images\muestra.jpg
+wwwroot\images\ñufo.jpg
+wwwroot\images\papitas.jpeg
+wwwroot\images\pollito.jpg
 wwwroot\images\reviews\senior-man-white-sweater-eyeglasses.jpg
 wwwroot\images\reviews\young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg
 wwwroot\images\reviews\young-woman-with-round-glasses-yellow-sweater.jpg
@@ -37,6 +49,7 @@ wwwroot\img\pepsi 450ml.png
 wwwroot\img\Polloentero.jpg
 wwwroot\img\product-image.jpg
 wwwroot\img\profile-image.png
+wwwroot\img\sticker rufo jato.png
 wwwroot\img\unpolloalabraza.jpeg
 wwwroot\img\unpollochicha.webp
 wwwroot\jquery-ui-datepicker\AUTHORS.txt
