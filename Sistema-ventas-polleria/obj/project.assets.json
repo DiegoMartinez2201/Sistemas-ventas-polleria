@@ -6621,19 +6621,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nelson Juarez\\.nuget\\packages\\": {}
+    "C:\\Users\\jurge\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "projectUniqueName": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
       "projectName": "Sistema-ventas-polleria",
-      "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
-      "packagesPath": "C:\\Users\\Nelson Juarez\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\obj\\",
+      "projectPath": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\Sistema-ventas-polleria.csproj",
+      "packagesPath": "C:\\Users\\jurge\\.nuget\\packages\\",
+      "outputPath": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Nelson Juarez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jurge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6648,11 +6653,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj": {
-              "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capaLogica\\capaLogica.csproj"
+            "D:\\DIARS OTRA VES JUEVES\\capaLogica\\capaLogica.csproj": {
+              "projectPath": "D:\\DIARS OTRA VES JUEVES\\capaLogica\\capaLogica.csproj"
             },
-            "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj": {
-              "projectPath": "C:\\Proyecto\\Sistemas-ventas-polleria\\capa\\capaEntidad.csproj"
+            "D:\\DIARS OTRA VES JUEVES\\capa\\capaEntidad.csproj": {
+              "projectPath": "D:\\DIARS OTRA VES JUEVES\\capa\\capaEntidad.csproj"
             }
           }
         }

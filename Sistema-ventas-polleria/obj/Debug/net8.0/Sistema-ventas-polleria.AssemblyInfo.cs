@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema-ventas-polleria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0608abc9a8f3f3800b9081e786b38e53044a2ce4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c3b3b9193383d35ef99157e023345f1a4b8794a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema-ventas-polleria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema-ventas-polleria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

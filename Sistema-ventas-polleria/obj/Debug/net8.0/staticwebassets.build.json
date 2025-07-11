@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UjH0QWHulceAt5ghzWotxtw39QFXQBRTBLwtR09Eoeo=",
+  "Hash": "CRRc8EKOBhIymAYJONoqq5xWnFqOAp8FwZL2QSX5vDU=",
   "Source": "Sistema-ventas-polleria",
   "BasePath": "_content/Sistema-ventas-polleria",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Sistema-ventas-polleria\\wwwroot",
       "Source": "Sistema-ventas-polleria",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\bootstrap-icons.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\css\\bootstrap-icons.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "css/bootstrap-icons.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-icons.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\fontawesome.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\css\\fontawesome.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "css/fontawesome.min.css",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\css\\fontawesome.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\fullcalendar.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\css\\fullcalendar.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "css/fullcalendar.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\fullcalendar.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\tooplate.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\css\\tooplate.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "css/tooplate.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\tooplate.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\tooplate-barista.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\css\\tooplate-barista.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "css/tooplate-barista.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\tooplate-barista.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\css\\vegas.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\css\\vegas.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "css/vegas.min.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\vegas.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\fonts\\bootstrap-icons.woff",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\fonts\\bootstrap-icons.woff",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "fonts/bootstrap-icons.woff",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\fonts\\bootstrap-icons.woff2",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\fonts\\bootstrap-icons.woff2",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "fonts/bootstrap-icons.woff2",
       "AssetKind": "All",
@@ -169,10 +169,29 @@
       "OriginalItemSpec": "wwwroot\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\alayo.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\alan.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
+      "BasePath": "_content/Sistema-ventas-polleria",
+      "RelativePath": "images/alan.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\alan.png"
+    },
+    {
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\alayo.jpg",
+      "SourceId": "Sistema-ventas-polleria",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/alayo.jpg",
       "AssetKind": "All",
@@ -188,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\alayo.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\barman-with-fruits.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\barman-with-fruits.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/barman-with-fruits.jpg",
       "AssetKind": "All",
@@ -207,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\barman-with-fruits.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\calvito.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\calvito.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/calvito.jpg",
       "AssetKind": "All",
@@ -226,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\calvito.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\chamo.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\chamo.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/chamo.jpg",
       "AssetKind": "All",
@@ -245,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\chamo.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\coffee-beans.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\coffee-beans.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/coffee-beans.png",
       "AssetKind": "All",
@@ -264,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\coffee-beans.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\family.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\family.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/family.jpg",
       "AssetKind": "All",
@@ -283,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\family.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\fuego.gif",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\fuego.gif",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/fuego.gif",
       "AssetKind": "All",
@@ -302,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fuego.gif"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\gringos.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\gringos.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/gringos.jpg",
       "AssetKind": "All",
@@ -321,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gringos.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg",
       "AssetKind": "All",
@@ -340,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\happy-loving-couple-bakers-drinking-coffee-looking-notebook.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg",
       "AssetKind": "All",
@@ -359,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\logoKialChiken.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\logoKialChiken.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/logoKialChiken.jpg",
       "AssetKind": "All",
@@ -378,10 +397,29 @@
       "OriginalItemSpec": "wwwroot\\images\\logoKialChiken.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\melissa loza.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
+      "BasePath": "_content/Sistema-ventas-polleria",
+      "RelativePath": "images/melissa loza.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\melissa loza.png"
+    },
+    {
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg",
+      "SourceId": "Sistema-ventas-polleria",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg",
       "AssetKind": "All",
@@ -397,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\muestra.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\muestra.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/muestra.jpg",
       "AssetKind": "All",
@@ -416,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\muestra.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\ñufo.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\ñufo.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/ñufo.jpg",
       "AssetKind": "All",
@@ -435,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ñufo.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\papitas.jpeg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\papitas.jpeg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/papitas.jpeg",
       "AssetKind": "All",
@@ -454,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\papitas.jpeg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\pollito.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\pollito.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/pollito.jpg",
       "AssetKind": "All",
@@ -473,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pollito.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\senior-man-white-sweater-eyeglasses.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\senior-man-white-sweater-eyeglasses.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/reviews/senior-man-white-sweater-eyeglasses.jpg",
       "AssetKind": "All",
@@ -492,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\reviews\\senior-man-white-sweater-eyeglasses.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/reviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg",
       "AssetKind": "All",
@@ -511,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\reviews\\young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\young-woman-with-round-glasses-yellow-sweater.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\reviews\\young-woman-with-round-glasses-yellow-sweater.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/reviews/young-woman-with-round-glasses-yellow-sweater.jpg",
       "AssetKind": "All",
@@ -530,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\reviews\\young-woman-with-round-glasses-yellow-sweater.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\slides\\sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\slides\\sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/slides/sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg",
       "AssetKind": "All",
@@ -549,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\slides\\sincere-laugh-showing-picture-smartphone-casual-meeting-with-best-friends-restaurant-terrace.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\team\\cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/team/cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg",
       "AssetKind": "All",
@@ -568,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\team\\cute-korean-barista-girl-pouring-coffee-prepare-filter-batch-brew-pour-working-cafe.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\portrait-elegant-old-man-wearing-suit.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\team\\portrait-elegant-old-man-wearing-suit.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/team/portrait-elegant-old-man-wearing-suit.jpg",
       "AssetKind": "All",
@@ -587,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\team\\portrait-elegant-old-man-wearing-suit.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\small-business-owner-drinking-coffee.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\team\\small-business-owner-drinking-coffee.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/team/small-business-owner-drinking-coffee.jpg",
       "AssetKind": "All",
@@ -606,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\team\\small-business-owner-drinking-coffee.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\team\\smiley-business-woman-working-cashier.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\team\\smiley-business-woman-working-cashier.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/team/smiley-business-woman-working-cashier.jpg",
       "AssetKind": "All",
@@ -625,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\team\\smiley-business-woman-working-cashier.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\images\\young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\images\\young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg",
       "AssetKind": "All",
@@ -644,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\1cuartopollo.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\1cuartopollo.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/1cuartopollo.png",
       "AssetKind": "All",
@@ -663,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\img\\1cuartopollo.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\1octavo.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\1octavo.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/1octavo.png",
       "AssetKind": "All",
@@ -682,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\img\\1octavo.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\1sobre4 pollo.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\1sobre4 pollo.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/1sobre4 pollo.png",
       "AssetKind": "All",
@@ -701,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\img\\1sobre4 pollo.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-01.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-01.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/dash-bg-01.jpg",
       "AssetKind": "All",
@@ -720,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\img\\dash-bg-01.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-02.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-02.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/dash-bg-02.jpg",
       "AssetKind": "All",
@@ -739,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\img\\dash-bg-02.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-03.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\dash-bg-03.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/dash-bg-03.jpg",
       "AssetKind": "All",
@@ -758,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\img\\dash-bg-03.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\Fuego-KialChicken.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\Fuego-KialChicken.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/Fuego-KialChicken.jpg",
       "AssetKind": "All",
@@ -777,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Fuego-KialChicken.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\inka500ml.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\inka500ml.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/inka500ml.png",
       "AssetKind": "All",
@@ -796,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\img\\inka500ml.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\mediopollo.jpeg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\mediopollo.jpeg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/mediopollo.jpeg",
       "AssetKind": "All",
@@ -815,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\img\\mediopollo.jpeg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\medioPollo.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\medioPollo.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/medioPollo.png",
       "AssetKind": "All",
@@ -834,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\img\\medioPollo.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\mediopollodosgaseosaysalsas.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\mediopollodosgaseosaysalsas.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/mediopollodosgaseosaysalsas.png",
       "AssetKind": "All",
@@ -853,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\img\\mediopollodosgaseosaysalsas.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\PapasFritas.webp",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\PapasFritas.webp",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/PapasFritas.webp",
       "AssetKind": "All",
@@ -872,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\img\\PapasFritas.webp"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\pepsi 450ml.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\pepsi 450ml.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/pepsi 450ml.png",
       "AssetKind": "All",
@@ -891,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\img\\pepsi 450ml.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\Polloentero.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\Polloentero.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/Polloentero.jpg",
       "AssetKind": "All",
@@ -910,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Polloentero.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\product-image.jpg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\product-image.jpg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/product-image.jpg",
       "AssetKind": "All",
@@ -929,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\img\\product-image.jpg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\profile-image.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\profile-image.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/profile-image.png",
       "AssetKind": "All",
@@ -948,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\img\\profile-image.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\unpolloalabraza.jpeg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\unpolloalabraza.jpeg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/unpolloalabraza.jpeg",
       "AssetKind": "All",
@@ -967,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\img\\unpolloalabraza.jpeg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\img\\unpollochicha.webp",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\img\\unpollochicha.webp",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "img/unpollochicha.webp",
       "AssetKind": "All",
@@ -986,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\img\\unpollochicha.webp"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\AUTHORS.txt",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\AUTHORS.txt",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/AUTHORS.txt",
       "AssetKind": "All",
@@ -1005,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\AUTHORS.txt"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\external\\jquery\\jquery.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\external\\jquery\\jquery.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/external/jquery/jquery.js",
       "AssetKind": "All",
@@ -1024,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\external\\jquery\\jquery.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_75_d0e5f5_1x400.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_75_d0e5f5_1x400.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-bg_glass_75_d0e5f5_1x400.png",
       "AssetKind": "All",
@@ -1043,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_75_d0e5f5_1x400.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_85_dfeffc_1x400.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_85_dfeffc_1x400.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-bg_glass_85_dfeffc_1x400.png",
       "AssetKind": "All",
@@ -1062,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_85_dfeffc_1x400.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_95_fef1ec_1x400.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_95_fef1ec_1x400.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-bg_glass_95_fef1ec_1x400.png",
       "AssetKind": "All",
@@ -1081,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-bg_glass_95_fef1ec_1x400.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_gloss-wave_55_5c9ccc_500x100.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_gloss-wave_55_5c9ccc_500x100.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png",
       "AssetKind": "All",
@@ -1100,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-bg_gloss-wave_55_5c9ccc_500x100.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_f5f8f9_1x100.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_f5f8f9_1x100.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-bg_inset-hard_100_f5f8f9_1x100.png",
       "AssetKind": "All",
@@ -1119,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_f5f8f9_1x100.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_fcfdfd_1x100.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_fcfdfd_1x100.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-bg_inset-hard_100_fcfdfd_1x100.png",
       "AssetKind": "All",
@@ -1138,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-bg_inset-hard_100_fcfdfd_1x100.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_217bc0_256x240.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_217bc0_256x240.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-icons_217bc0_256x240.png",
       "AssetKind": "All",
@@ -1157,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-icons_217bc0_256x240.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_2e83ff_256x240.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_2e83ff_256x240.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-icons_2e83ff_256x240.png",
       "AssetKind": "All",
@@ -1176,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-icons_2e83ff_256x240.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_469bdd_256x240.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_469bdd_256x240.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-icons_469bdd_256x240.png",
       "AssetKind": "All",
@@ -1195,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-icons_469bdd_256x240.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_6da8d5_256x240.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_6da8d5_256x240.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-icons_6da8d5_256x240.png",
       "AssetKind": "All",
@@ -1214,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-icons_6da8d5_256x240.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_cd0a0a_256x240.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_cd0a0a_256x240.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-icons_cd0a0a_256x240.png",
       "AssetKind": "All",
@@ -1233,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-icons_cd0a0a_256x240.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_d8e7f3_256x240.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_d8e7f3_256x240.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-icons_d8e7f3_256x240.png",
       "AssetKind": "All",
@@ -1252,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-icons_d8e7f3_256x240.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_f9bd01_256x240.png",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\images\\ui-icons_f9bd01_256x240.png",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/images/ui-icons_f9bd01_256x240.png",
       "AssetKind": "All",
@@ -1271,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\images\\ui-icons_f9bd01_256x240.png"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\index.html",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\index.html",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/index.html",
       "AssetKind": "All",
@@ -1290,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\index.html"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/jquery-ui.css",
       "AssetKind": "All",
@@ -1309,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\jquery-ui.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/jquery-ui.js",
       "AssetKind": "All",
@@ -1328,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\jquery-ui.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/jquery-ui.min.css",
       "AssetKind": "All",
@@ -1347,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\jquery-ui.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/jquery-ui.min.js",
       "AssetKind": "All",
@@ -1366,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\jquery-ui.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/jquery-ui.structure.css",
       "AssetKind": "All",
@@ -1385,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/jquery-ui.structure.min.css",
       "AssetKind": "All",
@@ -1404,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\jquery-ui.structure.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/jquery-ui.theme.css",
       "AssetKind": "All",
@@ -1423,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/jquery-ui.theme.min.css",
       "AssetKind": "All",
@@ -1442,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\jquery-ui.theme.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\LICENSE.txt",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\LICENSE.txt",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/LICENSE.txt",
       "AssetKind": "All",
@@ -1461,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\package.json",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\jquery-ui-datepicker\\package.json",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "jquery-ui-datepicker/package.json",
       "AssetKind": "All",
@@ -1480,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\jquery-ui-datepicker\\package.json"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1499,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\Chart.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\Chart.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/Chart.min.js",
       "AssetKind": "All",
@@ -1518,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Chart.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\click-scroll.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\click-scroll.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/click-scroll.js",
       "AssetKind": "All",
@@ -1537,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\js\\click-scroll.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\custom.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\custom.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/custom.js",
       "AssetKind": "All",
@@ -1556,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\js\\custom.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\fullcalendar.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\fullcalendar.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/fullcalendar.min.js",
       "AssetKind": "All",
@@ -1575,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\js\\fullcalendar.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\jquery.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/jquery.min.js",
       "AssetKind": "All",
@@ -1594,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery.sticky.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\jquery.sticky.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/jquery.sticky.js",
       "AssetKind": "All",
@@ -1613,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.sticky.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\jquery-3.3.1.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/jquery-3.3.1.min.js",
       "AssetKind": "All",
@@ -1632,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.3.1.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\moment.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\moment.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/moment.min.js",
       "AssetKind": "All",
@@ -1651,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\js\\moment.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\tooplate-scripts.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\tooplate-scripts.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/tooplate-scripts.js",
       "AssetKind": "All",
@@ -1670,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\js\\tooplate-scripts.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\utils.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\utils.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/utils.js",
       "AssetKind": "All",
@@ -1689,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\js\\utils.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\js\\vegas.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\js\\vegas.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "js/vegas.min.js",
       "AssetKind": "All",
@@ -1708,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\js\\vegas.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1727,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1746,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1765,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1784,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1803,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1822,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1841,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1860,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1879,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1898,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1917,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1936,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1955,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1974,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1993,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2012,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2031,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2050,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2069,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2088,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2107,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2126,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2145,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2164,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2183,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2202,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2221,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2240,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2259,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2278,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2297,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2316,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2335,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2354,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2373,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2392,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2411,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2430,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2449,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2468,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2487,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2506,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2525,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2544,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2563,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2582,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2601,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2620,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2639,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2658,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2677,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2696,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2715,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2734,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2753,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2772,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2791,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\videos\\pexels-mike-jones-9046237.mp4",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\videos\\pexels-mike-jones-9046237.mp4",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "videos/pexels-mike-jones-9046237.mp4",
       "AssetKind": "All",
@@ -2810,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\videos\\pexels-mike-jones-9046237.mp4"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.eot",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-brands-400.eot",
       "AssetKind": "All",
@@ -2829,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.svg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-brands-400.svg",
       "AssetKind": "All",
@@ -2848,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.ttf",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -2867,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.woff",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-brands-400.woff",
       "AssetKind": "All",
@@ -2886,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-brands-400.woff2",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -2905,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.eot",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-regular-400.eot",
       "AssetKind": "All",
@@ -2924,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.svg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-regular-400.svg",
       "AssetKind": "All",
@@ -2943,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.ttf",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -2962,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.woff",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-regular-400.woff",
       "AssetKind": "All",
@@ -2981,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-regular-400.woff2",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -3000,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.eot",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-solid-900.eot",
       "AssetKind": "All",
@@ -3019,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.svg",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-solid-900.svg",
       "AssetKind": "All",
@@ -3038,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.ttf",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -3057,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.woff",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-solid-900.woff",
       "AssetKind": "All",
@@ -3076,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Identity": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "Identity": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\webfonts\\fa-solid-900.woff2",
       "SourceId": "Sistema-ventas-polleria",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Proyecto\\Sistemas-ventas-polleria\\Sistema-ventas-polleria\\wwwroot\\",
+      "ContentRoot": "D:\\DIARS OTRA VES JUEVES\\Sistema-ventas-polleria\\wwwroot\\",
       "BasePath": "_content/Sistema-ventas-polleria",
       "RelativePath": "webfonts/fa-solid-900.woff2",
       "AssetKind": "All",
