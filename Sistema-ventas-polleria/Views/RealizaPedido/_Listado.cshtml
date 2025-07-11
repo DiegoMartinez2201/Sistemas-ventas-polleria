@@ -1,0 +1,44 @@
+﻿@* Views/RealizaPedido/_Listado.cshtml *@
+@model IEnumerable<capa.entRealizaPedido>
+
+<table class="table table-hover table-striped tm-table-small tm-user-table">
+    <thead>
+        <tr>
+            <th class="text-center"># Pedido</th>
+            <th>Usuario</th>
+            <th>Correo</th>
+            <th>Envío</th>
+            <th>Pago</th>
+            <th>Fecha / Hora</th>
+            <th>Estado</th>
+            <th class="text-center">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>
+                <td class="text-center">@p.idPedidoOnline</td>
+                <td>@p.Usuario.nombreCli @p.Usuario.apellidoCli</td>
+                <td>@p.Usuario.correo</td>
+                <td>@p.FormaEnvio.nombreForma</td>
+                <td>@p.MetodoPago.nombreMetodo</td>
+                <td>
+                    @p.fecha.ToString("dd/MM/yyyy")<br />
+                    @p.hora.ToString(@"hh\:mm")
+                </td>
+                <td>
+                    <span class="badge badge-@(p.Estado.estado == 1 ? "success" : "secondary")">
+                        @p.Estado.nombreEstado
+                    </span>
+                </td>
+                <td class="text-center">
+                    <a href="@Url.Action("Edit", "RealizaPedido", new { id = p.idPedidoOnline })"
+                       class="btn btn-sm btn-warning load-edit">
+                        Cambiar Estado
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

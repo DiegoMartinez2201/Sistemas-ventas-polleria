@@ -60,7 +60,7 @@ namespace Sistema_ventas_polleria.Controllers
                     idFormaEnvio = formaEnvio,
                     idMetodoPago = metodoPago, // <-- Ahora dinámico
                     fecha = DateTime.Now.Date,
-                    hora = DateTime.Now,
+                    hora = DateTime.Now.TimeOfDay,
                     observaciones = (referencia ?? "") + ((enlaceGoogleMaps != null && enlaceGoogleMaps != "") ? (" | Google Maps: " + enlaceGoogleMaps) : ""),
                     direccion = direccion
                 };

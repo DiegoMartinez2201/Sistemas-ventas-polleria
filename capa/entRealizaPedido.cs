@@ -15,7 +15,7 @@ namespace capa
         public int idFormaEnvio { get; set; }
         public int idMetodoPago { get; set; }
         public DateTime fecha { get; set; }
-        public DateTime hora { get; set; }
+        public TimeSpan hora { get; set; }
         public string observaciones { get; set; }
         public string direccion { get; set; }
 

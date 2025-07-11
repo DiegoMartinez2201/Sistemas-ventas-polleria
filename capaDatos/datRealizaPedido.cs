@@ -40,7 +40,7 @@ namespace capaDatos
                     idFormaEnvio = dr.GetInt32("idFormaEnvio"),
                     idMetodoPago = dr.GetInt32("idMetodoPago"),
                     fecha = dr.GetDateTime("fecha"),
-                    hora = dr.GetDateTime("hora"),
+                    hora = dr.GetTimeSpan(dr.GetOrdinal("hora")),
                     observaciones = dr["observaciones"]?.ToString(),
                     direccion = dr["direccion"]?.ToString(),
 
@@ -50,24 +50,24 @@ namespace capaDatos
                         correo = dr["correoUsuario"].ToString(),
                         nombreCli = dr["nombreUsuario"].ToString(),
                         apellidoCli = dr["apellidoUsuario"].ToString()
-                    },
+                    },  
                     Estado = new entEstado
                     {
-                        idEstado = dr.GetInt32("idEstado"),
+                        idEstado = dr.GetInt32(dr.GetOrdinal("idEstado")),
                         nombreEstado = dr["nombreEstado"].ToString(),
-                        estado = dr.GetInt32("estado")           // aquí tu campo int
+                        estado = dr.GetInt32(dr.GetOrdinal("activoEstado"))
                     },
                     FormaEnvio = new entFormaEnvio
                     {
                         idFormaEnvio = dr.GetInt32("idFormaEnvio"),
                         nombreForma = dr["nombreFormaEnvio"].ToString(),
-                        estado = dr.GetInt32("estadoFormaEnvio") // asume que el alias en el SP es estadoFormaEnvio
+                        estado = dr.GetInt32(dr.GetOrdinal("activoFormaEnvio"))  // coincide con el SP
                     },
                     MetodoPago = new entMetodoDePago
                     {
                         idMetodoPago = dr.GetInt32("idMetodoPago"),
                         nombreMetodo = dr["nombreMetodoPago"].ToString(),
-                        estado = dr.GetInt32("estadoMetodoPago") // alias en el SP
+                        estado = dr.GetInt32(dr.GetOrdinal("activoMetodoPago"))  // coincide con el SP
                     }
                 });
             }

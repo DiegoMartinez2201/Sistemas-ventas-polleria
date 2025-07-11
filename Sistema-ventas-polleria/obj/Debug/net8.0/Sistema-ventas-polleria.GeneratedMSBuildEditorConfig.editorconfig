@@ -296,12 +296,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuZWRvclVzdWFyaW9cTGlzdGFyVXN1YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eduar/Desktop/DIARS FINAL/Sistema-ventas-polleria/Views/RealizaPedido/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbGl6YVBlZGlkb1xFZGl0LmNzaHRtbA==
+[C:/Users/eduar/Desktop/DIARS FINAL/Sistema-ventas-polleria/Views/RealizaPedido/_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbGl6YVBlZGlkb1xfRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/eduar/Desktop/DIARS FINAL/Sistema-ventas-polleria/Views/RealizaPedido/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbGl6YVBlZGlkb1xJbmRleC5jc2h0bWw=
+[C:/Users/eduar/Desktop/DIARS FINAL/Sistema-ventas-polleria/Views/RealizaPedido/_Listado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhbGl6YVBlZGlkb1xfTGlzdGFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/eduar/Desktop/DIARS FINAL/Sistema-ventas-polleria/Views/Reportes/Index.cshtml]
