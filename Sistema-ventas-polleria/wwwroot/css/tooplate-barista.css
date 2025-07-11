@@ -552,20 +552,6 @@ strong {
     min-height: 620px;
     text-align: center;
 }
-
-    .hero-section::after {
-        background-color: rgba(0, 0, 0, 0.65);
-        border-radius: var(--border-radius-medium);
-        content: "";
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-55%, -50%) rotate(45deg);
-        width: 250px;
-        height: 350px;
-        pointer-events: none;
-    }
-
 @media screen and (min-width: 991px) {
     .hero-section {
         height: 100vh;
@@ -714,6 +700,7 @@ strong {
     background: rgba(0, 0, 0, 0.65);
     border-radius: var(--border-radius-medium);
     padding: 45px;
+    margin-top: 70px; /* espacio bajo el navbar */
 }
 
 .menu-block .border-top {
@@ -1180,11 +1167,6 @@ strong {
 
     h5 {
         font-size: 20px;
-    }
-
-    .hero-section::after {
-        width: 200px;
-        height: 200px;
     }
 
     .booking-form {
