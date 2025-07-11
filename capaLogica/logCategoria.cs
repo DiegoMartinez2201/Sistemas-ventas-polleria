@@ -71,10 +71,6 @@ namespace capaLogica
                 throw;
             }
         }
-        public List<entCategoria> ListarTodasCategorias()
-        {
-            return datCategoria.Instancia.ListarTodasCategorias();
-        }
         #endregion metodos
     }
 }

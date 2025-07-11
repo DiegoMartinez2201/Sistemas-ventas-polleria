@@ -65,10 +65,10 @@ namespace Sistema_ventas_polleria.Controllers
             }
         }
         [HttpGet]
-        public ActionResult DeshabilitarTamaño(int idTamaño)
+        public ActionResult DeshabilitarTamaño()
         {
-            entTamaño tamaño = logTamaño.Instancia.BuscarTamaño(idTamaño);
-            return View(tamaño);
+            List<entTamaño> listaTamaño = logTamaño.Instancia.ListarTamaño();
+            return View(listaTamaño);
         }
         [HttpPost]
         public ActionResult DeshabilitarTamaño(entTamaño c)
@@ -89,32 +89,6 @@ namespace Sistema_ventas_polleria.Controllers
             {
                 return View("Error", new { message = ex.Message });
             }
-        }
-        [HttpPost]
-        public ActionResult ConfirmarDeshabilitarTamaño(entTamaño c)
-        {
-            try
-            {
-                bool resultado = logTamaño.Instancia.DeshabilitarTamaño(c);
-                if (resultado)
-                {
-                    return RedirectToAction("ListarTamaño");
-                }
-                else
-                {
-                    return View("Error");
-                }
-            }
-            catch (Exception ex)
-            {
-                return View("Error", new { message = ex.Message });
-            }
-        }
-        public IActionResult ListarTodosTamaños()
-        {
-            List<entTamaño> lista = logTamaño.Instancia.ListarTodosTamaños();
-            ViewBag.lista = lista;
-            return View(lista);
         }
     }
 }

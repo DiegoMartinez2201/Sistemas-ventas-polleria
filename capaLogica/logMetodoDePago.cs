@@ -63,10 +63,6 @@ namespace capaLogica
             }
             catch (Exception) { throw; }
         }
-        public List<entMetodoDePago> ListarTodosMetodosDePago()
-        {
-            return datMetodoDePago.Instancia.ListarTodosMetodosDePago();
-        }
         #endregion metodos
     }
 }

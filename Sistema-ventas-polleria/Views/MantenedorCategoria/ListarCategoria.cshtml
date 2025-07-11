@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<capa.entCategoria>
 
 @{
-    ViewData["Title"] = "Listar Categorías";
+    ViewData["Title"] = "ListarCategoria";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
@@ -9,151 +9,43 @@
     string MostrarEstado(int estado)
     {
         return estado == 1
-            ? "<span class='badge bg-success rounded-pill'><i class='fas fa-check-circle me-1'></i>Activo</span>"
-            : "<span class='badge bg-danger rounded-pill'><i class='fas fa-times-circle me-1'></i>Inactivo</span>";
+            ? "<span class='badge bg-success'>Activo</span>"
+            : "<span class='badge bg-danger'>Inactivo</span>";
     }
 }
 
-<div class="container-fluid">
-    <!-- Header Section -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card border-0 shadow-sm">
-                <div class="card-header bg-primary bg-gradient text-white">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h3 class="mb-0">
-                                <i class="fas fa-list me-2"></i>Categorías Registradas
-                            </h3>
-                            <p class="mb-0 opacity-75">Gestión de categorías del sistema</p>
-                        </div>
-                        <div class="btn-group" role="group">
-                            <a class="btn btn-light btn-sm" href="@Url.Action("InsertarCategoria", "MantenedorCategoria")" 
-                               data-bs-toggle="tooltip" title="Agregar nueva categoría">
-                                <i class="fas fa-plus me-1"></i>Nueva Categoría
-                            </a>
-                            <a class="btn btn-info btn-sm" href="@Url.Action("ListarTodasCategorias", "MantenedorCategoria")" 
-                               data-bs-toggle="tooltip" title="Ver todas las categorías">
-                                <i class="fas fa-list me-1"></i>Ver Todas
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="bg-white shadow rounded p-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 fw-bold">Categorías Registradas</h1>
+        <a class="btn btn-success" href="@Url.Action("InsertarCategoria", "MantenedorCategoria")" aria-label="Agregar nueva categoría">
+            <i class="fas fa-plus"></i> Nueva Categoría
+        </a>
     </div>
 
-    <!-- Content Section -->
-    <div class="row">
-        <div class="col-12">
-            <div class="card border-0 shadow-sm">
-                <div class="card-body p-0">
-                    <div class="table-responsive">
-                        <table class="table table-hover mb-0">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th class="text-center" style="width: 80px;">
-                                        <i class="fas fa-hashtag me-1"></i>ID
-                                    </th>
-                                    <th>
-                                        <i class="fas fa-tag me-1"></i>Nombre de la Categoría
-                                    </th>
-                                    <th class="text-center" style="width: 120px;">
-                                        <i class="fas fa-toggle-on me-1"></i>Estado
-                                    </th>
-                                    <th class="text-center" style="width: 200px;">
-                                        <i class="fas fa-cogs me-1"></i>Acciones
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var item in Model)
-                                {
-                                    <tr class="align-middle">
-                                        <td class="text-center">
-                                            <span class="badge bg-secondary rounded-pill">@item.idCategoria</span>
-                                        </td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="bg-primary bg-opacity-10 rounded-circle p-2 me-3">
-                                                    <i class="fas fa-folder text-primary"></i>
-                                                </div>
-                                                <div>
-                                                    <h6 class="mb-0 fw-bold">@item.nombreCategoria</h6>
-                                                    <small class="text-muted">Categoría del sistema</small>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-center">
-                                            @Html.Raw(MostrarEstado(item.estado))
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group" role="group">
-                                                <a href="@Url.Action("EditarCategoria", "MantenedorCategoria", new { idCategoria = item.idCategoria })" 
-                                                   class="btn btn-primary btn-lg px-4 me-2 d-flex align-items-center justify-content-center" 
-                                                   data-bs-toggle="tooltip" title="Editar categoría">
-                                                    <i class="fas fa-edit me-2"></i> Edit
-                                                </a>
-                                                <a href="@Url.Action("DeshabilitarCategoria", "MantenedorCategoria", new { idCategoria = item.idCategoria })" 
-                                                   class="btn btn-danger btn-lg px-4 d-flex align-items-center justify-content-center" 
-                                                   data-bs-toggle="tooltip" title="Deshabilitar categoría">
-                                                    <i class="fas fa-trash me-2"></i> Delete
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Empty State -->
-    @if (!Model.Any())
-    {
-        <div class="row mt-4">
-            <div class="col-12">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body text-center py-5">
-                        <div class="mb-3">
-                            <i class="fas fa-folder-open text-muted" style="font-size: 3rem;"></i>
-                        </div>
-                        <h5 class="text-muted">No hay categorías registradas</h5>
-                        <p class="text-muted mb-3">Comienza agregando tu primera categoría</p>
-                        <a href="@Url.Action("InsertarCategoria", "MantenedorCategoria")" class="btn btn-primary">
-                            <i class="fas fa-plus me-1"></i>Agregar Primera Categoría
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    }
-</div>
-
-@section Scripts {
-    <script>
-        $(document).ready(function() {
-            // Inicializar tooltips
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-            });
-
-            // Efecto hover en las filas
-            $('tbody tr').hover(
-                function() {
-                    $(this).addClass('table-active');
-                },
-                function() {
-                    $(this).removeClass('table-active');
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.idCategoria)</th>
+                    <th>@Html.DisplayNameFor(model => model.nombreCategoria)</th>
+                    <th>@Html.DisplayNameFor(model => model.estado)</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.idCategoria</td>
+                        <td>@item.nombreCategoria</td>
+                        <td>@Html.Raw(MostrarEstado(item.estado))</td>
+                        <td class="text-center">
+                            @Html.ActionLink("Edit", "EditarCategoria", new { idCategoria = item.idCategoria }) |
+                            @Html.ActionLink("Delete", "DeshabilitarCategoria", new { idCategoria = item.idCategoria })
+                        </td>
+                    </tr>
                 }
-            );
-
-            // Animación de entrada
-            $('.card').hide().fadeIn(800);
-        });
-    </script>
-}
+            </tbody>
+        </table>
+    </div>
+</div>

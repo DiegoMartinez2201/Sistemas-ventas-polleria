@@ -61,8 +61,10 @@ namespace Sistema_ventas_polleria.Controllers
                     return RedirectToAction("Dashboard", "Administrador");
                 else if (usuario.idRol == 2)
                     return RedirectToAction("Index", "Vendedor"); // Cambia según tu controlador de vendedor
-                else // Cliente
+                else if (usuario.idRol == 3)
                     return RedirectToAction("Clientelog", "Cliente");
+                else 
+                    return RedirectToAction("delivery", "Delivery");
             }
             else
             {

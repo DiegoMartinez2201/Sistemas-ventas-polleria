@@ -120,7 +120,7 @@ namespace capaDatos
                 try
                 {
                     SqlConnection cn = cConexion.Instancia.Conectar();
-                    cmd = new SqlCommand("spDeshabilitarMetodoDePago", cn);
+                    cmd = new SqlCommand("DeshabilitarMetodoDePago", cn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@idMetodoPago", c.idMetodoPago);
                     cn.Open();
@@ -136,30 +136,6 @@ namespace capaDatos
                 }
                 finally { cmd.Connection.Close(); }
                 return delete;
-            }
-            public List<entMetodoDePago> ListarTodosMetodosDePago()
-            {
-                SqlCommand cmd = null;
-                List<entMetodoDePago> lista = new List<entMetodoDePago>();
-                try
-                {
-                    SqlConnection cn = cConexion.Instancia.Conectar();
-                    cmd = new SqlCommand("spListarTodosMetodosDePago", cn);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cn.Open();
-                    SqlDataReader dr = cmd.ExecuteReader();
-                    while (dr.Read())
-                    {
-                        entMetodoDePago c = new entMetodoDePago();
-                        c.idMetodoPago = Convert.ToInt32(dr["idMetodoPago"]);
-                        c.nombreMetodo = Convert.ToString(dr["nombreMetodo"]);
-                        c.estado = Convert.ToInt32(dr["estado"]);
-                        lista.Add(c);
-                    }
-                }
-                catch (Exception) { throw; }
-                finally { cmd.Connection.Close(); }
-                return lista;
             }
             #endregion metodos
         }
