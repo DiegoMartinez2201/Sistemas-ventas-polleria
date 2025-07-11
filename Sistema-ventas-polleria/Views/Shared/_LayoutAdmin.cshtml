@@ -96,7 +96,7 @@
                     </nav>
                 </div>
             </div>
-            <div>
+            <div id="main-content">
                 @RenderBody()
             </div>
             <script src="@Url.Content("~/js/jquery.min.js")"></script>
@@ -114,6 +114,47 @@
             <script src="@Url.Content("~/js/click-scroll.js")"></script>
             <script src="@Url.Content("~/js/vegas.min.js")"></script>
             <script src="@Url.Content("~/js/custom.js")"></script>
+            <script>
+                $(function(){
+                  console.log("Inicializando AJAX pedidos");
+
+                  $("#main-content").on("submit", "#frmEditEstado", function(e){
+                    e.preventDefault();
+                    console.log("submit capturado");
+                    var $form = $(this);
+                    $.ajax({
+                      url: $form.attr("action"),
+                      method: $form.attr("method"),
+                      data: $form.serialize(),
+                      success: function(res) {
+                        if (res.success) {
+                          $("#main-content").load("@Url.Action("Index", "RealizaPedido")");
+                        } else {
+                          $("#main-content").html(res);
+                        }
+                      },
+                      error: function() {
+                        alert("Error al guardar. Intenta de nuevo.");
+                      }
+                    });
+                  });
+
+                  $("#main-content").on("click", "#btnCancelar", function(){
+                    $("#main-content").load("@Url.Action("Index", "RealizaPedido")");
+                  });
+                });
+            </script>
+
+            <script>
+                $(function(){
+                  // Cuando un enlace con clase .load-list sea clickeado…
+                  $("#main-content").on("click", ".load-list", function(e){
+                    e.preventDefault();
+                    var url = $(this).attr("href");
+                    $("#main-content").load(url);
+                  });
+                });
+            </script>
             <script>
                 let ctxLine,
                     ctxBar,
@@ -142,6 +183,7 @@
                     });
                 })
             </script>
+
             @RenderSection("Scripts", required: false)
         </div>
     </div>

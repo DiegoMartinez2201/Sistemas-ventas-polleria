@@ -8,85 +8,87 @@ namespace Sistema_ventas_polleria.Controllers
 {
     public class RealizaPedidoController : Controller
     {
-        // Creamos las instancias de los servicios
         private readonly logRealizaPedido _pedidoService = new logRealizaPedido();
         private readonly logEstado _estadoService = new logEstado();
 
-        // GET: /RealizaPedido/
-        public ActionResult Index()
+        // GET: /RealizaPedido/Index
+        public IActionResult Index()
         {
-            // 1. Obtenemos lista completa de pedidos con detalles
             var pedidos = _pedidoService.ListarPedidosConDetalles();
-            // 2. Devolvemos la vista con esos datos
+
+            // Si es llamada AJAX, devolvemos solo el partial _Listado
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Listado", pedidos);
+            }
+
+            // Llamada normal: renderizamos Index.cshtml que a su vez incluye el partial
             return View(pedidos);
         }
 
         // GET: /RealizaPedido/Edit/5
-        public ActionResult Edit(int id)
+        public IActionResult Edit(int id)
         {
-            // 1. Buscamos el pedido por su ID
             var pedido = _pedidoService
                             .ListarPedidosConDetalles()
                             .FirstOrDefault(p => p.idPedidoOnline == id);
             if (pedido == null)
                 return NotFound();
 
-            // 2. Obtenemos solo los estados activos
-            var listaSelect = _estadoService.ListarEstado()
-                                .Where(e => e.estado == 1)
-                                .Select(e => new SelectListItem
-                                {
-                                    Value = e.idEstado.ToString(),
-                                    Text = e.nombreEstado
-                                });
-
-            // 3. Construimos el ViewModel
             var vm = new PedidoEstadoViewModel
             {
                 IdPedido = id,
                 IdEstadoNuevo = pedido.idEstado,
-                Estados = listaSelect
+                Estados = _estadoService.ListarEstado()
+                                 .Where(e => e.estado == 1)
+                                 .Select(e => new SelectListItem
+                                 {
+                                     Value = e.idEstado.ToString(),
+                                     Text = e.nombreEstado
+                                 }).ToList()
             };
 
-            return View(vm);
+            // Si viene por AJAX, devolvemos sólo el partial:
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                return PartialView("_Edit", vm);
+
+            // Si es una navegación directa, devolvemos la vista completa
+            return View("Edit", vm);
         }
 
         // POST: /RealizaPedido/Edit
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(PedidoEstadoViewModel vm)
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Edit(PedidoEstadoViewModel vm)
         {
             if (!ModelState.IsValid)
             {
-                // Si hay errores, recargamos la lista de estados para el dropdown
+                // validación fallida: devolvemos el formulario con errores
                 vm.Estados = _estadoService.ListarEstado()
                                   .Where(e => e.estado == 1)
                                   .Select(e => new SelectListItem
                                   {
                                       Value = e.idEstado.ToString(),
                                       Text = e.nombreEstado
-                                  });
-                return View(vm);
+                                  }).ToList();
+                return PartialView("_Edit", vm);
             }
 
-            // Intentamos actualizar el estado
-            bool actualizado = _pedidoService.CambiarEstadoPedido(vm.IdPedido, vm.IdEstadoNuevo);
-            if (!actualizado)
+            bool updated = _pedidoService.CambiarEstadoPedido(vm.IdPedido, vm.IdEstadoNuevo);
+            if (!updated)
             {
                 ModelState.AddModelError("", "No se pudo actualizar el estado.");
-                // Recargamos la lista de estados
                 vm.Estados = _estadoService.ListarEstado()
                                   .Where(e => e.estado == 1)
                                   .Select(e => new SelectListItem
                                   {
                                       Value = e.idEstado.ToString(),
                                       Text = e.nombreEstado
-                                  });
-                return View(vm);
+                                  }).ToList();
+                return PartialView("_Edit", vm);
             }
 
-            // Redirigimos de vuelta al listado
-            return RedirectToAction("Index");
+            // Éxito: devolvemos JSON para que el cliente recargue el listado
+            return Json(new { success = true });
         }
     }
 }

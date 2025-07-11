@@ -1,0 +1,66 @@
+﻿@model IEnumerable<capa.entRealizaPedido>
+
+@{
+    ViewData["Title"] = "Pedidos Registrados";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@functions {
+    string FormatoHora(TimeSpan hora)
+        => hora.ToString(@"hh\:mm");
+
+    string MostrarBadgeEstado(int estado, string nombre)
+        => estado == 1
+           ? $"<span class='badge bg-success rounded-pill'><i class='fas fa-check-circle me-1'></i>{nombre}</span>"
+           : $"<span class='badge bg-danger rounded-pill'><i class='fas fa-times-circle me-1'></i>{nombre}</span>";
+}
+
+<div class="container-fluid">
+    <!-- Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-purple bg-gradient text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h3 class="mb-0">
+                                <i class="fas fa-shopping-cart me-2"></i>Pedidos Registrados
+                            </h3>
+                            <p class="mb-0 opacity-75">Gestión de pedidos en línea</p>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-light btn-sm load-list"
+                               href="@Url.Action("Index", "RealizaPedido")"
+                               data-bs-toggle="tooltip" title="Refrescar listado">
+                                <i class="fas fa-sync-alt me-1"></i>Refrescar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content: aquí se inyecta el listado parcial -->
+    <div class="row">
+        <div class="col-12">
+            @Html.Partial("_Listado", Model)
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function() {
+            // tooltips
+            var tipTrigger = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tipTrigger.map(el => new bootstrap.Tooltip(el));
+
+            // hover efecto
+            $('tbody tr').hover(
+                function() { $(this).addClass('table-active'); },
+                function() { $(this).removeClass('table-active'); }
+            );
+        });
+    </script>
+}

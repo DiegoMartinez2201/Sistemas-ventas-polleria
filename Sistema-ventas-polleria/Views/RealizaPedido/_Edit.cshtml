@@ -1,7 +1,11 @@
 ﻿@* Views/RealizaPedido/_Edit.cshtml *@
 @model Sistema_ventas_polleria.Models.PedidoEstadoViewModel
 
-<form id="frmEditEstado" asp-action="Edit" method="post">
+<form id="frmEditEstado"
+      asp-controller="RealizaPedido"
+      asp-action="Edit"
+      method="post">
+    <input type="hidden" asp-for="IdPedido" />asp-action="Edit" method="post">
     <input type="hidden" asp-for="IdPedido" />
 
     <div class="form-group">
